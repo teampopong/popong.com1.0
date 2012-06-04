@@ -17,12 +17,13 @@
         padding-bottom: 40px;
       }
       .member-photo img {
-        width: 100%;
+        width: 100px;
       }
       .member-text {
         color: #EEEEEE;
-        background-color: #EEEEEE;
+        background-color: #whitesmoke;
         padding: 10px;
+        margin: 10px;
       }
       .text-block {
         color: white;
@@ -33,9 +34,17 @@
         text-align: right;
         padding-bottom: 30px;
       }
-      ::selection {
+      .member-description ::selection {
+        color: white;
         background-color: #FF9900;
       }
+      .member-name ::selection {
+        color: black;
+      }
+      .member-text ::selection {
+        background-color: #50A200;
+      }
+      
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -70,73 +79,71 @@
 	
 	<!-- Container -->
 	<div class="container">
-
-      <hr>
-  
       <div class="row-fluid">
         <div id="member-list" class="span7">
           <h2>Active Members</h2>
-            <!-- member -->
-            <div class="row-fluid">
-              <div class="member-photo span2"><a href="#cornchz">
-                <img src="images/member-cornchz.jpg"></a>
-              </div>
-              <div class="member-description span10">
-                <h3 class="member-name">cornchz</h3>
-                <div class="member-text">
-                  team POPONG의 starting member이자 핵심 개발자이자 엄마. 
-                  대체로 이름만큼 강하지만 때론 <span class="text-block">이름</span>만큼 강하지 않을 때도 있음.
-                </div>
+          <!-- member -->
+          <div class="row-fluid">
+            <div class="member-photo span2">
+              <a href="#cornchz"><img src="images/member-cornchz.jpg"></a>
+            </div>
+            <div class="member-description span10">
+              <div class="member-name"><h3>cornchz</h3></div>
+              <div class="member-text">
+                team POPONG의 starting member이자 핵심 개발자이자 엄마. 
+                대체로 이름만큼 강하지만 때론 <span class="text-block">이름</span>만큼 강하지 않을 때도 있음.
               </div>
             </div>
+          </div>
+  
+          <!-- member -->
+          <div class="row-fluid">
+            <div class="member-photo span2">
+              <a href="#daybreaker"><img src="images/member-daybreaker.jpg"></a>
+            </div>
+            <div class="member-description span10">
+              <div class="member-name"><h3>daybreaker</h3></div>
+              <div class="member-text">
+                team POPONG의 starting member.
+                이것은 <span class="text-block">중요한</span> 부분. 
+                이것은 <span class="text-block">키워드</span> 부분. 
+              </div>
+            </div>
+          </div>
             
-            <!-- member -->
-            <div class="row-fluid">
-              <div class="member-photo span2"><a href="#daybreaker">
-                <img src="images/member-daybreaker.jpg"></a>
-              </div>
-              <div class="member-description span10">
-                <h3 class="member-name">daybreaker</h3>
-                <div class="member-text">
-                  team POPONG의 starting member.
-                  이것은 <span class="text-block">중요한</span> 부분. 
-                  이것은 <span class="text-block">설명</span> 부분. 
-                </div>
+          <!-- member -->
+          <div class="row-fluid">
+            <div class="member-photo span2"><a href="#echojuliett">
+              <img src="images/member-echojuliett.jpg"></a>
+            </div>
+            <div class="member-description span10">
+              <div class="member-name"><h3>echojuliett</h3></div>
+              <div class="member-text">
+                team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
+                때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
+                <span class="text-block">삶</span>에서 가장 중요한 것은 <span class="text-block">사랑</span>이라 생각하고,
+                정치는 믿지 않으나 <span class="text-block">사람</span>은 믿음.
               </div>
             </div>
-            
-            <!-- member -->
-            <div class="row-fluid">
-              <div class="member-photo span2"><a href="http://twitter.com/echojuliett">
-                <img src="images/member-echojuliett.jpg"></a>
-              </div>
-              <div class="member-description span10">
-                <h3 class="member-name">echojuliett</h3>
-                <div class="member-text">
-                  team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
-                  때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
-                  <span class="text-block">삶</span>에서 가장 중요한 것은 <span class="text-block">사랑</span>이라 생각하고,
-                  정치는 믿지 않으나 <span class="text-block">사람</span>은 믿음.
-                </div>
-              </div>
-            </div>
+          </div>            
           <br />  
           
           <h2>Resting Members</h2>
-            <!-- member -->
-            <div class="row-fluid">
-              <div class="member-photo span2"><a href="#jooddang">
-                <img src="images/member-jooddang.jpg"></a>
-              </div>
-              <div class="member-description span10">
-                <h3 class="member-name">jooddang</h3>
-                <div class="member-text">
-                  team POPONG의 <span class="text-block">starting member</span> 이자 최초 organizer.
-                  지금은 <span class="text-block">Africa</span> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.
-                  <span class="text-block">England</span> 에 잊지 못할 사랑을 두고 옴.
-                </div>
+          <!-- member -->
+          <div class="row-fluid">
+            <div class="member-photo span2"><a href="#jooddang">
+              <img src="images/member-jooddang.jpg"></a>
+            </div>
+            <div class="member-description span10">
+              <div class="member-name"><h3>jooddang</h3></div>
+              <div class="member-text">
+                team POPONG의 <span class="text-block">starting member</span> 이자 최초 organizer.
+                지금은 <span class="text-block">Africa</span> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.
+                <span class="text-block">England</span> 에 잊지 못할 사랑을 두고 옴.
               </div>
             </div>
+          </div>
+            
           <br />
           
           <h2>We'd like to express our thanks to...</h2>
