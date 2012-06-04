@@ -16,6 +16,23 @@
         padding-top: 60px;
         padding-bottom: 40px;
       }
+      .member-photo img {
+        width: 100%;
+      }
+      .member-text {
+        color: white;
+      }
+      .text-block {
+        color: white;
+        background-color: #50A200;
+        padding: 3px;
+      }
+      #directlinks {
+        text-align: right;
+      }
+      ::selection {
+        background-color: #FFCC00;
+      }
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -34,13 +51,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#"><img src="images/popong_w.png" width="80px" alt="popong logo"></a>
+          <a class="brand" href="#"><img src="images/popong_w.png" width="80px" alt="popong logo"/ ></a>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
               <li><a href="#apps">Apps</a></li>              
               <li><a href="#data">Data</a></li>                            
-              <li><a href="#dev">Dev</a></li>                                          
+              <li><a href="#dev">Blog</a></li>                                          
               <li class="active"><a href="about.html">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -50,13 +67,105 @@
 	
 	<!-- Container -->
 	<div class="container">
-	  <!-- TODO -->
-	
+	  <div id="directlinks">
+        <a href="http://facebook.com/teampopong" target="_blank" title="facebook"><img class="icons" src="images/icon-facebook.png" alt="facebook logo"/ ></a>
+        <a href="http://twitter.com/teampopong" target="_blank" title="twitter"><img class="icons" src="images/icon-twitter.png" alt="twitter logo"/ ></a>
+        <a href="http://youtube.com/user/teampopong" target="_blank" title="youtube"><img class="icons" src="images/icon-youtube.png" alt="youtube logo"/ ></a>
+        <a href="http://vimeo.com/teampopong" target="_blank" title="vimeo"><img class="icons" src="images/icon-vimeo.png" alt="vimeo logo"/ ></a>
+        <a href="http://slideshare.com/teampopong" target="_blank" title="slideshare"><img class="icons" src="images/icon-slideshare.png" alt="slideshare logo"/ ></a>
+      </div>
+      <hr>
+  
+      <div class="row-fluid">
+        <div id="member-list" class="span7">
+          <h2>Active Members</h2>
+            <!-- member -->
+            <div class="row-fluid">
+              <div class="member-photo span2"><a href="#cornchz">
+                <img src="images/member-cornchz.jpg"></a>
+              </div>
+              <div class="member-description span10">
+                <h3 class="member-name">cornchz</h3>
+                <div class="member-text">
+                  team POPONG의 starting member이자 핵심 개발자이자 엄마. 
+                  대체로 이름만큼 강하지만 때론 <span class="text-block">이름</span>만큼 강하지 않을 때도 있음.
+                </div>
+              </div>
+            </div>
+            
+            <!-- member -->
+            <div class="row-fluid">
+              <div class="member-photo span2"><a href="#daybreaker">
+                <img src="images/member-daybreaker.jpg"></a>
+              </div>
+              <div class="member-description span10">
+                <h3 class="member-name">daybreaker</h3>
+                <div class="member-text">
+                  team POPONG의 starting member.
+                  이것은 <span class="text-block">중요한</span> 부분. 
+                  이것은 <span class="text-block">설명</span> 부분. 
+                </div>
+              </div>
+            </div>
+            
+            <!-- member -->
+            <div class="row-fluid">
+              <div class="member-photo span2"><a href="http://twitter.com/echojuliett">
+                <img src="images/member-echojuliett.jpg"></a>
+              </div>
+              <div class="member-description span10">
+                <h3 class="member-name">echojuliett</h3>
+                <div class="member-text">
+                  team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
+                  때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
+                  <span class="text-block">삶</span>에서 가장 중요한 것은 <span class="text-block">사랑</span>이라 생각하고,
+                  정치는 믿지 않으나 <span class="text-block">사람</span>은 믿음.
+                </div>
+              </div>
+            </div>
+          <br />  
+          
+          <h2>Resting Members</h2>
+            <!-- member -->
+            <div class="row-fluid">
+              <div class="member-photo span2"><a href="#jooddang">
+                <img src="images/member-jooddang.jpg"></a>
+              </div>
+              <div class="member-description span10">
+                <h3 class="member-name">jooddang</h3>
+                <div class="member-text">
+                  team POPONG의 <span class="text-block">starting member</span> 이자 최초 organizer.
+                  지금은 <span class="text-block">Africa</span> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.
+                  <span class="text-block">England</span> 에 잊지 못할 사랑을 두고 옴.
+                </div>
+              </div>
+            </div>
+          <br />
+          
+          <h2>We'd like to express our thanks to...</h2>
+          <a href="#">김미정</a>, 등등, a list of some people, ... and Steve Jobs.
+        </div>
+	    <!-- TODO -->
+	    
+	    <div id="slideshare" class="span5">
+	      <strong style="display:block;margin:12px 0 4px">
+	      <a href="http://www.slideshare.net/teampopong/" target="_blank">2011-11-18 @ChangeOn<br/ >정치참여 플랫폼에서 놀자: 쉽고 즐겁게 참여하는 일상 속의 정치</a>
+	      </strong>
+	      <iframe src="http://www.slideshare.net/slideshow/embed_code/12045164" width="425" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen></iframe> 
+	    </div>  
+      </div> <!-- /row-fluid -->
+      
 	  <!-- Footer -->
       <hr>
       <footer>
         <p>&copy; 2011-2012 Team POPONG</p>
       </footer>
-    </div> <!-- /Container -->
+    </div> <!-- /container -->
+    
+    <!-- list of members -->
+    <script>
+      function getMembers() {
+      }
+    </script>
   </body>
 </html>
