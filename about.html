@@ -17,47 +17,75 @@
         padding-bottom: 40px;
         background-color: whitesmoke;
       }
+      
       body ::selection {
         color: black;
-        background-color: white;
       }
+      
+      .member {
+        padding: 10px 0;
+      }
+      
       .member-photo {
-        text-align: right;
+        padding-left: 10px;
       }
+      
       .member-photo img {
         width: 100px;
       }
+      
       #member-list h2 {
         padding-top: 20px;
       }
+      
       .member-description ::selection {
         color: #006600;
+      }
+      
+      .member-description a {
+        color: black;
+        text-decoration: none;
+      }
+      
+      .member-description a:hover {
+        color: #FF0066;
+        text-decoration: none;
       }
       .member-text {
         color: white;
         background-color: white; 
         padding: 10px;
-        margin: 10px;
+        margin: 5px;
+          -webkit-border-radius: 6px;
+             -moz-border-radius: 6px;
+                  border-radius: 6px;
+
       }
+      
       .member-text ::selection {
         color: white;
         background-color: #50A200;
       }
+      
       .text-block {
         color: white;
         background-color: #50A200;
-        padding: 3px;
+        padding: 2px;
       }
+      
       .text-block ::selection {
-        color: white;
+        color: white;        
       }
+      
       #directlinks {
         text-align: right;
         padding-top: 16px;
       }
+      
       #directlinks img {
         padding: 0 3px;
       }
+      
       #slideshare {
         padding-top: 30px;
       }
@@ -106,12 +134,12 @@
         <div id="member-list" class="span8">
           <h2>Active Members</h2>
           <!-- member -->
-          <div class="row-fluid">
+          <div class="member row-fluid">
             <div class="member-photo span2">
               <a href="#cornchz"><img src="images/member-cornchz.jpg"></a>
             </div>
             <div class="member-description span10">
-              <div class="member-name"><h3>cornchz</h3></div>
+              <div class="member-name"><h3><a href="#">cornchz</a></h3></div>
               <div class="member-text">
                 team POPONG의 starting member이자 핵심 개발자이자 엄마. 
                 대체로 이름만큼 강하지만 때론 <span class="text-block">이름</span>만큼 강하지 않을 때도 있음.
@@ -120,12 +148,12 @@
           </div>
   
           <!-- member -->
-          <div class="row-fluid">
+          <div class="member row-fluid">
             <div class="member-photo span2 offset1">
               <a href="#daybreaker"><img src="images/member-daybreaker.jpg"></a>
             </div>
             <div class="member-description span10">
-              <div class="member-name"><h3>daybreaker</h3></div>
+              <div class="member-name"><h3><a href="#">daybreaker</a></h3></div>
               <div class="member-text">
                 team POPONG의 starting member.
                 이것은 <span class="text-block">중요한</span> 부분. 
@@ -135,12 +163,12 @@
           </div>
             
           <!-- member -->
-          <div class="row-fluid">
-            <div class="member-photo span2"><a href="#echojuliett">
-              <img src="images/member-echojuliett.jpg"></a>
+          <div class="member row-fluid">
+            <div class="member-photo span2">
+              <a href="#echojuliett"><img src="images/member-echojuliett.jpg"></a>
             </div>
             <div class="member-description span10">
-              <div class="member-name"><h3>echojuliett</h3></div>
+              <div class="member-name"><h3><a href="#">echojuliett</a></h3></div>
               <div class="member-text">
                 team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
                 때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
@@ -152,12 +180,12 @@
           
           <h2>Resting Members</h2>
           <!-- member -->
-          <div class="row-fluid">
-            <div class="member-photo span2"><a href="#jooddang">
-              <img src="images/member-jooddang.jpg"></a>
+          <div class="member row-fluid">
+            <div class="member-photo span2">
+              <a href="#jooddang"><img src="images/member-jooddang.jpg"></a>
             </div>
             <div class="member-description span10">
-              <div class="member-name"><h3>jooddang</h3></div>
+              <div class="member-name"><h3><a href="#">jooddang</a></h3></div>
               <div class="member-text">
                 team POPONG의 <span class="text-block">starting member</span> 이자 최초 organizer.
                 지금은 <span class="text-block">Africa</span> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.

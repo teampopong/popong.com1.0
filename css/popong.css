@@ -1,11 +1,20 @@
 #hero_unit > p {
-	font-size: 5px;
+  font-size: 5px;
 }
       
 .nav > li {
-	font-size: 12pt;
+  font-size: 12pt;
 }
       
 .navbar .nav > li > a {
-	padding: 16px 13px 15px;
+  padding: 16px 13px 15px;
+}
+
+#directlinks {
+  text-align: right;
+  padding-top: 16px;
+}
+
+#directlinks img {
+  padding: 0 3px;
 }
