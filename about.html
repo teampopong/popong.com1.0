@@ -9,19 +9,22 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
     <link href="css/popong.css" rel="stylesheet">
+
     <style type="text/css">
       body {
         padding-top: 60px;
-        padding-bottom: 40px;	
+        padding-bottom: 40px;
         background-color: #FFFCF5;
         font-family: "futura-pt", Helvetica, sans-serif;
       }
-      
+
       body ::selection {
         color: #50A200;
       }
-      
+
       .member {
         padding: 10px 0;
       }
@@ -29,10 +32,10 @@
       .member-photo {
         padding-left: 10px;
       }
-            
+
       .member-photo img {
         width: 130px;
-        height: 130px;        
+        height: 130px;
           -webkit-border-radius: 50em;
              -moz-border-radius: 50em;
                   border-radius: 50em;
@@ -40,17 +43,17 @@
 
       #member-list h2 {
         color: #0074cc;
-        padding-top: 50px;    
+        padding-top: 50px;
         font-weight: normal;
       }
-      
+
       .member-list ::selection {
         color: #50A200;
       }
-      
+
       .member-description {
         color: white;
-        background-color: white; 
+        background-color: white;
         padding: 10px;
         margin: 5px;
           -webkit-border-radius: 6px;
@@ -58,44 +61,43 @@
                   border-radius: 6px;
         border: solid 1px whitesmoke;
       }
-      
+
       .member-name a {
         color: black;
         font-weight: normal;
-        font-family: "Corbel";        
+        font-family: "Corbel";
       }
-      
+
       .member-name a:hover {
         color: #FF0066;
         text-decoration: none;
       }
-      
-      .member-description > ::selection {
+
+      .member-description ::selection {
         color: white;
         background-color: #50A200;
       }
-      
-      .text-block {
+
+      .member-description em {
+        font-style: normal;
         color: white;
         background-color: #50A200;
         padding: 2px;
       }
-      
+
       #slideshare {
         padding-top: 50px;
       }
     </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/popong-responsive.css" rel="stylesheet">
-    
+
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
  </head>
- 
+
  <body>
-	<!-- navigation bar -->
+    <!-- navigation bar -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -104,30 +106,30 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="index.html"><img src="images/popong_w.png" width="80px" alt="popong logo"/ ></a>
+          <a class="brand" href="index.html"><img src="images/popong_w.png" width="80px" alt="popong logo" /></a>
           <div class="nav-collapse">
             <ul class="nav">
               <li><a href="index.html">Home</a></li>
-              <li><a href="#apps">Apps</a></li>              
-              <li><a href="#data">Data</a></li>                            
-              <li><a href="blog.html">Blog</a></li>                                          
+              <li><a href="#apps">Apps</a></li>
+              <li><a href="#data">Data</a></li>
+              <li><a href="blog.html">Blog</a></li>
               <li class="active"><a href="#">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-	      <div id="directlinks">
-            <a href="http://facebook.com/teampopong" target="_blank" title="facebook"><img class="icons" src="images/icon-facebook.png" alt="facebook logo"/ ></a>
-            <a href="http://twitter.com/teampopong" target="_blank" title="twitter"><img class="icons" src="images/icon-twitter.png" alt="twitter logo"/ ></a>
-            <a href="http://youtube.com/user/teampopong" target="_blank" title="youtube"><img class="icons" src="images/icon-youtube.png" alt="youtube logo"/ ></a>
-            <a href="http://vimeo.com/teampopong" target="_blank" title="vimeo"><img class="icons" src="images/icon-vimeo.png" alt="vimeo logo"/ ></a>
-            <a href="http://slideshare.com/teampopong" target="_blank" title="slideshare"><img class="icons" src="images/icon-slideshare.png" alt="slideshare logo"/ ></a>
+          <div id="directlinks">
+            <a href="http://facebook.com/teampopong" target="_blank" title="facebook"><img class="icons" src="images/icon-facebook.png" alt="facebook logo" /></a>
+            <a href="http://twitter.com/teampopong" target="_blank" title="twitter"><img class="icons" src="images/icon-twitter.png" alt="twitter logo" /></a>
+            <a href="http://youtube.com/user/teampopong" target="_blank" title="youtube"><img class="icons" src="images/icon-youtube.png" alt="youtube logo" /></a>
+            <a href="http://vimeo.com/teampopong" target="_blank" title="vimeo"><img class="icons" src="images/icon-vimeo.png" alt="vimeo logo" /></a>
+            <a href="http://slideshare.com/teampopong" target="_blank" title="slideshare"><img class="icons" src="images/icon-slideshare.png" alt="slideshare logo" /></a>
           </div>
         </div>
       </div>
     </div>
-	
-	<!-- Container -->
-	<div class="container">
-      <div class="row fluid">
+
+    <!-- Container -->
+    <div class="container">
+      <div class="row-fluid">
         <div id="member-list" class="span8">
           <h2>Active Members</h2>
           <!-- member -->
@@ -136,51 +138,45 @@
               <img src="images/member-cornchz.jpg">
             </div>
             <div class="span9">
-              <div class="member-name">
-                <h3><a href="#cornchz">cornchz</a></h3>
-              </div>
-              <div class="member-description">
-                team POPONG의 starting member이자 <span class="text-block">핵심</span> 개발자이자 엄마. 
-                대체로 이름만큼 강하지만 때론 <span class="text-block">이름</span>만큼 <span class="text-block">강</span>하지 않을 때도 있음. 
-                생산성을 높이기 위해 jooddang이 이따금 둔부를 <span class="text-block">철</span>썩임.
-              </div>
+              <h3 class="member-name"><a href="#cornchz">cornchz</a></h3>
+              <p class="member-description">
+                team POPONG의 starting member이자 <em>핵심</em> 개발자이자 엄마.
+                대체로 이름만큼 강하지만 때론 <em>이름</em>만큼 <em>강</em>하지 않을 때도 있음.
+                생산성을 높이기 위해 jooddang이 이따금 둔부를 <em>철</em>썩임.
+              </p>
             </div>
           </div>
-  
+
           <!-- member -->
           <div id="daybreaker" class="member row-fluid">
             <div class="member-photo span2">
               <img src="images/member-daybreaker.jpg">
             </div>
             <div class="span9">
-              <div class="member-name">
-                <h3><a href="#daybreaker">daybreaker</a></h3>
-              </div>
-            <div class="member-description">
-              team POPONG의 starting member.
-              이것은 <span class="text-block">중요한</span> 부분. 
-              이것은 <span class="text-block">키워드</span> 부분. 
-            </div>
+              <h3 class="member-name"><a href="#daybreaker">daybreaker</a></h3>
+              <p class="member-description">
+                team POPONG의 starting member.
+                이것은 <em>중요한</em> 부분.
+                이것은 <em>키워드</em> 부분.
+              </p>
             </div>
           </div>
-          
+
           <!-- member -->
           <div id="jooddang" class="member row-fluid">
             <div class="member-photo span2">
               <img src="images/member-jooddang.jpg">
             </div>
             <div class="span9">
-              <div class="member-name">
-                <h3><a href="#jooddang">jooddang</a></h3>
-              </div>
-            <div class="member-description">
-              team POPONG의 <span class="text-block">starting member</span> 이자 최초 organizer.
-              지금은 <span class="text-block">Africa</span> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.
-              <span class="text-block">England</span> 에 잊지 못할 사랑을 두고 옴.
-            </div>
+              <h3 class="member-name"><a href="#jooddang">jooddang</a></h3>
+              <p class="member-description">
+                team POPONG의 <em>starting member</em> 이자 최초 organizer.
+                지금은 <em>Africa</em> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.
+                <em>England</em> 에 잊지 못할 사랑을 두고 옴.
+              </p>
             </div>
           </div>
-                  
+
           <h2>Resting Members</h2>
           <!-- member -->
           <div id="echojuliett" class="member row-fluid">
@@ -188,32 +184,30 @@
               <img src="images/member-echojuliett.jpg">
             </div>
             <div class="span9">
-              <div class="member-name">
-                <h3><a href="#echojuliett">echojuliett</a></h3>
-              </div>            
-            <div class="member-description">
-              team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
-              때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
-              <span class="text-block">삶</span>에서 가장 중요한 것은 <span class="text-block">사랑</span>이라 생각하고,
-              정치는 믿지 않으나 <span class="text-block">사람</span>은 믿음.
-            </div>
+              <h3 class="member-name"><a href="#echojuliett">echojuliett</a></h3>
+              <p class="member-description">
+                team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
+                때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
+                <em>삶</em>에서 가장 중요한 것은 <em>사랑</em>이라 생각하고,
+                정치는 믿지 않으나 <em>사람</em>은 믿음.
+              </p>
             </div>
           </div>
-                    
+
           <h2>We'd like to express our thanks to...</h2>
-          <div class="member-name">
+          <p class="member-name">
             <a href="#">김미정</a>, 등등, a list of some people, ... and <a href="#">Steve Jobs</a>.
-          </div>
+          </p>
         </div>
-        
+
         <div id="slideshare" class="span4">
           <iframe src="http://www.slideshare.net/slideshow/embed_code/12045164" width="100%" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
-	    </div>
+        </div>
       </div>
       <!-- TODO -->
 
 
-	  <!-- Footer -->
+      <!-- Footer -->
       <hr>
       <footer>
         <p>&copy; 2011-2012 Team POPONG</p>
@@ -226,17 +220,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap-transition.js"></script>
-    <script src="js/bootstrap-alert.js"></script>
-    <script src="js/bootstrap-modal.js"></script>
-    <script src="js/bootstrap-dropdown.js"></script>
-    <script src="js/bootstrap-scrollspy.js"></script>
-    <script src="js/bootstrap-tab.js"></script>
-    <script src="js/bootstrap-tooltip.js"></script>
-    <script src="js/bootstrap-popover.js"></script>
-    <script src="js/bootstrap-button.js"></script>
     <script src="js/bootstrap-collapse.js"></script>
-    <script src="js/bootstrap-carousel.js"></script>
-    <script src="js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
