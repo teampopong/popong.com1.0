@@ -4,7 +4,31 @@
 @bgrcolor: #FFFCF5;
 
 
+// styles
 body {
   background-color: @bgrcolor;
 }
 
+@media (min-width: 980px) {
+  body > .container {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+.nav > li {
+  font-size: 12pt;
+}
+      
+.navbar .nav > li > a {
+  padding: 16px 13px 15px;
+}
+
+#directlinks {
+  text-align: right;
+  padding-top: 16px;
+}
+
+#directlinks img {
+  padding: 0 3px;
+}
