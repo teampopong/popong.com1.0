@@ -15,73 +15,16 @@
 	<script src="js/less-1.3.0.min.js" type="text/javascript"></script>
 
     <style type="text/css">
-      body ::selection {
-        color: #50A200;
-      }
-
-      .member {
-        padding: 10px 0;
-      }
-
-      .member-photo {
-        padding-left: 10px;
-      }
-
-      .member-photo img {
-        width: 130px;
-        height: 130px;
-          -webkit-border-radius: 50em;
-             -moz-border-radius: 50em;
-                  border-radius: 50em;
-      }
-
-      #member-list h2 {
-        color: #0074cc;
-        padding-top: 50px;
-        font-weight: normal;
-      }
-
-      .member-list ::selection {
-        color: #50A200;
-      }
-
-      .member-description {
-        color: white;
-        background-color: white;
-        padding: 10px;
-        margin: 5px;
-          -webkit-border-radius: 6px;
-             -moz-border-radius: 6px;
-                  border-radius: 6px;
-        border: solid 1px whitesmoke;
-      }
-
-      .member-name a {
-        color: black;
-        font-weight: normal;
-        font-family: "Corbel";
-      }
-
-      .member-name a:hover {
-        color: #FF0066;
-        text-decoration: none;
-      }
-
-      .member-description ::selection {
-        color: white;
-        background-color: #50A200;
-      }
-
-      .member-description em {
-        font-style: normal;
-        color: white;
-        background-color: #50A200;
-        padding: 2px;
-      }
-
       #slideshare {
         padding-top: 50px;
       }
+      @media (min-width: 980px) {
+      #members img {
+      width: 80px;;
+      height: 100px;
+      }
+      }
+      
     </style>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -119,9 +62,8 @@
       </div>
     </div>
 
-    <!-- Container -->
-    <div class="container">
-      <div class="row-fluid">
+
+<!--
         <div id="member-list" class="span8">
 		  <h2>Temporary List of Contributors</h2>
 		  daybreaker(김준기), cornchz(강철), 
@@ -137,82 +79,95 @@
 		  ...
 		  <br>
 		  any more?
-
+-->
+    <!-- Container -->
+    <div class="container">
+      <div class="row-fluid">
+        <div id="members" class="span8">
           <h2>Active Members</h2>
-          <!-- member -->
-          <div id="cornchz" class="member row-fluid">
-            <div class="member-photo span2">
-              <img src="images/member-cornchz.jpg">
-            </div>
-            <div class="span9">
+          <div id="active-members" class="row-fluid">
+          
+            <div id="cornchz" class="span2">
               <h3 class="member-name"><a href="#cornchz">cornchz</a></h3>
-              <div class="member-description shadow">
-                <p>
-                team POPONG의 starting member이자 <em>핵심</em> 개발자이자 엄마.
-                대체로 이름만큼 강하지만 때론 <em>이름</em>만큼 <em>강</em>하지 않을 때도 있음.
-                생산성을 높이기 위해 jooddang이 이따금 둔부를 <em>철</em>썩임.
-                </p>
-              </div>
+              <img src="images/member-cornchz.jpg">
+				<p class="member-description shadow">
+                starting member
             </div>
-          </div>
-
-          <!-- member -->
-          <div id="daybreaker" class="member row-fluid">
-            <div class="member-photo span2">
-              <img src="images/member-daybreaker.jpg">
-            </div>
-            <div class="span9">
+            
+            <div id="daybreaker" class="span2">
               <h3 class="member-name"><a href="#daybreaker">daybreaker</a></h3>
-              <div class="member-description shadow">
-                <p>
-                team POPONG의 starting member.
-                이것은 <em>중요한</em> 부분.
-                이것은 <em>키워드</em> 부분.
+              <img src="images/member-daybreaker.jpg">
+				<p class="member-description shadow">
+                팔방미인
                 </p>
-              </div>
             </div>
-          </div>
-
-          <!-- member -->
-          <div id="jooddang" class="member row-fluid">
-            <div class="member-photo span2">
-              <img src="images/member-jooddang.jpg">
-            </div>
-            <div class="span9">
+            
+            <div id="jooddang" class="span2">
               <h3 class="member-name"><a href="#jooddang">jooddang</a></h3>
-              <div class="member-description shadow">
-                <p>
-                team POPONG의 <em>starting member</em> 이자 최초 organizer.
-                지금은 <em>Africa</em> 여행중이라 부재중이고, 곧 bay area로 유학을 갈 예정.
-                <em>England</em> 에 잊지 못할 사랑을 두고 옴.
+              <img src="images/member-jooddang.jpg">
+				<p class="member-description shadow">
+                대장
                 </p>
-              </div>
             </div>
+            
+            <div id="echojuliett" class="span2">
+              <h3 class="member-name"><a href="#echojuliett">echojuliett</a></h3>
+              <img src="images/member-echojuliett.jpg">
+				<p class="member-description shadow">
+            	데이터마이너
+                </p>
+            </div>
+
+            <div id="allsolution" class="span2">
+              <h3 class="member-name"><a href="#allsolution">allsolution</a></h3>
+              <img src="images/member-allsolution.jpg">
+				<p class="member-description shadow">
+                server side
+                </p>
+            </div>
+          
+          </div>
+          <div id="active-members" class="row-fluid">
+          
+            <div id="minspiration" class="span2">
+              <h3 class="member-name"><a href="#minspiration">minspiration</a></h3>
+              <img src="images/member-minspiration.jpg">
+				<p class="member-description shadow">
+                UX 기획자
+                </p>
+            </div>
+            
+            <div id="unicell208" class="span2">
+              <h3 class="member-name"><a href="#unicell208">unicell208</a></h3>
+              <img src="images/member-unicell208.jpg">
+				<p class="member-description shadow">
+                data miner
+            </div>                                                
           </div>
 
           <h2>Dormant Members</h2>
-          <!-- member -->
-          <div id="echojuliett" class="member row-fluid">
-            <div class="member-photo span2">
-              <img src="images/member-echojuliett.jpg">
+          <div id="dormant-members" class="row-fluid">
+          
+            <div id="jihye" class="span2">
+              <h3 class="member-name"><a href="#jihye">최지혜</a></h3>
+              <img src="images/member-jihye.jpg">
+				<p class="member-description shadow">
+                starting member.
             </div>
-            <div class="span9">
-              <h3 class="member-name"><a href="#echojuliett">echojuliett</a></h3>
-              <div class="member-description shadow">
-                <p>
-                team POPONG에서 갖은 뒤치닥거리를 맡고 있음. 남는 시간에 data mining을 하기도 함.
-                때론 술에 취하고, 때론 음악에 취하고, 때론 잠에 취함.
-                <em>삶</em>에서 가장 중요한 것은 <em>사랑</em>이라 생각하고,
-                정치는 믿지 않으나 <em>사람</em>은 믿음.
-                </p>
-              </div>
-            </div>
+            
           </div>
 
           <h2>We'd like to express our thanks to...</h2>
           <p class="member-name">
-            <a href="#">김미정</a>, 등등, a list of some people, ... and <a href="#">Steve Jobs</a>.
+            <a href="#">김미정</a>, 
+		    ffee21(박정환), 
+		    김수연, 
+		    dongx3, 
+		    신재호, 
+		    한규섭 교수님, 
+		    등등, a list of some people, ... and <a href="#">Steve Jobs</a>.
           </p>
+          
         </div>
 
         <div id="slideshare" class="span4">
