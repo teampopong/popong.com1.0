@@ -5,10 +5,55 @@
   date: 2012-06-00
   modification logs:
     2012-07-09 added style descriptions
+    2012-07-15 added color palette, mix-ins & nested rules
 */
 
-// ----- variables ------------------------------------------------
-@bgrcolor: #FFFCF5;
+
+// ----- variables ---------------------------------------------------
+@img_folder: "../images";
+
+
+// ----- color palette ------------------------------------------------
+@bgrcolor		: #FFFCF5;	// light yellow
+
+@colorA0: #7C07A9;	// purple
+@colorA1: #65247F;
+@colorA2: #50026E;
+@colorA3: #A93CD4;
+@colorA4: #B564D4;
+
+@colorB0: #DF004F;	// pink
+@colorB1: #A82A56;
+@colorB2: #910033;
+@colorB3: #EF3C7B;
+@colorB4: #EF6C9A;
+
+@colorC0: #74E600;	// green
+@colorC1: #6CAC2B;
+@colorC2: #4B9500;
+@colorC3: #98F23D;
+@colorC4: #B0F26D;
+
+@colorD0: #F0FC00;	// yellow
+@colorD1: #B6BD2F;
+@colorD2: #9CA400;
+@colorD3: #F4FE3F;
+@colorD4: #F7FE72;
+
+
+// ----- mixins --------------------------------------------------
+
+.rounded-corners (@radius: 5px) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
+.box-shadow (@alpha: 30%) when (isnumber(@alpha)) {
+  box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
+  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
+  -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
+}
 
 
 // ----- styles ---------------------------------------------------
@@ -24,32 +69,44 @@ body {
   }
 }
 
-.nav > li {
-  font-size: 12pt;
+a {
+  color: @colorA0;
+  &:hover {
+    color: @colorB0;
+  }
 }
+
+h1, h2, h3, h4, h5 {
+  color: inherit;
+}
+
+
+// navigation bar
       
-.navbar .nav > li > a {
-  padding: 16px 13px 15px;
+.navbar .nav > li {
+  font-size: 12pt;
+  a {
+    padding: 16px 13px 15px;
+  }
 }
 
 #directlinks {
   text-align: right;
   padding-top: 16px;
+  img {
+    padding: 0 3px;
+  }
 }
 
-#directlinks img {
-  padding: 0 3px;
-}
 
 // index.html
 .appbutton {
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-}
-
-.appbutton img {
-  width: 50%;
+  img {
+    width: 50%;
+  }
 }
 
 .hero-unit {
@@ -57,11 +114,50 @@ body {
   padding-bottom: 30px;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: white;
-  border: solid 1px whitesmoke;
+  background-color: @colorC4;
+  border: solid 3px @colorC2;
+  p {
+    font-size: 11pt;
+    margin: auto;
+  }
 }
 
-.hero-unit > p {
-  font-size: 11pt;
-  margin: auto;
+
+// about.html
+
+#members {
+  li {
+    display: block;
+    float: left;
+    width: 33% !important;
+    height: auto;
+    .rounded-corners;
+    margin: 0 0 30px;
+
+    .member-name {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .member-job {
+      text-align: center;
+    }
+  }
 }
+
+.member-box (@img_file: null) {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  background-image: url("@{img_folder}/member-@{img_file}.jpg");
+  .rounded-corners(40px);
+  .box-shadow;
+}
+
+.member-photo-cornchz 		{  .member-box(cornchz);  }
+.member-photo-daybreaker 	{  .member-box(daybreaker);  }
+.member-photo-jooddang		{  .member-box(jooddang);  }
+.member-photo-echojuliett 	{  .member-box(echojuliett);  }
+.member-photo-allsolution	{  .member-box(allsolution);  }
+.member-photo-minspiration	{  .member-box(minspiration);  }
