@@ -16,6 +16,8 @@
 // -----  palette ------------------------------------------------
 @bgrcolor		: #FFF;	//#FFFCF5; light yellow
 @hovercolor		: #FF0058;	
+@codecolor		: #333333;
+
 // ----- mixins --------------------------------------------------
 
 .rounded-corners (@radius: 5px) {
@@ -52,6 +54,10 @@ a {
 
 h1, h2, h3, h4, h5 {
   color: inherit;
+}
+
+code {
+  color: @codecolor;
 }
 
 
