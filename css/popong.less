@@ -109,26 +109,35 @@ code {
   li {
     display: block;
     float: left;
-    width: 33% !important;
     height: auto;
     .rounded-corners;
-    margin: 0 0 30px;
+    margin: 0 3% 30px;
 
     .member-name {
-      text-align: center;
       font-size: 16px;
-      font-weight: bold;
-    }
-
-    .member-job {
-      text-align: center;
-    }
+      font-weight: normal;
+    } 
   }
 }
 
 #members img {
   width: 80px;
   height: 100px;
+}
+
+#thanksto {
+  display: block;
+  width: 100%;
+  float: left;
+  margin: 0 0 40px;
+  
+  li {
+    margin: 0 3px 3px 3px;
+  }
+
+  li:after {
+    content: ". ";
+  }
 }
 
 .member-box (@img_file: null) {
@@ -146,4 +155,11 @@ code {
 .member-photo-echojuliett 	{  .member-box(echojuliett);  }
 .member-photo-allsolution	{  .member-box(allsolution);  }
 .member-photo-minspiration	{  .member-box(minspiration);  }
-.member-photo-unicell208	{  .member-box(unicell208);  }
+.member-photo-uni208		{  .member-box(uni208);  }
+.member-photo-jihye			{  .member-box(jihye);  }
+.member-photo-sanxiyn		{  .member-box(sanxiyn);  }
+.member-photo-dongx3		{  .member-box(dongx3);  }
+.member-photo-netj			{  .member-box(netj);  }
+.member-photo-unrealive		{  .member-box(unrealive);  }
+.member-photo-ingtellect	{  .member-box(ingtellect);  }
+
