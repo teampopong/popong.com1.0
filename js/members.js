@@ -12,7 +12,8 @@
         "dongx3": "모바일 개발자",
         "netj": "개발자",
         "unrealive": "기획자",
-        "ingtellect": "개발자"
+        "ingtellect": "개발자",
+        "weirdclaire": "UX 디자이너"
         };
 
     $.each(names, function(name, description) {
