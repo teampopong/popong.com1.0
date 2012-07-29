@@ -1,11 +1,12 @@
-// LESS 
+// LESS
 
 /*
   author: @teampopong
   date: 2012-06-00
   modification logs:
     2012-07-09 added style descriptions
-    2012-07-15 added  palette, mix-ins & nested rules
+    2012-07-15 added palette, mix-ins & nested rules
+    2012-07-24 added member photos
 */
 
 
@@ -14,9 +15,9 @@
 
 
 // -----  palette ------------------------------------------------
-@bgrcolor		: #FFF;	//#FFFCF5; light yellow
-@hovercolor		: #FF0058;	
-@codecolor		: #333333;
+@bgr_color      : #FFF;
+@hover_color    : #FF0058;
+@code_color     : #333333;
 
 // ----- mixins --------------------------------------------------
 
@@ -24,8 +25,6 @@
   border-radius: @radius;
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
-}
-
 .box-shadow (@alpha: 30%) when (isnumber(@alpha)) {
   box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
   -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
@@ -36,19 +35,19 @@
 // ----- styles ---------------------------------------------------
 
 body {
-  background-: @bgrcolor;
+  background-color: @bgr_color;
 }
 
 @media (min-width: 980px) {
   body > .container {
-    padding-top: 80px;
+    padding-top: 80px !important;
     padding-bottom: 40px;
   }
 }
 
 a {
   &:hover {
-    color: @hovercolor;
+    color: @hover_color;
   }
 }
 
@@ -58,12 +57,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 code {
-  color: @codecolor;
+  color: @code_color;
 }
 
 
 // navigation bar
-      
+
 .navbar .nav > li {
   font-size: 12pt;
   a {
@@ -106,18 +105,22 @@ code {
 
 // about.html
 
-#members {
+#left-column {
+  h2 {
+    margin-bottom: 10px;
+  }
+
   li {
     display: block;
     float: left;
     height: auto;
     .rounded-corners;
-    margin: 0 3% 30px;
+    margin: 0 3% 15px;
 
     .member-name {
       font-size: 16px;
       font-weight: normal;
-    } 
+    }
   }
 }
 
@@ -130,8 +133,8 @@ code {
   display: block;
   width: 100%;
   float: left;
-  margin: 0 0 40px;
-  
+  margin: 0 0 20px;
+
   li {
     margin: 0 3px 3px 3px;
   }
@@ -150,17 +153,20 @@ code {
   .box-shadow;
 }
 
-.member-photo-cornchz 		{  .member-box(cornchz);  }
-.member-photo-daybreaker 	{  .member-box(daybreaker);  }
-.member-photo-jooddang		{  .member-box(jooddang);  }
-.member-photo-echojuliett 	{  .member-box(echojuliett);  }
-.member-photo-allsolution	{  .member-box(allsolution);  }
-.member-photo-minspiration	{  .member-box(minspiration);  }
-.member-photo-uni208		{  .member-box(uni208);  }
-.member-photo-jihye			{  .member-box(jihye);  }
-.member-photo-sanxiyn		{  .member-box(sanxiyn);  }
-.member-photo-dongx3		{  .member-box(dongx3);  }
-.member-photo-netj			{  .member-box(netj);  }
-.member-photo-unrealive		{  .member-box(unrealive);  }
-.member-photo-ingtellect	{  .member-box(ingtellect);  }
+.member-photo-cornchz      {  .member-box(cornchz);  }
+.member-photo-daybreaker   {  .member-box(daybreaker);  }
+.member-photo-jooddang     {  .member-box(jooddang);  }
+.member-photo-echojuliett  {  .member-box(echojuliett);  }
+.member-photo-allsolution  {  .member-box(allsolution);  }
+.member-photo-minspiration {  .member-box(minspiration);  }
+.member-photo-uni208       {  .member-box(uni208);  }
+.member-photo-jihye        {  .member-box(jihye);  }
+.member-photo-sanxiyn      {  .member-box(sanxiyn);  }
+.member-photo-dongx3       {  .member-box(dongx3);  }
+.member-photo-netj         {  .member-box(netj);  }
+.member-photo-unrealive    {  .member-box(unrealive);  }
+.member-photo-ingtellect   {  .member-box(ingtellect);  }
 
+#slideshare {
+  padding-top: 50px;
+}
