@@ -32,20 +32,17 @@
           <a class="brand" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/popong_w.png') }}" width="80px" alt="popong logo"></a>
           <div class="nav-collapse">
             <ul class="nav">
-            <!-- TODO: active 활성화 -->
               {% for title, url in menus %}
-              <li><a {% if current_menu==title %}class="active"{% endif %} href="{{url}}">{{title}}</a></li>
+              <li {% if active_page==title %}class="active"{% endif %}>
+                <a href="{{url}}">{{title}}</a></li>
               {% endfor %}
             </ul>
           </div><!--/.nav-collapse -->
-
   
           <div id="directlinks">
-              <a href="http://facebook.com/teampopong" target="_blank" title="facebook"><img class="icons" src="{{ url_for('static', filename='images/icon-facebook.png') }}" alt="facebook logo"></a>
-            <a href="http://twitter.com/teampopong" target="_blank" title="twitter"><img class="icons" src="{{ url_for('static', filename='images/icon-twitter.png') }}" alt="twitter logo"></a>
-            <a href="http://youtube.com/user/teampopong" target="_blank" title="youtube"><img class="icons" src="{{ url_for('static', filename='images/icon-youtube.png') }}" alt="youtube logo"></a>
-            <a href="http://vimeo.com/teampopong" target="_blank" title="vimeo"><img class="icons" src="{{ url_for('static', filename='images/icon-vimeo.png') }}" alt="vimeo logo"></a>
-            <a href="http://slideshare.com/teampopong" target="_blank" title="slideshare"><img class="icons" src="{{ url_for('static', filename='images/icon-slideshare.png') }}" alt="slideshare logo"></a>
+            {% for title, url in dirlinks %}
+            <a href="{{url}}" target="_blank" title="{{title}}"><img class="icons" src="{{ url_for('static', filename='images/icon-%s.png' % title) }}" alt="{{title}} logo"></a>
+            {% endfor %}
           </div>
         </div>
       </div>

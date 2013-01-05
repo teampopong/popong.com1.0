@@ -9,7 +9,8 @@ def init_routes(app):
 
     @app.route('/')
     def home():
-        return render_template('home.html', menus=settings.MENUS, current_menu='Home')
+        return render_template('home.html', menus=settings.MENUS,
+                dirlinks=settings.DIRLINKS, active_page='Home')
 
     @app.route('/blog')
     def blog():
@@ -17,7 +18,8 @@ def init_routes(app):
 
     @app.route('/about')
     def about():
-        return render_template('about.html', menus=settings.MENUS)
+        return render_template('about.html', menus=settings.MENUS,
+                dirlinks=settings.DIRLINKS, active_page='About')
 
 def main():
     app = Flask(__name__)
