@@ -16,7 +16,8 @@ MENUS = [
 DIRLINKS = [
         ('facebook', 'http://facebook.com/teampopong'),
         ('twitter', 'http://twitter.com/teampopong'),
-        ('youtube', 'http://youtube.com/user/teampopong'),
+        #('youtube', 'http://youtube.com/user/teampopong'),
         ('vimeo', 'http://vimeo.com/teampopong'),
-        ('slideshare', 'http://slideshare.com/teampopong')
+        ('slideshare', 'http://slideshare.com/teampopong'),
+        ('github', 'http://github.com/popong')
 ]
