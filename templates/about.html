@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block contents %}
+<div class="row-fluid">
+
+  <div id="left-column" class="span8">
+    <div id="members">
+      <h2>함께하는 사람들</h2>
+      <ul>
+      <script type="text/javascript" src="{{ url_for('static', filename='js/members.js') }}"></script>
+        <script>
+            $('li img')
+            //$('li img').clipImage();
+        </script>
+      </ul>
+    </div>
+
+    <div id="thanksto">
+      <h2>고마운 분들</h2>
+      <ul>
+        <li>김미정 님</li>
+        <li>한규섭 교수님</li>
+        <li>김묘영 님</li>
+        <li>강민주 님</li>
+        <li>박순일 님</li>
+        <li><a href="http://twitter.com/ssaljalu">ssaljalu</a></li>
+        <li><a href="http://twitter.com/tebica">tebica</a></li>
+        <li>박훈준 님</li>
+        <li><a href="http://37signals.com/svn/">Signal vs Noise</a></li>
+        <li>Steve Jobs</li>
+        <li>그리고 사랑하는 우리의 가족들</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="right-column" class="span4">
+    <div id="slideshare">
+      <iframe src="http://www.slideshare.net/slideshow/embed_code/12045164" width="100%" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <div id="contact">
+      e-mail: <a href="mail:contact@popong.com">contact@popong.com</a>
+    </div>
+  </div> 
+
+</div> <!-- /row-fluid -->
+{% endblock %}
