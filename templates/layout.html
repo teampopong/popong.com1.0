@@ -33,16 +33,13 @@
           <div class="nav-collapse">
             <ul class="nav">
               {% for title, url in menus %}
-              <li {% if active_page==title %}class="active"{% endif %}>
-                <a href="{{url}}">{{title}}</a></li>
-              {% endfor %}
+              <li{% if active_page==title %} class="active"{% endif %}><a href="{{url}}">{{title}}</a></li>{% endfor %}
             </ul>
           </div><!--/.nav-collapse -->
   
           <div id="directlinks">
             {% for title, url in dirlinks %}
-            <a href="{{url}}" target="_blank" title="{{title}}"><img class="icons" src="{{ url_for('static', filename='images/icon-%s.png' % title) }}" alt="{{title}} logo"></a>
-            {% endfor %}
+            <a href="{{url}}" target="_blank" title="{{title}}"><img class="icons" src="{{ url_for('static', filename='images/icon-%s.png' % title) }}" alt="{{title}} logo"></a>{% endfor %}
           </div>
         </div>
       </div>
