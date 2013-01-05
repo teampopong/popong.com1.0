@@ -25,6 +25,8 @@ def main():
     app = Flask(__name__)
     init_routes(app)
     app.run(**settings.SERVER_SETTINGS)
+    app.add_url_rule('/favicon.ico',
+            redirect_to=url_for('static', filename='images/favicon.ico'))
 
 if __name__ == '__main__':
     main()
