@@ -7,10 +7,10 @@
     <div id="members">
       <h2>함께하는 사람들</h2>
       <ul>
-      <script type="text/javascript" src="{{ url_for('static', filename='js/members.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/members.js') }}"></script>
+        <script src="{{url_for('static', filename='js/popong.js')}}"></script>
         <script>
-            $('li img')
-            //$('li img').clipImage();
+            $('li img').clipImage();
         </script>
       </ul>
     </div>
