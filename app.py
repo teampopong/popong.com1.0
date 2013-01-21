@@ -6,6 +6,7 @@ from flask import Flask, render_template, redirect
 import settings
 
 app = Flask(__name__)
+app.debug = False
 
 @app.route('/')
 def home():
@@ -20,6 +21,10 @@ def blog():
 def about():
     return render_template('about.html', menus=settings.MENUS,
             dirlinks=settings.DIRLINKS, active_page='About')
+
+@app.route('/error')
+def error():
+    return 'error ;_;'
 
 def main():
     app.run(**settings.SERVER_SETTINGS)
