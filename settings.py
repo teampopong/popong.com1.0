@@ -7,6 +7,12 @@ SERVER_SETTINGS = {
     'debug': True
 }
 
+BABEL_SETTINGS = {
+    'default_locale': 'ko',
+}
+
+LOCALES = ['ko', 'en']
+
 MENUS = [
     ('Home', '/'),
     ('Blog', '/blog'),
