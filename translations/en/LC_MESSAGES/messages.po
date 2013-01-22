@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-01-22 23:50+0900\n"
+"POT-Creation-Date: 2013-01-23 00:04+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -19,15 +19,15 @@ msgstr ""
 
 #: templates/about.html:8
 msgid "함께하는 사람들"
-msgstr ""
+msgstr "Current members"
 
 #: templates/about.html:18
 msgid "함께했던 사람들"
-msgstr ""
+msgstr "Past members"
 
 #: templates/about.html:26
 msgid "고마운 분들"
-msgstr ""
+msgstr "Thanks to"
 
 #: templates/home.html:6
 msgid "나는 정치에 관심이 있다? 없다?"
@@ -62,13 +62,13 @@ msgid "애정선거"
 msgstr "Baffling Election"
 
 #: templates/home.html:24
-#, fuzzy
 msgid ""
 "10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 "
 "가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
 "A blinded test to find out which candidate of the 2011 Seoul Mayor "
-"Election is best fit for you! (Only available in Korean.)"
+"Election is best fit for you! Based on candidates' pledges. (Only "
+"available in Korean.)"
 
 #: templates/home.html:27
 msgid "대한민국 정치인명사전"
