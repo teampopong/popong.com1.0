@@ -28,7 +28,7 @@ def home():
             dirlinks=settings.DIRLINKS, active_page='Home')
 
 @app.route('/blog')
-def blog(locale=default_locale):
+def blog():
     if locale=='ko':
         return redirect('http://blog.popong.com')
     else:
@@ -48,7 +48,7 @@ def error():
 def inject_menus():
     return dict(menus=[
             ('Home', url_for('home')),
-            ('Blog', url_for('blog', locale=locale)),
+            ('Blog', url_for('blog')),
             ('About', url_for('about'))
         ])
 
