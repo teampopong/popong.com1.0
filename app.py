@@ -17,7 +17,7 @@ default_locale = settings.BABEL_SETTINGS['default_locale']
 def get_locale():
     locale = request.host.split('.')[0]
     if locale not in settings.LOCALES:
-        locale = 'en'
+        locale = settings.LOCALES[0]
     return locale
 
 @app.route('/')
