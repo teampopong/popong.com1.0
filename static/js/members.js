@@ -2,17 +2,7 @@
     var names = {
         "cornchz": "핵심 개발자",
         "daybreaker": "개발자",
-        "jooddang": "얼굴마담",
         "echojuliett": "데이터마이너",
-        "allsolution": "서버 개발자",
-        "minspiration": "UX 기획자",
-        "uni208": "데이터마이너",
-        "jihye": "기획자",
-        "sanxiyn": "개발자",
-        "dongx3": "모바일 개발자",
-        "netj": "개발자",
-        "unrealive": "기획자",
-        "ingtellect": "개발자",
         "weirdclaire": "UX 디자이너"
         };
 

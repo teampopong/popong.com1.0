@@ -5,7 +5,7 @@
 
   <div id="left-column" class="span8">
     <div id="members">
-      <h2>함께하는 사람들</h2>
+      <h2>{{ gettext("함께하는 사람들") }}</h2>
       <ul>
         <script type="text/javascript" src="{{ url_for('static', filename='js/members.js') }}"></script>
         <script src="{{url_for('static', filename='js/popong.js')}}"></script>
@@ -14,21 +14,22 @@
         </script>
       </ul>
     </div>
-
-    <div id="thanksto">
-      <h2>고마운 분들</h2>
+    <div id="members-past">
+      <h2>{{ gettext("함께했던 사람들") }}</h2>
       <ul>
-        <li>김미정 님</li>
-        <li>한규섭 교수님</li>
-        <li>김묘영 님</li>
-        <li>강민주 님</li>
-        <li>박순일 님</li>
-        <li><a href="http://twitter.com/ssaljalu">ssaljalu</a></li>
-        <li><a href="http://twitter.com/tebica">tebica</a></li>
-        <li>박훈준 님</li>
-        <li><a href="http://37signals.com/svn/">Signal vs Noise</a></li>
-        <li>Steve Jobs</li>
-        <li>그리고 사랑하는 우리의 가족들</li>
+        {% for member in OB.items() %}
+        <li><a href="http://twitter.com/{{ member[0] }}">{{ member[0] }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div id="thanksto">
+      <h2>{{ gettext("고마운 분들") }}</h2>
+      <ul>
+        {% for person in THANKS_TO.items() %}
+        <li>
+        {% if person[1] != '' %}<a href="{{ person[1] }}">{% endif %}
+            {{ person[0] }}{% if person[1] != '' %}</a>{% endif %}</li>
+        {% endfor %}
       </ul>
     </div>
   </div>

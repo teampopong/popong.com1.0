@@ -26,13 +26,17 @@ def home():
             dirlinks=settings.DIRLINKS, active_page='Home')
 
 @app.route('/blog')
-def blog():
-    return redirect('http://blog.popong.com')
+def blog(locale=default_locale):
+    if locale=='ko':
+        return redirect('http://blog.popong.com')
+    else:
+        return redirect('http://en.blog.popong.com')
 
 @app.route('/about')
 def about():
     return render_template('about.html', menus=settings.MENUS,
-            dirlinks=settings.DIRLINKS, active_page='About')
+            dirlinks=settings.DIRLINKS, active_page='About',
+            YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
 @app.route('/error')
 def error():

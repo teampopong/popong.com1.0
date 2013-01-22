@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import unicode_literals
+from flaskext.babel import Babel, gettext
 
 YB = {
     "cornchz": ["핵심 개발자", "2010.12",],
@@ -23,10 +24,10 @@ OB = {
     "unrealive": ["기획자","2011.01","2011.06"]
     }
 
-THANKS_TO = [
-    '<a href="http://twitter.com/tebica">tebica</a>',
-    '박훈준 님'
-    ]
+THANKS_TO = {
+    'tebica': '<a href="http://twitter.com/tebica">tebica</a>',
+    'Hoonjoon Park': ''
+    }
 
 OTHERS = ['한규섭 교수님', '김묘영 님', '김미정 님', '강민주 님', '박순일 님',
     '<a href="http://twitter.com/ssaljalu">ssaljalu</a>',
