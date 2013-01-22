@@ -4,6 +4,7 @@
 from flask import Flask, render_template, redirect
 
 import settings
+import members
 
 app = Flask(__name__)
 app.debug = False
