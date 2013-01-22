@@ -1,11 +1,11 @@
 #! /usr/bin/python2.7
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, redirect, request, g
-from flaskext.babel import Babel, gettext
+from flask import Flask, render_template, redirect, request, url_for
+from flaskext.babel import Babel
+from werkzeug.local import LocalProxy
 
 import settings, members
-
 
 app = Flask(__name__)
 app.debug = False
@@ -20,9 +20,11 @@ def get_locale():
         locale = default_locale
     return locale
 
+locale = LocalProxy(get_locale) # 함수를 변수처럼
+
 @app.route('/')
 def home():
-    return render_template('home.html', menus=settings.MENUS,
+    return render_template('home.html',
             dirlinks=settings.DIRLINKS, active_page='Home')
 
 @app.route('/blog')
@@ -34,13 +36,21 @@ def blog(locale=default_locale):
 
 @app.route('/about')
 def about():
-    return render_template('about.html', menus=settings.MENUS,
+    return render_template('about.html',
             dirlinks=settings.DIRLINKS, active_page='About',
             YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
 @app.route('/error')
 def error():
     return 'error ;_;'
+
+@app.context_processor
+def inject_menus():
+    return dict(menus=[
+            ('Home', url_for('home')),
+            ('Blog', url_for('blog', locale=locale)),
+            ('About', url_for('about'))
+        ])
 
 def main():
     app.run(**settings.SERVER_SETTINGS)

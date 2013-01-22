@@ -13,12 +13,6 @@ BABEL_SETTINGS = {
 
 LOCALES = ['ko', 'en']
 
-MENUS = [
-    ('Home', '/'),
-    ('Blog', '/blog'),
-    ('About', '/about')
-]
-
 DIRLINKS = [
         ('facebook', 'http://facebook.com/teampopong'),
         ('twitter', 'http://twitter.com/teampopong'),
