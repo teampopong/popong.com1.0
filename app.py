@@ -1,7 +1,7 @@
 #! /usr/bin/python2.7
 # -*- coding: utf-8 -*-
 
-from flask import Flask, render_template, redirect, g
+from flask import Flask, render_template, redirect, request, g
 from flaskext.babel import Babel, gettext
 
 import settings, members
@@ -15,9 +15,9 @@ default_locale = settings.BABEL_SETTINGS['default_locale']
 
 @babel.localeselector
 def get_locale():
-    locale = getattr(g, 'lang', default_locale)
+    locale = request.host.split('.')[0]
     if locale not in settings.LOCALES:
-        locale = 'en'
+        locale = settings.LOCALES[0]
     return locale
 
 @app.route('/')
