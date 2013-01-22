@@ -1,9 +1,9 @@
 (function () {
     var names = {
-        "cornchz": "핵심 개발자",
-        "daybreaker": "개발자",
-        "echojuliett": "데이터마이너",
-        "weirdclaire": "UX 디자이너"
+        "cornchz": "developer",
+        "daybreaker": "developer",
+        "echojuliett": "data miner",
+        "weirdclaire": "UX designer"
         };
 
     $.each(names, function(name, description) {

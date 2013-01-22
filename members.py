@@ -5,10 +5,10 @@ from __future__ import unicode_literals
 from flaskext.babel import Babel, gettext
 
 YB = {
-    "cornchz": ["핵심 개발자", "2010.12",],
-    "daybreaker": ["개발자", "2010.12",],
-    "echojuliett": ["데이터마이너","2011.01",],
-    "weirdclaire": ["UX 디자이너","2012.08",]
+    "cornchz": ["developer", "2010.12",],
+    "daybreaker": ["developer", "2010.12",],
+    "echojuliett": ["data miner","2011.01",],
+    "weirdclaire": ["UX designer","2012.08",]
     }
 
 OB = {

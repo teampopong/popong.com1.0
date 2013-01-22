@@ -8,7 +8,7 @@ SERVER_SETTINGS = {
 }
 
 BABEL_SETTINGS = {
-    'default_locale': 'ko',
+    'default_locale': 'en',
 }
 
 LOCALES = ['ko', 'en']
