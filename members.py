@@ -25,7 +25,7 @@ OB = {
     }
 
 THANKS_TO = {
-    'tebica': '<a href="http://twitter.com/tebica">tebica</a>',
+    'tebica': 'http://twitter.com/tebica',
     'Hoonjoon Park': ''
     }
 
