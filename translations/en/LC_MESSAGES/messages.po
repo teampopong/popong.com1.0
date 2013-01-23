@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-01-23 00:04+0900\n"
+"POT-Creation-Date: 2013-01-23 13:03+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 
 #: templates/home.html:13
 msgid "나는 서울 시장이다!"
-msgstr "I am Seoul Mayor!"
+msgstr "I am the Seoul Mayor!"
 
 #: templates/home.html:17
 msgid ""
