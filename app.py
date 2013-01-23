@@ -52,6 +52,14 @@ def inject_menus():
             ('About', url_for('about'))
         ])
 
+@app.context_processor
+def all_locales():
+    return dict(locales=settings.LOCALES)
+
+@app.context_processor
+def inject_locale():
+    return dict(active_lang=locale)
+
 def main():
     app.run(**settings.SERVER_SETTINGS)
 

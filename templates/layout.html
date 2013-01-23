@@ -36,7 +36,13 @@
               <li{% if active_page==title %} class="active"{% endif %}><a href="{{url}}" alt="{{title}}">{{title}}</a></li>{% endfor %}
             </ul>
           </div><!--/.nav-collapse -->
-  
+          <div id="lang">
+            <ul class="nav-pills">
+                {% for lang in locales %}
+                <li{% if active_lang==lang %} class="active"{% endif %}><a href="http://{{lang}}.popong.com">{{ lang }}</a></li>
+                {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
