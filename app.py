@@ -45,6 +45,10 @@ def about():
             dirlinks=settings.DIRLINKS, active_page='About',
             YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
+@app.route('/sources')
+def sources():
+    return render_template('sources.html')
+
 @app.route('/error')
 def error():
     return 'error ;_;'
