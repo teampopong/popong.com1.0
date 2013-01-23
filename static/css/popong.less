@@ -62,6 +62,7 @@ code {
   color: @code_color;
 }
 
+
 // navigation bar
 .navbar .nav > li {
   font-size: 12pt;
@@ -69,6 +70,40 @@ code {
     padding: 16px 13px 15px;
   }
 }
+
+#lang {
+  float: right;
+  ul {
+      margin: 0;
+      li {
+        display: inline-block;
+        font-size: 12px;
+        padding: 0px;
+      }
+  }
+}
+
+.nav-pills {
+  a { 
+    color: #777;
+  }
+  a:hover { 
+    color: #FFF;
+    text-decoration: none;
+  }
+  .active {
+    a { 
+      text-decoration: none;
+      background-color: #777; 
+      }
+    a:hover { 
+      color: #EEE;
+      text-decoration: none;
+      background-color: #777; 
+    }
+  }
+}
+
 
 // footer
 #copyright {
@@ -82,6 +117,12 @@ code {
   }
 }
 
+
+@media (max-width: 400px) {
+    #directlinks {
+        display: none;
+    }
+}
 
 // ----- home.html ---------------------------------------------------
 .appbutton {
