@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-01-23 13:03+0900\n"
+"POT-Creation-Date: 2013-01-23 20:19+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -72,12 +72,12 @@ msgstr ""
 
 #: templates/home.html:27
 msgid "대한민국 정치인명사전"
-msgstr "Korean Politician Glossary"
+msgstr "Korean Politician Dictionary"
 
 #: templates/home.html:31
 msgid "1대부터 19대까지의 국회의원, 대통령, 후보자와 당선자까지! 대한민국 정치인을 총망라한 대한민국 최초의 정치인명 사전!"
 msgstr ""
-"This glossary aims to list all politicians in South Korea. The Korean "
-"Politician Glossary currently contains over 22,000 candidates and elected"
-" officials of the National Assembly Election."
+"The Korean Politician Dictionary  aims to list all politicians in South "
+"Korea. It currently contains over 22,000 candidates and elected officials"
+" of the National Assembly Election."
 
