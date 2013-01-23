@@ -38,8 +38,8 @@
           </div><!--/.nav-collapse -->
           <div id="lang">
             <ul class="nav-pills">
-                {% for lang in locales %}
-                <li{% if active_lang==lang %} class="active"{% endif %}><a href="http://{{lang}}.popong.com">{{ lang }}</a></li>
+                {% for lang, url in locales.items() %}
+                <li{% if active_lang==lang %} class="active"{% endif %}><a href="{{ url }}">{{ lang }}</a></li>
                 {% endfor %}
             </ul>
           </div>

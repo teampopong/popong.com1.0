@@ -52,9 +52,17 @@ def inject_menus():
             ('About', url_for('about'))
         ])
 
+def host(locale=default_locale):
+  if locale not in settings.LOCALES:
+    locale = default_locale
+  return '%s.popong.com' % locale
+
 @app.context_processor
 def all_locales():
-    return dict(locales=settings.LOCALES)
+  return dict(
+      locales=dict((locale, request.url.replace(request.host, host(locale))) # 로케일과 href에 들어갈 URL
+        for locale in settings.LOCALES),
+      active_lang=locale)
 
 @app.context_processor
 def inject_locale():
