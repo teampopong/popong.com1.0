@@ -26,7 +26,7 @@
     <div class="span4">
         <h2><img src="{{ url_for('static', filename='images/icon-new.png') }}">{{ gettext("대한민국 정치인명사전") }}</h2>
       <div class="appbutton">
-          <a href="http://labs.popong.com/polidic/" target="_blank"><img src="{% if active_lang=='ko' %}{{ url_for('static', filename='images/button-polidic.png') }}{% else %}{{ url_for('static', filename='images/button-polidic-en.png') }}{% endif %}"></a>
+		  <a href="http://{{request.host}}/polidic/" target="_blank"><img src="{% if active_lang=='ko' %}{{ url_for('static', filename='images/button-polidic.png') }}{% else %}{{ url_for('static', filename='images/button-polidic-en.png') }}{% endif %}"></a>
       </div>
       <p>{{ gettext("1대부터 19대까지의 국회의원, 대통령, 후보자와 당선자까지! 대한민국 정치인을 총망라한 대한민국 최초의 정치인명 사전!") }}</p>
     </div>
