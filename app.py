@@ -20,6 +20,11 @@ def get_locale():
         locale = default_locale
     return locale
 
+def host(locale=default_locale):
+    if locale not in settings.LOCALES:
+        locale = default_locale
+    return '%s.popong.com' % locale
+
 locale = LocalProxy(get_locale) # 함수를 변수처럼
 
 @app.route('/')
@@ -52,21 +57,12 @@ def inject_menus():
             ('About', url_for('about'))
         ])
 
-def host(locale=default_locale):
-  if locale not in settings.LOCALES:
-    locale = default_locale
-  return '%s.popong.com' % locale
-
-@app.context_processor
-def all_locales():
-  return dict(
-      locales=dict((locale, request.url.replace(request.host, host(locale))) # 로케일과 href에 들어갈 URL
-        for locale in settings.LOCALES),
-      active_lang=locale)
-
 @app.context_processor
 def inject_locale():
-    return dict(active_lang=locale)
+    locale_links = dict((locale, request.url.replace(request.host, host(locale)))
+            for locale in settings.LOCALES)
+    return dict(locale_links=locale_links,
+            active_lang=locale)
 
 def main():
     app.run(**settings.SERVER_SETTINGS)
