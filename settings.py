@@ -19,5 +19,5 @@ DIRLINKS = [
         #('youtube', 'http://youtube.com/user/teampopong'),
         ('vimeo', 'http://vimeo.com/teampopong'),
         ('slideshare', 'http://slideshare.com/teampopong'),
-        ('github', 'http://github.com/popong')
+        ('github', 'http://github.com/teampopong')
 ]
