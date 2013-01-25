@@ -108,9 +108,9 @@
     .post-footer li.tags ul li {margin-left: 0.4em;}
     
     /* NOTES */
-	ol.notes { margin: 0; padding: 0; }
-	ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
-	ol.notes img.avatar { display: none; }
+  ol.notes { margin: 0; padding: 0; }
+  ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
+  ol.notes img.avatar { display: none; }
 
     /* PAGINATION */
     #pagination{margin:3em 0}
@@ -210,7 +210,7 @@
     {block:Posts}
       {block:Text}
       <div class="text">
-          {block:Title}<h2 class="title">{Title}</h2>{/block:Title}
+          {block:Title}<h2 class="title"><a href="{Permalink}" class="permalink">{Title}</a></h2>{/block:Title}
           <ul>
           <li class="right no-bullet">written by: @{PostAuthorName}</li>
           <li class="date right no-bullet">
@@ -265,16 +265,16 @@
         {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
       {/block:Photo}
 
-			{block:Photoset}
-			<div class="photoset-post">
-				{Photoset-500}
-				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-			{/block:Photoset}
+      {block:Photoset}
+      <div class="photoset-post">
+        {Photoset-500}
+        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+      {/block:Photoset}
       
       
       {block:Chat}
       <div class="chat">
-        {block:Title}<h2>{Title}</h2>{/block:Title}
+        {block:Title}<h2><a href="{Permalink}" class="permalink">{Title}</a></h2>{/block:Title}
         <ul class="convo">
           {block:Lines}
           <li class="{Alt}">
@@ -305,15 +305,10 @@
               <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}
             </li>
             -->
-          {block:Date}
-          
-          <li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>
-		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="dsq-comment-count permalink">{lang:Comment}</a></li>{block:IfDisqusShortname}
-          {/block:Date}
         </ul>
       </div> <!-- end single post -->
       
-	  
+    
       {/block:Posts}
       
       
@@ -392,7 +387,7 @@
           </div>
       </div>    
     
-	{block:IfDisqusShortname}
+  {block:IfDisqusShortname}
   <script type="text/javascript">
   //<![CDATA[
   (function() {

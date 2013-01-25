@@ -10,6 +10,11 @@ body a:hover {
 color: #ff0058;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: auto;
+  margin-bottom: 7px;
+}
+
 ul ul, ul ol, ol ol, ol ul {
 margin: 0 0 1.5em;
 }
@@ -232,6 +237,16 @@ blockquote > p {
   font-size: 12px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: auto;
+.title {
+  font-weight: bold;
+}
+
+.title a {
+  color: #000;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.title a:hover {
+  color: #000;
 }
