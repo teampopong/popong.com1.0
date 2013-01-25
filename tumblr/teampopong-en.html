@@ -107,10 +107,10 @@
     .post-footer li.tags ul, .post-footer li.tags ul li{display:inline; padding: 0;}
     .post-footer li.tags ul li {margin-left: 0.4em;}
     
-  /* NOTES */
-  ol.notes { margin: 0; padding: 0; }
-  ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
-  ol.notes img.avatar { display: none; }
+    /* NOTES */
+	ol.notes { margin: 0; padding: 0; }
+	ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
+	ol.notes img.avatar { display: none; }
 
     /* PAGINATION */
     #pagination{margin:3em 0}
@@ -172,18 +172,18 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="http://popong.com/"><img src="http://popong.com/static/images/popong_w.png" width="80px" alt="popong logo"></a>
+          <a class="brand" href="http://en.popong.com/"><img src="http://popong.com/static/images/popong_w.png" width="80px" alt="popong logo"></a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><a href="http://popong.com/">Home</a></li>
-              <li class="active"><a href="http://teampopong-ko.tumblr.com">Blog</a></li>
-              <li><a href="http://popong.com/about">About</a></li>
+              <li><a href="http://en.popong.com/">Home</a></li>
+              <li class="active"><a href="http://teampopong.tumblr.com">Blog</a></li>
+              <li><a href="http://en.popong.com/about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
           <div id="lang">                                                                                                                                                                       
             <ul class="nav-pills">                                                                                                                                                                                                                                                                                                       
-                <li><a href="http://en.blog.popong.com">en</a></li>
-                <li class="active"><a href="#">ko</a></li>
+                <li class="active"><a href="#">en</a></li>
+                <li><a href="http://blog.popong.com">ko</a></li>
             </ul>                                                                                                                                                                               
           </div> 
         </div>
@@ -214,9 +214,9 @@
           <ul>
           <li class="right no-bullet">written by: @{PostAuthorName}</li>
           <li class="date right no-bullet">
-          {block:Date}
-{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}
-          {/block:Date} KST
+              {block:Date}
+              {Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}
+              {/block:Date} KST
             <!--      
               {block:IfShowNotes}{block:NoteCount}
               <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}
@@ -265,11 +265,11 @@
         {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
       {/block:Photo}
 
-      {block:Photoset}
-      <div class="photoset-post">
-        {Photoset-500}
-        {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
-      {/block:Photoset}
+			{block:Photoset}
+			<div class="photoset-post">
+				{Photoset-500}
+				{block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
+			{/block:Photoset}
       
       
       {block:Chat}
@@ -308,12 +308,12 @@
           {block:Date}
           
           <li><a href="{Permalink}" class="permalink">{lang:Permalink}</a></li>
-      {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="dsq-comment-count permalink">{lang:Comment}</a></li>{block:IfDisqusShortname}
+		  {block:IfDisqusShortname}<li><a href="{Permalink}#disqus_thread" class="dsq-comment-count permalink">{lang:Comment}</a></li>{block:IfDisqusShortname}
           {/block:Date}
         </ul>
       </div> <!-- end single post -->
       
-    
+	  
       {/block:Posts}
       
       
@@ -376,9 +376,8 @@
       <span id="pagecount" align="right">&nbsp;</span>
     </div>
     {/block:PermalinkPagination}
-  
   </div> <!-- end container -->
-  <!-- Footer -->
+  
       <div id="page-footer" class="container">
         <hr>
           <div id="copyright">
@@ -391,9 +390,9 @@
             <a href="http://slideshare.com/teampopong" target="_blank" title="slideshare"><img class="icons" src="http://popong.com/static/images/icon-slideshare.png" alt="slideshare logo"></a>
             <a href="http://github.com/popong" target="_blank" title="github"><img class="icons" src="http://popong.com/static/images/icon-github.png" alt="github logo"></a>
           </div>
-      </div>
+      </div>    
     
-  {block:IfDisqusShortname}
+	{block:IfDisqusShortname}
   <script type="text/javascript">
   //<![CDATA[
   (function() {
