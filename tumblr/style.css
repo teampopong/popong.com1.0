@@ -250,3 +250,7 @@ blockquote > p {
 .title a:hover {
   color: #000;
 }
+
+#pagination > #next {
+  float: right;
+}

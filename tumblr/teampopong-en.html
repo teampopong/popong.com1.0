@@ -335,19 +335,19 @@
     
     {block:Pagination}
     <div id="pagination">
-      {block:NextPage}<a href="{NextPage}">&larr; {lang:Older entries}</a>{/block:NextPage}
+      {block:NextPage}<a href="{NextPage}" id="next">&larr; {lang:Older entries}</a>{/block:NextPage}
       <span id="pagecount">{lang:Page CurrentPage of TotalPages}</span>
-      {block:PreviousPage}<a href="{PreviousPage}">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
+      {block:PreviousPage}<a href="{PreviousPage}" id="previous">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
     </div>
     {/block:Pagination}
     
     {block:PermalinkPagination}
     <div id="pagination">
-      {block:PreviousPost}<a href="{PreviousPost}">&larr; {lang:Previous post}</a>{/block:PreviousPost}
+      {block:PreviousPost}<a href="{PreviousPost}" id="previous">&larr; {lang:Previous post}</a>{/block:PreviousPost}
 
         {block:Pagination}
             {block:PreviousPage}
-                <a href="{PreviousPage}">Previous</a>
+                <a href="{PreviousPage}" id="previous">Previous</a>
             {/block:PreviousPage}
 
             {block:JumpPagination length="5"}
@@ -361,12 +361,12 @@
             {/block:JumpPagination}
 
             {block:NextPage}
-                <a href="{NextPage}">Next</a>
+                <a href="{NextPage}" id="next">Next</a>
             {/block:NextPage}
         {/block:Pagination}
         
         
-      {block:NextPost}<a href="{NextPost}">{lang:Next post} &rarr;</a>{/block:NextPost}
+      {block:NextPost}<a href="{NextPost}" id="next">{lang:Next post} &rarr;</a>{/block:NextPost}
       
       <span id="pagecount" align="right">&nbsp;</span>
     </div>
