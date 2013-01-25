@@ -215,3 +215,23 @@ div.MathJax_Display {
 div.MathJax_Display .MathJax {
   font-size: 15px;
 }
+
+blockquote {
+  font-family: "Georgia", Courier New, courier, sans-serif;
+  background: #efefef;
+  padding: 5px 10px;
+  border: solid 1px #ddd;
+  margin: 15px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  color:  #333;
+}
+
+blockquote > p {
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: auto;
+}
