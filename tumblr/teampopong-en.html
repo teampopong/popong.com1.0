@@ -211,8 +211,8 @@
       {block:Text}
       <div class="text">
           {block:Title}<h2 class="title"><a href="{Permalink}" class="permalink">{Title}</a></h2>{/block:Title}
-          <ul>
-          <li class="right no-bullet">written by: @{PostAuthorName}</li>
+          <ul id="post-description">
+          <li class="right no-bullet">written by: <a href="http://twitter.com/{PostAuthorName}">@{PostAuthorName}</a></li>
           <li class="date right no-bullet">
               {block:Date}
               {Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}
@@ -371,6 +371,8 @@
       <span id="pagecount" align="right">&nbsp;</span>
     </div>
     {/block:PermalinkPagination}
+    <hr>
+    <div id="copyright">All posts on this blog are copyrighted by the author under a <a href="http://creativecommons.org/licenses/by/2.0/" alt="cc2.0">Creative Commons Attribution 2.0 Generic License</a>. That means you are totally free to copy and share any blog post without prior permission so long as you attribute the text to the author and the Team POPONG Blog.</div>
   </div> <!-- end container -->
   
       <div id="page-footer" class="container">
