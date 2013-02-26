@@ -4,6 +4,7 @@
 from flask import Flask, render_template, redirect, request, url_for
 from flaskext.babel import Babel
 from werkzeug.local import LocalProxy
+import json
 
 import settings, members
 
@@ -48,6 +49,14 @@ def about():
 @app.route('/sources')
 def sources():
     return render_template('sources.html')
+
+@app.route('/glossary')
+def glossary():
+    return render_template('glossary.html', terms=load_data('static/data/glossary.json'))
+
+def load_data(data):
+    with open(data, 'r') as f:
+        return json.load(f, encoding='utf-8')
 
 @app.route('/error')
 def error():
