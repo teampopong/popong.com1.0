@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-01-23 20:19+0900\n"
+"POT-Creation-Date: 2013-02-26 18:16+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -28,6 +28,22 @@ msgstr "Past members"
 #: templates/about.html:26
 msgid "고마운 분들"
 msgstr "Thanks to"
+
+#: templates/glossary.html:18
+msgid "정치용어집"
+msgstr "Glossary of Korean Political Terms"
+
+#: templates/glossary.html:22
+msgid "한국어"
+msgstr "Korean"
+
+#: templates/glossary.html:23
+msgid "영어"
+msgstr "English"
+
+#: templates/glossary.html:24
+msgid "의미"
+msgstr "Meaning"
 
 #: templates/home.html:6
 msgid "나는 정치에 관심이 있다? 없다?"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-01-23 20:19+0900\n"
+"POT-Creation-Date: 2013-02-26 18:16+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,6 +27,22 @@ msgstr ""
 
 #: templates/about.html:26
 msgid "고마운 분들"
+msgstr ""
+
+#: templates/glossary.html:18
+msgid "정치용어집"
+msgstr ""
+
+#: templates/glossary.html:22
+msgid "한국어"
+msgstr ""
+
+#: templates/glossary.html:23
+msgid "영어"
+msgstr ""
+
+#: templates/glossary.html:24
+msgid "의미"
 msgstr ""
 
 #: templates/home.html:6
