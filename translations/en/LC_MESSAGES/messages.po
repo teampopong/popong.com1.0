@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-02-26 18:24+0900\n"
+"POT-Creation-Date: 2013-02-27 22:31+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -96,4 +96,46 @@ msgstr ""
 "The Korean Politician Dictionary  aims to list all politicians in South "
 "Korea. It currently contains over 22,000 candidates and elected officials"
 " of the National Assembly Election."
+
+#: templates/sources.html:5
+msgid ""
+"팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다. 자세한 내용은 <a "
+"href='http://developers.popong.com'>개발자 문서</a>를 참고해주세요."
+msgstr ""
+
+#: templates/sources.html:8
+msgid "정부공식문서"
+msgstr "Official government sources"
+
+#: templates/sources.html:10
+msgid "국회 의안정보시스템"
+msgstr "National Assembly Bill Information System"
+
+#: templates/sources.html:10
+msgid "국회 회의록 및 의안 원문"
+msgstr "National Assembly minutes and text of legislation"
+
+#: templates/sources.html:11
+msgid "중앙선거관리위원회 선거통계시스템"
+msgstr "National Election Commision Electioni Information System"
+
+#: templates/sources.html:11
+msgid "국회 의원 선거 후보자/당선인 데이터"
+msgstr "National Assembly Election candidates/officials data"
+
+#: templates/sources.html:12
+msgid "영상회의록시스템"
+msgstr "VOD service for conferences"
+
+#: templates/sources.html:12
+msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
+msgstr ""
+
+#: templates/sources.html:13
+msgid "중앙선거관리위원회 알림광장"
+msgstr "National Election Committee online bulletin board"
+
+#: templates/sources.html:13
+msgid "정치인들이 받은 선거 자금 내역"
+msgstr "Political fund records"
 

@@ -26,7 +26,7 @@
   "교육의원선거": "",
   "교육감선거": "",
   "전국동시지방선거": "Nationwide Local Election",
-  "회의록": "",
+  "회의록": "minutes",
   "국회사무처": "National Assembly Secretariat",
   "국회예산정책처": "National Assembly Budget Office",
   "국회입법조사처": "National Assembly Research Service",
@@ -39,5 +39,12 @@
   "등록": "registration",
   "취임": "inauguration",
   "무소속": "independent",
+  "개정": "amendment",
+  "의안 원문": "text of legislation",
+  "영상회의록시스템": "VOD service for conferences",
+  "본회의": "",
+  "예산결산특별위원회": "Special Committee on Budget and Accounts",
+  "상임위원회": "",
+  "특별위원회": "",
   "위원회": "committee"
 }
