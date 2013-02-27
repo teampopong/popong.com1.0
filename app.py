@@ -4,7 +4,6 @@
 from flask import Flask, render_template, redirect, request, url_for
 from flaskext.babel import Babel
 from werkzeug.local import LocalProxy
-import json
 
 import settings, members
 
@@ -52,11 +51,21 @@ def sources():
 
 @app.route('/glossary')
 def glossary():
-    return render_template('glossary.html', terms=load_data('static/data/glossary.json'))
+    return render_template('glossary.html', terms=load_data('static/data/glossary.csv'))
 
 def load_data(data):
-    with open(data, 'r') as f:
-        return json.load(f, encoding='utf-8')
+    import csv
+    items = []
+    with open(data, 'rb') as f:
+        tsvreader = csv.reader(f, delimiter=',')
+        for row in tsvreader:
+            row = [unicode(cell, 'utf-8') for cell in row]
+            items.append(','.join(row))
+    return items
+
+def utf8_encoder(unicode_csv_data):
+    for line in unicode_csv_data:
+        yield line.encode('utf-8')
 
 @app.route('/error')
 def error():

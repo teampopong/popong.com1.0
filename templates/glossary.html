@@ -25,11 +25,11 @@
         </tr>
     </thead>
     <tbody>
-        {% for ko, en in terms.items() %}
+        {% for term in terms %}
         <tr>
-            <td>{{ko}}</td>
-            <td>{{en}}</td>
-            <td></td>
+            {% for t in term.split(',') %}
+            <td>{{t}}</td>
+            {% endfor %}
         </tr>
         {% endfor %}
     </tbody>
