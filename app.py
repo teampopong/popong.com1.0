@@ -16,6 +16,8 @@ default_locale = settings.BABEL_SETTINGS['default_locale']
 
 @babel.localeselector
 def get_locale():
+    if app.locale != 'auto':
+        return app.locale
     locale = request.host.split('.')[0]
     if locale not in settings.LOCALES:
         locale = default_locale
@@ -86,7 +88,18 @@ def inject_locale():
     return dict(locale_links=locale_links,
             active_lang=locale)
 
+def cmd_args():
+    from argparse import ArgumentParser
+    parser = ArgumentParser()
+    parser.add_argument('-l', dest='locale',
+            choices=['en', 'ko', 'auto'],
+            default='auto')
+    args = parser.parse_args()
+    return args
+
 def main():
+    args = cmd_args()
+    app.locale = args.locale
     app.run(**settings.SERVER_SETTINGS)
 
 if __name__ == '__main__':
