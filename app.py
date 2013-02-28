@@ -63,10 +63,6 @@ def load_data(data):
             items.append([unicode(cell, 'utf-8') for cell in row])
     return items
 
-def utf8_encoder(unicode_csv_data):
-    for line in unicode_csv_data:
-        yield line.encode('utf-8')
-
 @app.route('/error')
 def error():
     return 'error ;_;'
