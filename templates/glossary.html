@@ -3,6 +3,7 @@
 {% block contents %}
 <!-- DataTables javascript -->
 <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.dataTables.columnFilter.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/datatable.js') }}"></script>
 
 <!-- DataTables styling -->
@@ -33,5 +34,13 @@
         </tr>
         {% endfor %}
     </tbody>
+    <tfoot>
+        <tr>
+            <th>{{ gettext("한국어") }}</th>
+            <th>{{ gettext("영어") }}</th>
+            <th>{{ gettext("의미") }}</th>
+        </tr>
+    </tfoot>
+
 </table>
 {% endblock %}

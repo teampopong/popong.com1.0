@@ -155,5 +155,5 @@ $(document).ready(function() {
         "oLanguage": {
             "sLengthMenu": "_MENU_ records per page"
         }
-    } );
+    } ).columnFilter();
 } );
