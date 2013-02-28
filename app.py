@@ -92,7 +92,7 @@ def cmd_args():
     from argparse import ArgumentParser
     parser = ArgumentParser()
     parser.add_argument('-l', dest='locale',
-            choices=['en', 'ko', 'auto'],
+            choices=settings.LOCALES + ['auto'],
             default='auto')
     args = parser.parse_args()
     return args
