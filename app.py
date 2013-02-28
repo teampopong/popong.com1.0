@@ -16,7 +16,7 @@ default_locale = settings.BABEL_SETTINGS['default_locale']
 
 @babel.localeselector
 def get_locale():
-    if app.locale != 'auto':
+    if getattr(app, 'locale', 'auto') != 'auto':
         return app.locale
     locale = request.host.split('.')[0]
     if locale not in settings.LOCALES:
