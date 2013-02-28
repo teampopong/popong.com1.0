@@ -2,7 +2,7 @@
 
 {% block contents %}
 <!-- DataTables javascript -->
-<script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jquery.dataTables/1.9.4/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery.dataTables.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/datatable.js') }}"></script>
 
 <!-- DataTables styling -->
@@ -27,8 +27,8 @@
     <tbody>
         {% for term in terms %}
         <tr>
-            {% for t in term.split(',') %}
-            <td>{{t}}</td>
+            {% for t in term %}
+            <td>{{ t }}</td>
             {% endfor %}
         </tr>
         {% endfor %}

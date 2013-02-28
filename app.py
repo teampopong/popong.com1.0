@@ -1,6 +1,7 @@
 #! /usr/bin/python2.7
 # -*- coding: utf-8 -*-
 
+import re
 from flask import Flask, render_template, redirect, request, url_for
 from flaskext.babel import Babel
 from werkzeug.local import LocalProxy
@@ -56,11 +57,10 @@ def glossary():
 def load_data(data):
     import csv
     items = []
-    with open(data, 'rb') as f:
-        tsvreader = csv.reader(f, delimiter=',')
-        for row in tsvreader:
-            row = [unicode(cell, 'utf-8') for cell in row]
-            items.append(','.join(row))
+    with open(data, 'r') as f:
+        reader = csv.reader(f, delimiter=',')
+        for row in reader:
+            items.append([unicode(cell, 'utf-8') for cell in row])
     return items
 
 def utf8_encoder(unicode_csv_data):
