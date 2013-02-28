@@ -155,6 +155,6 @@ $(document).ready(function() {
         "oLanguage": {
             "sLengthMenu": "_MENU_ records per page"
         },
-        "iDisplayLength": 50
+        "iDisplayLength": 10
     } ).columnFilter();
 } );
