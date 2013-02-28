@@ -18,29 +18,54 @@
 <!-- DataTables data -->
 <h1>{{ gettext("정치용어집") }}</h1>
 <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="glossary-table">
+    {% if locale=='ko' %}
     <thead>
         <tr>
-            <th>{{ gettext("한국어") }}</th>
-            <th>{{ gettext("영어") }}</th>
-            <th>{{ gettext("의미") }}</th>
+            <th>한국어</th>
+            <th>영어</th>
+            <th>의미</th>
         </tr>
     </thead>
     <tbody>
         {% for term in terms %}
         <tr>
-            {% for t in term %}
-            <td>{{ t }}</td>
-            {% endfor %}
+            <td>{{ term[0] }}</td>
+            <td>{{ term[1] }}</td>
+            <td>{{ term[2] }}</td>
         </tr>
         {% endfor %}
     </tbody>
     <tfoot>
         <tr>
-            <th>{{ gettext("한국어") }}</th>
-            <th>{{ gettext("영어") }}</th>
-            <th>{{ gettext("의미") }}</th>
+            <th>'한국어'에서 검색</th>
+            <th>'영어'에서 검색</th>
+            <th>'의미'에서 검색</th>
         </tr>
     </tfoot>
-
+    {% else %}
+    <thead>
+        <tr>
+            <th>English</th>
+            <th>Korean</th>
+            <th>Meaning</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for term in terms %}
+        <tr>
+            <td>{{ term[1] }}</td>
+            <td>{{ term[0] }}</td>
+            <td>{{ term[3] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Search in 'English'</th>
+            <th>Search in 'Korean'</th>
+            <th>Search in 'Meaning'</th>
+        </tr>
+    </tfoot>
+    {% endif %}
 </table>
 {% endblock %}

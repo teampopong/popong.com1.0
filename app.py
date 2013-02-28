@@ -54,7 +54,7 @@ def sources():
 
 @app.route('/glossary')
 def glossary():
-    return render_template('glossary.html', terms=load_data('static/data/glossary.csv'))
+    return render_template('glossary.html', locale=app.locale, terms=load_data('static/data/glossary.csv'))
 
 def load_data(data):
     import csv
