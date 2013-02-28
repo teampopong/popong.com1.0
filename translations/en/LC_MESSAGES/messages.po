@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-02-28 16:23+0900\n"
+"POT-Creation-Date: 2013-02-28 16:27+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -89,7 +89,10 @@ msgstr ""
 msgid ""
 "팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다. 자세한 내용은 <a "
 "href='http://developers.popong.com'>개발자 문서</a>를 참고해주세요."
-msgstr "Team POPONG pulls most of the data from a variety of Government sources. For more information see the <a href='http://developers.popong.com'>Developer Documentation</a>"
+msgstr ""
+"Team POPONG pulls most of the data from a variety of Government sources. "
+"For more information see the <a "
+"href='http://developers.popong.com'>Developer Documentation</a>"
 
 #: templates/sources.html:8
 msgid "정부공식문서"
@@ -142,10 +145,4 @@ msgstr "National Assembly Bill Information System"
 #: templates/sources.html:20
 msgid "정치용어집의 의미"
 msgstr "Term explanations"
-
-#~ msgid "국회사무처 영문의회용어검색"
-#~ msgstr "National Assembly Secretaritat's Assembly English term search"
-
-#~ msgid "의안정보시스템 의안개요"
-#~ msgstr "National Assembly Bill Information System"
 
