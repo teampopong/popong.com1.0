@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-02-27 22:31+0900\n"
+"POT-Creation-Date: 2013-02-28 16:23+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,20 +29,8 @@ msgstr ""
 msgid "고마운 분들"
 msgstr ""
 
-#: templates/glossary.html:18
+#: templates/glossary.html:19 templates/sources.html:17
 msgid "정치용어집"
-msgstr ""
-
-#: templates/glossary.html:22
-msgid "한국어"
-msgstr ""
-
-#: templates/glossary.html:23
-msgid "영어"
-msgstr ""
-
-#: templates/glossary.html:24
-msgid "의미"
 msgstr ""
 
 #: templates/home.html:6
@@ -76,7 +64,7 @@ msgid ""
 "가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
 
-#: templates/home.html:27
+#: templates/home.html:27 templates/sources.html:9
 msgid "대한민국 정치인명사전"
 msgstr ""
 
@@ -94,35 +82,51 @@ msgstr ""
 msgid "정부공식문서"
 msgstr ""
 
-#: templates/sources.html:10
+#: templates/sources.html:11
 msgid "국회 의안정보시스템"
 msgstr ""
 
-#: templates/sources.html:10
+#: templates/sources.html:11
 msgid "국회 회의록 및 의안 원문"
 msgstr ""
 
-#: templates/sources.html:11
+#: templates/sources.html:12
 msgid "중앙선거관리위원회 선거통계시스템"
 msgstr ""
 
-#: templates/sources.html:11
+#: templates/sources.html:12
 msgid "국회 의원 선거 후보자/당선인 데이터"
 msgstr ""
 
-#: templates/sources.html:12
+#: templates/sources.html:13
 msgid "영상회의록시스템"
 msgstr ""
 
-#: templates/sources.html:12
+#: templates/sources.html:13
 msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
 msgstr ""
 
-#: templates/sources.html:13
+#: templates/sources.html:14
 msgid "중앙선거관리위원회 알림광장"
 msgstr ""
 
-#: templates/sources.html:13
+#: templates/sources.html:14
 msgid "정치인들이 받은 선거 자금 내역"
+msgstr ""
+
+#: templates/sources.html:19
+msgid "국회사무처"
+msgstr ""
+
+#: templates/sources.html:19
+msgid "정치용어집의 영문"
+msgstr ""
+
+#: templates/sources.html:20
+msgid "의안정보시스템"
+msgstr ""
+
+#: templates/sources.html:20
+msgid "정치용어집의 의미"
 msgstr ""
 
