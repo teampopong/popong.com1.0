@@ -259,6 +259,10 @@ blockquote > p {
 }
 
 #pagination > #next {
+  float: left;
+}
+
+#pagination > #previous {
   float: right;
 }
 
