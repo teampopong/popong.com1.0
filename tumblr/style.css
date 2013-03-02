@@ -274,3 +274,8 @@ p {
 li {
   line-height: 23px;
 }
+
+#cc {
+  color: #777;
+  font-size: 13px;
+}
