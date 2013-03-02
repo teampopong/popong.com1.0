@@ -15,7 +15,7 @@
   <title>{block:PostSummary}{PostSummary} - {/block:PostSummary}{Title}</title>
   <meta name="description" content="{MetaDescription}"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- DEFAULT COLORS -->
   <meta name="color:Background" content="#fff"/>
   <meta name="color:Footer Background" content="#222"/>
@@ -27,13 +27,13 @@
 
   <!-- Disqus Shortname -->
   <meta name="text:Disqus Shortname" content="teampopong-ko"/>
-  
+
   <!-- Show Notes -->
   <meta name="if:Show notes" content="1">
 
   <link rel="shortcut icon" href="{Favicon}"/>
   <link rel="alternate" type="application/rss+xml" name="RSS" href="{RSS}"/>
-  
+
   <!-- for bootstrap -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="http://popong.com/static/css/bootstrap-2.0.3.css" rel="stylesheet">
@@ -43,22 +43,22 @@
   <script type="text/x-mathjax-config">
         MathJax.Hub.Config({
             tex2jax: {
-                skipTags: ['script', 'noscript', 'style', 'textarea']  
+                skipTags: ['script', 'noscript', 'style', 'textarea']
             },
-            "HTML-CSS": { 
+            "HTML-CSS": {
                 scale: 90,
                 styles: {
                  '.MathJax_Display': {
                     "margin": 0
                   }
                }
-            }  
+            }
         });
   </script>
-    
+
   <script type="text/javascript"
        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
+
   <style type="text/css" media="screen">
     html{font-size:87.5%}
     body{background:{color:Background};border-top:7px solid {color:Accent};color:{color:Text};font:normal 1em/1.5 "Lucida Grande","Lucida Sans Unicode", "Lucida Sans",Tahoma,sans-serif;margin:0;padding:3em 0 0}
@@ -68,7 +68,7 @@
     p{margin:0 0 1.5em}
     ul,ol{margin:0 0 1.5em;padding-left:2.5em}
     blockquote{border-left:2px solid {color:Lighter Text};color:{color:Lighter Text};margin:0 1em 1.5em;padding:0 1em}
-    /* LAYOUT 
+    /* LAYOUT
     #container{margin:0 auto;min-width:500px;width:37em}*/
 
     /* HEADER */
@@ -98,15 +98,15 @@
     /* POST FOOTERS */
     .post-footer{list-style:none;font-size:0.857em;margin:3em 0;padding:0;text-align:right;}
     .post-footer li{display:inline;margin-left:1em;padding:0}
-    
+
     /* REBLOG */
     .post-footer li.reblog{color:{color:Lighter Text};display:block;font-style:italic;margin-bottom:0.25em}
     .post-footer li.date h3{coloar:{color:Lighter Text};display:inline;font-family:Helvetica,Arial,sans-serif;font-size:1em}
-    
+
     /* TAGS */
     .post-footer li.tags ul, .post-footer li.tags ul li{display:inline; padding: 0;}
     .post-footer li.tags ul li {margin-left: 0.4em;}
-    
+
     /* NOTES */
   ol.notes { margin: 0; padding: 0; }
   ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
@@ -123,29 +123,29 @@
     #footer h3{border-bottom:1px solid {color:Lighter Text};color:{color:Lighter Text};font-size:1.5em;margin:2em 0 0.25em}
     #footer ul{list-style:none;padding:0}
     #footer ul li{line-height:2}
-    
+
     /* FOLLOWING LIST */
     #footer #following li { line-height: 30px; display: inline; }
 
-    /* FOOTER LAYOUT */ 
+    /* FOOTER LAYOUT */
     #footer-contain{margin:0 auto;padding:0;width:50em}
     #footer-left{float:left;width:15em}
     #footer-middle{float:left;margin-left:2.5em;width:15em}
     #footer-right{float:left;margin-left:2.5em;width:15em}
-    
+
     /* SEARCH */
     #search input{display:inline;}
     #searchresultcount{font-style:italic;margin: 3em 0;text-align: center;}
     #searchresultcount .query{font-weight:bold;}
-    
+
     .search_query, .tag {
         font-weight: bold;
     }
-    
+
     /* CUSTOM CSS */
     {CustomCSS}
   </style>
-  
+
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-15347606-2']);
@@ -162,7 +162,7 @@
 </head>
 
 <body>
-    
+
     <!-- navigation bar -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
@@ -180,33 +180,33 @@
               <li><a href="http://en.popong.com/about">About</a></li>
             </ul>
           </div><!--/.nav-collapse -->
-          <div id="lang">                                                                                                                                                                       
-            <ul class="nav-pills">                                                                                                                                                                                                                                                                                                       
+          <div id="lang">
+            <ul class="nav-pills">
                 <li class="active"><a href="#">en</a></li>
                 <li><a href="http://blog.popong.com">ko</a></li>
-            </ul>                                                                                                                                                                               
-          </div> 
+            </ul>
+          </div>
         </div>
       </div>
     </div> <!-- end .navigation bar -->
-    
+
     <!-- container -->
   <div id="container">
     <div id="header"></div>
-  
+
     <div id="posts">
     {block:SearchPage}
     <div id="searchresultcount">
       {block:SearchResults}
         <p>{lang:Your search for SearchQuery returned SearchResultCount results 2}</p>
       {block:SearchResults}
-    
+
       {block:NoSearchResults}
         <p>{lang:No search results for SearchQuery 2}</p>
       {block:NoSearchResults}
     </div>
     {/block:SearchPage}
-      
+
     {block:Posts}
       {block:Text}
       <div class="text">
@@ -217,7 +217,7 @@
               {block:Date}
               {Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}
               {/block:Date} KST
-            <!--      
+            <!--
               {block:IfShowNotes}{block:NoteCount}
               <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}
             -->
@@ -242,15 +242,15 @@
         {/block:Description}
       {/block:Link}
 
-      
+
       {block:Video}
       <div class="video">
         {Video-500}
         {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
       {/block:Video}
-      
 
-      
+
+
       {block:Audio}
       <div class="audio">
         <span class="playcount">{lang:Played PlayCount times}</span>
@@ -258,7 +258,7 @@
         {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
       {/block:Audio}
 
-      
+
       {block:Photo}
       <div class="photo">
         {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
@@ -270,8 +270,8 @@
         {Photoset-500}
         {block:Caption}<div class="caption">{Caption}</div>{/block:Caption}
       {/block:Photoset}
-      
-      
+
+
       {block:Chat}
       <div class="chat">
         {block:Title}<h2><a href="{Permalink}" class="permalink">{Title}</a></h2>{/block:Title}
@@ -284,13 +284,13 @@
           {/block:Lines}
         </ul>
       {/block:Chat}
-      
+
         <ul class="post-footer">
           {block:RebloggedFrom}
             <li class="reblog">{lang:Reblogged from ReblogParentTitle 2}</li>
           {/block:RebloggedFrom}
           {block:HasTags}
-            <li class="tags">{lang:Tags}: 
+            <li class="tags">{lang:Tags}:
             <ul>{block:Tags}
               <li><a href="{TagURL}">{Tag}</a></li>
               {/block:Tags}
@@ -307,19 +307,19 @@
             -->
         </ul>
       </div> <!-- end single post -->
-      
-    
+
+
       {/block:Posts}
-      
-      
+
+
       {block:IfDisqusShortname}
       <div id="disqus_thread"></div>
       <script type="text/javascript" src="http://disqus.com/forums/{text:Disqus Shortname}/embed.js"></script>
       <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
       {/block:IfDisqusShortname}
       {/block:Permalink}
-      
-      
+
+
       <div class="notes">
       {block:Permalink}
       {block:IfShowNotes}
@@ -329,10 +329,10 @@
       {block:PostNotes}
       {/block:IfShowNotes}
       </div>
-      
+
     </div> <!-- end posts -->
-    
-    
+
+
     {block:Pagination}
     <div id="pagination">
       {block:NextPage}<a href="{NextPage}" id="next">&larr; {lang:Older entries}</a>{/block:NextPage}
@@ -340,7 +340,7 @@
       {block:PreviousPage}<a href="{PreviousPage}" id="previous">{lang:Newer Entries} &rarr;</a>{/block:PreviousPage}
     </div>
     {/block:Pagination}
-    
+
     {block:PermalinkPagination}
     <div id="pagination">
       {block:PreviousPost}<a href="{PreviousPost}" id="previous">&larr; {lang:Previous post}</a>{/block:PreviousPost}
@@ -364,17 +364,17 @@
                 <a href="{NextPage}" id="next">Next</a>
             {/block:NextPage}
         {/block:Pagination}
-        
-        
+
+
       {block:NextPost}<a href="{NextPost}" id="next">{lang:Next post} &rarr;</a>{/block:NextPost}
-      
+
       <span id="pagecount" align="right">&nbsp;</span>
     </div>
     {/block:PermalinkPagination}
     <hr>
     <div id="copyright">All posts on this blog are copyrighted by the author under a <a href="http://creativecommons.org/licenses/by/2.0/" alt="cc2.0">Creative Commons Attribution 2.0 Generic License</a>. That means you are totally free to copy and share any blog post without prior permission so long as you attribute the text to the author and the Team POPONG Blog.</div>
   </div> <!-- end container -->
-  
+
       <div id="page-footer" class="container">
         <hr>
           <div id="copyright">
@@ -387,8 +387,8 @@
             <a href="http://slideshare.com/teampopong" target="_blank" title="slideshare"><img class="icons" src="http://popong.com/static/images/icon-slideshare.png" alt="slideshare logo"></a>
             <a href="http://github.com/popong" target="_blank" title="github"><img class="icons" src="http://popong.com/static/images/icon-github.png" alt="github logo"></a>
           </div>
-      </div>    
-    
+      </div>
+
   {block:IfDisqusShortname}
   <script type="text/javascript">
   //<![CDATA[
@@ -405,15 +405,15 @@
   //]]>
   </script>
   {/block:IfDisqusShortname}
-  
-    
+
+
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://popong.com/static/js/jquery.js"></script>
     <script src="http://popong.com/static/js/bootstrap-transition.js"></script>
     <script src="http://popong.com/static/js/bootstrap-collapse.js"></script>
-    
-    
+
+
 </body>
 </html>
