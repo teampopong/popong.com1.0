@@ -254,6 +254,10 @@ blockquote > p {
   margin-bottom: 15px;
 }
 
+#pagination > #previous {
+  float: left;
+}
+
 #pagination > #next {
   float: right;
 }
