@@ -108,9 +108,9 @@
     .post-footer li.tags ul li {margin-left: 0.4em;}
 
     /* NOTES */
-  ol.notes { margin: 0; padding: 0; }
-  ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
-  ol.notes img.avatar { display: none; }
+    ol.notes { margin: 0; padding: 0; }
+    ol.notes li.note { margin: 0 0 0.75em 0; padding: 0 0 0.75em 0 }
+    ol.notes img.avatar { display: none; }
 
     /* PAGINATION */
     #pagination{margin:3em 0}
@@ -217,10 +217,6 @@
               {block:Date}
               {Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}
               {/block:Date} KST
-            <!--
-              {block:IfShowNotes}{block:NoteCount}
-              <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}
-            -->
               </li>
           </ul>
         {Body}
@@ -297,20 +293,9 @@
             </ul>
             </li>
           {/block:HasTags}
-          <!--
-          {block:Date}
-            <li class="date">
-              <h3>{Month} {DayOfMonthWithZero}, {Year}, {12Hour}:{Minutes}{AmPm}{/block:Date}</h3>
-              {block:IfShowNotes}{block:NoteCount}
-              <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{NoteCountWithLabel}</h3>{/block:NoteCount}{/block:IfShowNotes}
-            </li>
-            -->
         </ul>
       </div> <!-- end single post -->
-
-
       {/block:Posts}
-
 
       {block:IfDisqusShortname}
       <div id="disqus_thread"></div>
@@ -318,17 +303,6 @@
       <noscript><a href="http://{text:Disqus Shortname}.disqus.com/?url=ref">{lang:View the discussion thread}</a></noscript>
       {/block:IfDisqusShortname}
       {/block:Permalink}
-
-
-      <div class="notes">
-      {block:Permalink}
-      {block:IfShowNotes}
-      {block:PostNotes}
-      <!-- ><h4>{lang:Notes}</h4> -->
-      {PostNotes}
-      {block:PostNotes}
-      {/block:IfShowNotes}
-      </div>
 
     </div> <!-- end posts -->
 
