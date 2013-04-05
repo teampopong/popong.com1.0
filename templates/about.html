@@ -7,10 +7,16 @@
     <div id="members">
       <h2>{{ gettext("함께하는 사람들") }}</h2>
       <ul>
-        <script type="text/javascript" src="{{ url_for('static', filename='js/members.js') }}"></script>
+        {% for name, attrs in YB.items() %}
+        <li id="{{name}}">
+          <h3 class="member-name"><a href="http://twitter.com/{{name}}">{{name}}</a></h3>
+          <img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}">
+          <div class="member-description shadow">{{attrs[0]}}</div>
+        </li>
+        {% endfor %}
         <script src="{{url_for('static', filename='js/popong.js')}}"></script>
         <script>
-            $('li img').clipImage();
+            $('li img').tooltip().clipImage();
         </script>
       </ul>
     </div>
