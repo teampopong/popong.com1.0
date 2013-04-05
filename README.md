@@ -1,5 +1,7 @@
 # popong.com
 
+[![Build Status](https://travis-ci.org/teampopong/popong.com.png)](https://travis-ci.org/teampopong/popong.com)
+
 ## Requirements
 
 - Flask==0.9 
