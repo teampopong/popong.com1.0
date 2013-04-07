@@ -10,7 +10,7 @@
 
 ## Run 
 
-    $ python server.py
+    $ python app.py
 
 ## Change logs
 
