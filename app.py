@@ -38,9 +38,9 @@ def home():
 @app.route('/blog')
 def blog():
     if locale=='ko':
-        return redirect('http://blog.popong.com')
+        return redirect('http://blog.popong.com/ko')
     else:
-        return redirect('http://en.blog.popong.com')
+        return redirect('http://blog.popong.com/en')
 
 @app.route('/about')
 def about():
