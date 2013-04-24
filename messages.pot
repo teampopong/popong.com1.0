@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-04-24 15:03+0900\n"
+"POT-Creation-Date: 2013-04-24 17:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "국회 회의록 및 의안 원문"
 msgstr ""
 
-#: templates/sources.html:16
+#: templates/sources.html:16 templates/sources.html:48
 msgid "중앙선거관리위원회 선거통계시스템"
 msgstr ""
 
@@ -134,5 +134,9 @@ msgstr ""
 
 #: templates/sources.html:45
 msgid "한국행정구역분류 코드"
+msgstr ""
+
+#: templates/sources.html:49
+msgid "선거구-행정구역(읍면동) 매핑"
 msgstr ""
 

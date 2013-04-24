@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-04-24 15:03+0900\n"
+"POT-Creation-Date: 2013-04-24 17:27+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgstr "National Assembly Bill Information System"
 msgid "국회 회의록 및 의안 원문"
 msgstr "National Assembly minutes and text of legislation"
 
-#: templates/sources.html:16
+#: templates/sources.html:16 templates/sources.html:48
 msgid "중앙선거관리위원회 선거통계시스템"
 msgstr "National Election Commision Electioni Information System"
 
@@ -148,4 +148,8 @@ msgstr "KOSTAT"
 #: templates/sources.html:45
 msgid "한국행정구역분류 코드"
 msgstr "South Korea administrative division codes"
+
+#: templates/sources.html:49
+msgid "선거구-행정구역(읍면동) 매핑"
+msgstr "Electoral district-administrative division mapping"
 
