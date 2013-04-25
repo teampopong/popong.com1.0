@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-04-24 17:27+0900\n"
+"POT-Creation-Date: 2013-04-25 16:13+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -138,5 +138,17 @@ msgstr ""
 
 #: templates/sources.html:49
 msgid "선거구-행정구역(읍면동) 매핑"
+msgstr ""
+
+#: templates/sources.html:52
+msgid "안전행정부 행정표준코드관리시스템"
+msgstr ""
+
+#: templates/sources.html:53
+msgid "기관코드"
+msgstr ""
+
+#: templates/sources.html:54
+msgid "학과, 학력 등 코드"
 msgstr ""
 

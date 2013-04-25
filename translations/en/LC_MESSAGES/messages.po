@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-04-24 17:27+0900\n"
+"POT-Creation-Date: 2013-04-25 16:13+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -152,4 +152,18 @@ msgstr "South Korea administrative division codes"
 #: templates/sources.html:49
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr "Electoral district-administrative division mapping"
+
+#: templates/sources.html:52
+msgid "안전행정부 행정표준코드관리시스템"
+msgstr ""
+"Ministry of Security and Public Administration, Administrative Code "
+"Management System"
+
+#: templates/sources.html:53
+msgid "기관코드"
+msgstr "Institue codes"
+
+#: templates/sources.html:54
+msgid "학과, 학력 등 코드"
+msgstr "and other codes"
 
