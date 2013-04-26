@@ -4,14 +4,13 @@
 SERVER_SETTINGS = {
     'host': '0.0.0.0',
     'port': 8192,
-    'debug': True
+    'debug': True,
+    'use_reloader': False,
 }
 
 BABEL_SETTINGS = {
     'default_locale': 'ko',
 }
-
-LOCALES = ['ko', 'en']
 
 DIRLINKS = [
         ('facebook', 'http://facebook.com/teampopong'),
