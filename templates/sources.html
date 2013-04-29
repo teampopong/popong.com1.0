@@ -6,23 +6,31 @@
 </p>
 
 <h2>{{ gettext("정부공식문서") }}</h2>
-<h3><a href='http://{{ request.host }}/polidic/'>{{ gettext("대한민국 정치인명사전") }}</a></h3>
+<h3><a href="http://{{ request.host }}/polidic/">{{ gettext("대한민국 정치인명사전") }}</a></h3>
 <ul>
     <li>
         {{ gettext("국회 의안정보시스템") }}: 
-        <a href='http://likms.assembly.go.kr/bill'>{{ gettext("국회 회의록 및 의안 원문") }}</a>
+        <a href="http://likms.assembly.go.kr/bill">{{ gettext("국회 회의록 및 의안 원문") }}</a>
     </li>
     <li>
         {{ gettext("중앙선거관리위원회 선거통계시스템") }}:
-        <a href='http://info.nec.go.kr/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI'>{{ gettext("국회 의원 선거 후보자/당선인 데이터") }}</a>
+        <a href="http://info.nec.go.kr/main/showDocument.xhtml?electionId=0000000000&topMenuId=BI&secondMenuId=BIGI">{{ gettext("국회의원 선거 후보자/당선인 데이터") }}</a>
     </li>
     <li>
         {{ gettext("영상회의록시스템") }}: 
-        <a href='http://w3.assembly.go.kr/' alt="vod service for conferences">{{ gettext("본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보") }}</a>
+        <a href="http://w3.assembly.go.kr/' alt="vod service for conferences">{{ gettext("본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보") }}</a>
     </li>
     <li>
         {{ gettext("중앙선거관리위원회 알림광장") }}: 
-        <a href='http://www.nec.go.kr/nec_new2009/BoardCotBySeq.do?cmSeq=&bmSeq=14&bcSeq=772'>{{ gettext("정치인들이 받은 선거 자금 내역") }}</a>
+        <a href="http://www.nec.go.kr/nec_new2009/BoardCotBySeq.do?cmSeq=&bmSeq=14&bcSeq=772">{{ gettext("정치인들이 받은 선거 자금 내역") }}</a>
+    </li>
+    <li>
+        {{ gettext("대한민국헌정회") }}:
+        <a href="http://www.rokps.or.kr/profile.asp">{{ gettext("헌정회 소속 국회의원 데이터") }}</a>
+    </li>
+    <li>
+        {{ gettext("대한민국 국회") }}:
+		<a href="http://www.assembly.go.kr/renew10/asm/ifn/file_down.jsp?M_idx=1_02&SAVEFILENAME=oldmem.pdf&FILENAME=%BF%AA%B4%EB%B1%B9%C8%B8%C0%C7%BF%F8.pdf">{{ gettext("역대 국회의원 선거구 및 당적") }}</a>
     </li>
 </ul>
 
@@ -30,11 +38,11 @@
 <ul>
     <li>
         {{ gettext("국회사무처") }}: 
-        <a href='http://nas.na.go.kr/site?siteId=site-20111206-000001000&pageId=page-20111207-000001129'>{{ gettext("용어의 한글-영문 매핑") }}</a>
+        <a href="http://nas.na.go.kr/site?siteId=site-20111206-000001000&pageId=page-20111207-000001129">{{ gettext("용어의 한글-영문 매핑") }}</a>
     </li>
     <li>
         {{ gettext("국회 의안정보시스템") }}: 
-        <a href='http://likms.assembly.go.kr/bill/WebContents/Summary2.htm'>{{ gettext("용어의 의미") }}</a>
+        <a href="http://likms.assembly.go.kr/bill/WebContents/Summary2.htm">{{ gettext("용어의 의미") }}</a>
     </li>
 </ul>
 
