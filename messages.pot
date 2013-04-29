@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-04-29 14:45+0900\n"
+"POT-Creation-Date: 2013-04-29 15:14+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "고마운 분들"
 msgstr ""
 
-#: templates/glossary.html:19 templates/sources.html:37
+#: templates/glossary.html:19 templates/sources.html:33
 msgid "정치용어집"
 msgstr ""
 
@@ -64,7 +64,7 @@ msgid ""
 "가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
 
-#: templates/home.html:27 templates/sources.html:9
+#: templates/home.html:27 templates/sources.html:9 templates/sources.html:71
 msgid "대한민국 정치인명사전"
 msgstr ""
 
@@ -80,7 +80,7 @@ msgstr ""
 msgid "정부공식문서"
 msgstr ""
 
-#: templates/sources.html:12 templates/sources.html:44
+#: templates/sources.html:12 templates/sources.html:40
 msgid "국회 의안정보시스템"
 msgstr ""
 
@@ -88,7 +88,7 @@ msgstr ""
 msgid "국회 회의록 및 의안 원문"
 msgstr ""
 
-#: templates/sources.html:16 templates/sources.html:64
+#: templates/sources.html:16 templates/sources.html:60
 msgid "중앙선거관리위원회 선거통계시스템"
 msgstr ""
 
@@ -113,82 +113,86 @@ msgid "정치인들이 받은 선거 자금 내역"
 msgstr ""
 
 #: templates/sources.html:28
-msgid "대한민국헌정회"
-msgstr ""
-
-#: templates/sources.html:29
-msgid "헌정회 소속 국회의원 데이터"
-msgstr ""
-
-#: templates/sources.html:32
 msgid "대한민국 국회"
 msgstr ""
 
-#: templates/sources.html:33
+#: templates/sources.html:29
 msgid "역대 국회의원 선거구 및 당적"
 msgstr ""
 
-#: templates/sources.html:40
+#: templates/sources.html:36
 msgid "국회사무처"
 msgstr ""
 
-#: templates/sources.html:41
+#: templates/sources.html:37
 msgid "용어의 한글-영문 매핑"
 msgstr ""
 
-#: templates/sources.html:45
+#: templates/sources.html:41
 msgid "용어의 의미"
 msgstr ""
 
-#: templates/sources.html:48
+#: templates/sources.html:44
 msgid "법제처"
 msgstr ""
 
-#: templates/sources.html:49
+#: templates/sources.html:45
 msgid "법령용어한영사전"
 msgstr ""
 
-#: templates/sources.html:49
+#: templates/sources.html:45
 msgid "제2판"
 msgstr ""
 
-#: templates/sources.html:52
+#: templates/sources.html:48
 msgid "국가법령정보센터"
 msgstr ""
 
-#: templates/sources.html:53
+#: templates/sources.html:49
 msgid "법령용어검색"
 msgstr ""
 
-#: templates/sources.html:53
+#: templates/sources.html:49
 msgid "법령한영사전 포함"
 msgstr ""
 
-#: templates/sources.html:57
+#: templates/sources.html:53
 msgid "코드북"
 msgstr ""
 
-#: templates/sources.html:60
+#: templates/sources.html:56
 msgid "통계청"
 msgstr ""
 
-#: templates/sources.html:61
+#: templates/sources.html:57
 msgid "한국행정구역분류 코드"
 msgstr ""
 
-#: templates/sources.html:65
+#: templates/sources.html:61
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr ""
 
-#: templates/sources.html:68
+#: templates/sources.html:64
 msgid "안전행정부 행정표준코드관리시스템"
 msgstr ""
 
-#: templates/sources.html:69
+#: templates/sources.html:65
 msgid "기관코드"
 msgstr ""
 
-#: templates/sources.html:70
+#: templates/sources.html:66
 msgid "학과, 학력 등 코드"
+msgstr ""
+
+#: templates/sources.html:70
+msgid "기타 국회관련문서"
+msgstr ""
+
+#: templates/sources.html:74
+msgid "대한민국헌정회"
+msgstr ""
+
+#: templates/sources.html:75
+msgid "헌정회 소속 국회의원 데이터"
 msgstr ""
 
