@@ -52,7 +52,7 @@ def glossary():
 
 @app.route('/error')
 def error():
-    return 'error ;_;'
+    return render_template('404.html')
 
 
 @app.context_processor
