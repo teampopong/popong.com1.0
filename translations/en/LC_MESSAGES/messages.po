@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-04-30 23:22+0900\n"
+"POT-Creation-Date: 2013-05-07 11:48+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -129,7 +129,8 @@ msgstr "Explanations of terms"
 msgid "중앙선거관리위원회"
 msgstr "National Election Committee"
 
-#: templates/sources.html:45 templates/sources.html:52
+#: templates/sources.html:45 templates/sources.html:47
+#: templates/sources.html:54
 msgid "선거통계시스템"
 msgstr "Election Information System"
 
@@ -137,83 +138,87 @@ msgstr "Election Information System"
 msgid "국회의원 선거 후보자/당선인 데이터"
 msgstr "National Assembly Election candidates/officials data"
 
-#: templates/sources.html:47
+#: templates/sources.html:48
+msgid "19대 국회의원 공약 데이터"
+msgstr "19th National Assembly members' pledges"
+
+#: templates/sources.html:49
 msgid "알림광장"
 msgstr "Online bulletin board"
 
-#: templates/sources.html:48
+#: templates/sources.html:50
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr "Political fund records"
 
-#: templates/sources.html:53
+#: templates/sources.html:55
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr "Electoral district-administrative division mapping"
 
-#: templates/sources.html:58
+#: templates/sources.html:60
 msgid "국회사무처"
 msgstr "National Assembly Secretaritat"
 
-#: templates/sources.html:62
+#: templates/sources.html:64
 msgid "용어의 한글-영문 매핑"
 msgstr "Korean-English mapping of terms"
 
-#: templates/sources.html:68
+#: templates/sources.html:70
 msgid "법제처"
 msgstr "Korea Ministry of Government Legislation"
 
-#: templates/sources.html:72
+#: templates/sources.html:74
 msgid "법령용어한영사전"
 msgstr "Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:72
+#: templates/sources.html:74
 msgid "제2판"
 msgstr "2nd edition"
 
-#: templates/sources.html:78
+#: templates/sources.html:80
 msgid "국가법령정보센터"
 msgstr "Korea Law Service Center"
 
-#: templates/sources.html:82
+#: templates/sources.html:84
 msgid "법령용어검색"
 msgstr "Search legislative terms"
 
-#: templates/sources.html:82
+#: templates/sources.html:84
 msgid "법령한영사전 포함"
 msgstr "including Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:88
+#: templates/sources.html:90
 msgid "통계청"
 msgstr "KOSTAT"
 
-#: templates/sources.html:93
+#: templates/sources.html:95
 msgid "한국행정구역분류 코드"
 msgstr "South Korea administrative division codes"
 
-#: templates/sources.html:98
+#: templates/sources.html:100
 msgid "안전행정부"
 msgstr "Ministry of Security and Public Administration"
 
-#: templates/sources.html:103 templates/sources.html:105
+#: templates/sources.html:105 templates/sources.html:107
 msgid "행정표준코드관리시스템"
 msgstr "Administrative Code Management System"
 
-#: templates/sources.html:104
+#: templates/sources.html:106
 msgid "기관코드"
 msgstr "Institue codes"
 
-#: templates/sources.html:106
+#: templates/sources.html:108
 msgid "학과, 학력 등 코드"
 msgstr "and other codes"
 
-#: templates/sources.html:111
+#: templates/sources.html:113
 msgid "기타 국회관련문서"
 msgstr "Other sources of legislative information"
 
-#: templates/sources.html:116
+#: templates/sources.html:118
 msgid "대한민국헌정회"
 msgstr "Constitutional Government Society of the Republic of Korea"
 
-#: templates/sources.html:119
+#: templates/sources.html:121
 msgid "헌정회 소속 국회의원 데이터"
 msgstr "Members of the Constitutional Government Society"
 
