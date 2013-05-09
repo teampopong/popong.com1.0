@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-07 11:48+0900\n"
+"POT-Creation-Date: 2013-05-09 19:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid "코드북"
 msgstr ""
 
 #: templates/sources.html:20
-msgid "정부공식문서"
+msgid "정부공식기관"
 msgstr ""
 
 #: templates/sources.html:25
@@ -198,7 +198,7 @@ msgid "학과, 학력 등 코드"
 msgstr ""
 
 #: templates/sources.html:113
-msgid "기타 국회관련문서"
+msgid "민간기관"
 msgstr ""
 
 #: templates/sources.html:118
@@ -207,5 +207,13 @@ msgstr ""
 
 #: templates/sources.html:121
 msgid "헌정회 소속 국회의원 데이터"
+msgstr ""
+
+#: templates/sources.html:128
+msgid "개인"
+msgstr ""
+
+#: templates/sources.html:136
+msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr ""
 

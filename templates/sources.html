@@ -11,13 +11,13 @@
         <th></th>
         <th><a href="http://{{ request.host }}/polidic/">{{ gettext("대한민국 정치인명사전") }}</a></th>
         <th><a href="{{ url_for('glossary') }}">{{ gettext("정치용어집") }}</a></th>
-        <th>{{ gettext("코드북") }}</th>
+        <th><a href="https://github.com/teampopong/codebooks">{{ gettext("코드북") }}</a></th>
     </tr>
 </thead>
 <tbody>
     <tr>
         <td id="source-type" colspan=4>
-            {{ gettext("정부공식문서") }}
+            {{ gettext("정부공식기관") }}
         </td>
     </tr>
     <tr>
@@ -92,7 +92,7 @@
         <td></td>
         <td></td>
         <td>
-            <a href="http://kostat.go.kr/kssc/board_notice/BoardAction.do?method=view&board_id=3&seq=8&num=8&parent_num=0&page=2&sdate=&edate=&search_mode=&keyword=&position=&catgrp=kssc&catid1=kssc06&catid2=&catid3=&catid4=#startHeader">{{ gettext("한국행정구역분류 코드") }}</a>(<a href="https://github.com/teampopong/southkorea-poptration/blob/master/codebook/codebook-20100401-06-translation.csv">CSV version</a>)
+            <a href="http://kostat.go.kr/kssc/board_notice/BoardAction.do?method=view&board_id=3&seq=8&num=8&parent_num=0&page=2&sdate=&edate=&search_mode=&keyword=&position=&catgrp=kssc&catid1=kssc06&catid2=&catid3=&catid4=#startHeader">{{ gettext("한국행정구역분류 코드") }}</a>
         </td>
     </tr>
     <tr>
@@ -110,7 +110,7 @@
     </tr>
     <tr>
         <td id="source-type" colspan=4>
-            {{ gettext("기타 국회관련문서") }}
+            {{ gettext("민간기관") }}
         </td>
     </tr>
     <tr>
@@ -122,6 +122,22 @@
         </td>
         <td></td>
         <td></td>
+    </tr>
+    <tr>
+        <td id="source-type" colspan=4>
+            {{ gettext("개인") }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @mazefind
+        </td>
+        <td>
+            <a href="https://docs.google.com/spreadsheet/ccc?key=0Ao-novvdf79gdExCbW9FVWg0VlBoanNQSzV1akFJR1E">{{ gettext("현직 국회의원 블로그/SNS 데이터") }}</a>
+        </td>
+        <td></td>
+        <td></td>
+
     </tr>
 </tbody>
 </table>

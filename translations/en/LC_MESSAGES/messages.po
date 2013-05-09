@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-05-07 11:48+0900\n"
+"POT-Creation-Date: 2013-05-09 19:37+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid "코드북"
 msgstr "Codebook"
 
 #: templates/sources.html:20
-msgid "정부공식문서"
+msgid "정부공식기관"
 msgstr "Official government sources"
 
 #: templates/sources.html:25
@@ -204,15 +204,15 @@ msgstr "Administrative Code Management System"
 
 #: templates/sources.html:106
 msgid "기관코드"
-msgstr "Institue codes"
+msgstr "Institution codes"
 
 #: templates/sources.html:108
 msgid "학과, 학력 등 코드"
 msgstr "and other codes"
 
 #: templates/sources.html:113
-msgid "기타 국회관련문서"
-msgstr "Other sources of legislative information"
+msgid "민간기관"
+msgstr "Private institutions"
 
 #: templates/sources.html:118
 msgid "대한민국헌정회"
@@ -221,4 +221,12 @@ msgstr "Constitutional Government Society of the Republic of Korea"
 #: templates/sources.html:121
 msgid "헌정회 소속 국회의원 데이터"
 msgstr "Members of the Constitutional Government Society"
+
+#: templates/sources.html:128
+msgid "개인"
+msgstr "Individuals"
+
+#: templates/sources.html:136
+msgid "현직 국회의원 블로그/SNS 데이터"
+msgstr "Politicians' blog, SNS links"
 
