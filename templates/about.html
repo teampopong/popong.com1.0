@@ -4,8 +4,41 @@
 <div class="row-fluid">
 
   <div id="left-column" class="span8">
+    <div id="what-we-do">
+      <h2 id="objectives">{{ gettext('목표') }}</h2>
+      뛰어난 기술력을 바탕으로 <b>정치 데이터</b>에 대한
+        <ul>
+          <!--ul>
+            <li>자동화된 데이터 추출</li>
+            <li>reproducible하게</li>
+          </ul-->
+        <li>접근성과 사용성을 높이고
+        <ul>
+          <li>API, open data, open source,
+          <li>googling 가능
+          <li>programmable
+        </ul>
+        </li>
+        <li>쉽고 재미있게 시각화하여
+        <ul>
+          <li>UI, mobile,
+          <li>visualization
+        </ul>
+        </li>
+      </ul>
+      누구나 정치에 관심을 가질 수 있게 함으로써
+      정책 선거를 유도하여 민주주의의 가치 실현
+
+      <h2 id="values">{{ gettext('가치') }}</h2>
+      <ul>
+        <li>정치적 중립</li>
+          <li>사람의 손을 전혀 타지 않게
+        <li>Creative Commons의 가치 실현 (개방, 공유, 확산)</li>
+        <li><s>잉여가 세상을 바꾼다!</s></li>
+      </ul>
+    </div>
     <div id="members">
-      <h2>{{ gettext("함께하는 사람들") }}</h2>
+      <h2 id="who-we-are">{{ gettext('우리는') }}</h2>
       <ul>
         {% for name, attrs in YB.items() %}
         <li id="{{name}}">
@@ -21,7 +54,7 @@
       </ul>
     </div>
     <div id="members-past">
-      <h2>{{ gettext("함께했던 사람들") }}</h2>
+      <h3>{{ gettext("함께했던 사람들") }}</h3>
       <ul>
         {% for member in OB.items() %}
         <li><a href="http://twitter.com/{{ member[0] }}">{{ member[0] }}</a></li>
@@ -29,7 +62,7 @@
       </ul>
     </div>
     <div id="thanksto">
-      <h2>{{ gettext("고마운 분들") }}</h2>
+      <h3>{{ gettext("고마운 분들") }}</h3>
       <ul>
         {% for person in THANKS_TO.items() %}
         <li>
@@ -48,7 +81,7 @@
     <div id="contact">
       e-mail: <a href="mail:contact@popong.com">contact@popong.com</a>
     </div>
-  </div> 
+  </div>
 
 </div> <!-- /row-fluid -->
 {% endblock %}

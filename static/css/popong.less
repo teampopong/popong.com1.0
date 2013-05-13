@@ -182,20 +182,41 @@ footer > div {
 
 // ----- about.html ---------------------------------------------------
 #left-column {
+  font-size: 110%;
   h2 {
+    margin-top: 30px;
     margin-bottom: 10px;
+    color: olivedrab;
+  }
+  ul li {
+    color: #333;
+    line-height: 150%;
+    ul li {
+      display: none;
+      font-size: 80%;
+      color: #CCC;
+    }
   }
 
-  li {
-    display: block;
-    float: left;
-    height: auto;
-    .rounded-corners;
-    margin: 0 3% 15px;
+  #what-we-do {
+    line-height: 230%;
+    ul {
+      margin-bottom: 0;
+  }
+  }
 
-    .member-name {
-      font-size: 16px;
-      font-weight: normal;
+  #members {
+    li {
+      display: block;
+      float: left;
+      height: auto;
+      .rounded-corners;
+      margin: 0 3% 15px;
+
+      .member-name {
+        font-size: 16px;
+        font-weight: normal;
+      }
     }
   }
 }
@@ -216,22 +237,7 @@ footer > div {
   }
 }
 
-#members-past {
-  display: block;
-  width: 100%;
-  float: left;
-  margin: 0 0 20px;
-
-  li {
-    display: block;
-    margin: 0 3px 3px 3px;
-  }
-
-  li:after {
-    content: ". ";
-  }
-}
-
+#members-past,
 #thanksto {
   display: block;
   width: 100%;
@@ -239,6 +245,7 @@ footer > div {
   margin: 0 0 20px;
 
   li {
+    display: inline-block;
     margin: 0 3px 3px 3px;
   }
 
