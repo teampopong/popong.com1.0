@@ -245,10 +245,13 @@ footer > div {
 
 #members-past,
 #thanksto {
-  display: block;
+  display: none;
   width: 100%;
   float: left;
   margin: 0 0 20px;
+  a {
+    color: #777;
+  }
 
   li {
     display: inline-block;
@@ -288,13 +291,56 @@ footer > div {
 }
 
 #contact {
-  background: #EEE;
   color: #777;
-  float: left;
   font-weight: bold;
   margin: 10px auto;
   text-align: center;
   width: 100%;
+}
+
+#donations {
+  border: 1px solid #EEE;
+  color: #999;
+  margin: 30px auto 10px;
+  display: block;
+  padding: 10px;
+
+  h3#donation-title {
+    background: #EEE;
+    .rounded-corners;
+    color: #777;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  p {
+    text-indent: 5px;
+  }
+
+  div#paypal,
+  div#gittip {
+    border: 2px solid #EEE;
+    border-radius: 6pt;
+    display: inline-block;
+    height: 75px;
+    margin: 3px;
+    vertical-align: middle;
+    width: 160px;
+
+    .gittip-widget {
+      margin: auto;
+      border: none;
+      display: block;
+      background-position: right bottom;
+      width: 140px;
+    }
+
+    form {
+      margin: 10px 7px;
+    }
+  }
 }
 
 // ----- sources.html ---------------------------------------------------
