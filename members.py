@@ -26,7 +26,7 @@ OB = {
 
 THANKS_TO = {
     'tebica': 'http://twitter.com/tebica',
-    'Hoonjoon Park': ''
+    'Hoonjoon Park': 'http://www.facebook.com/hoonjoon.park'
     }
 
 OTHERS = ['한규섭 교수님', '김묘영 님', '김미정 님', '강민주 님', '박순일 님',
