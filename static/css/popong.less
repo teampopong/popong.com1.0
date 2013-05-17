@@ -247,7 +247,25 @@ footer > div {
   }
 
   #github-ribbon {
-      display: none;
+    display: none;
+  }
+}
+
+#donation-widgets {
+  width: 348px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+
+  #donation-widgets {
+    width: auto;
+  }
+
+  div#paypal,
+  div#gittip {
+    display: block !important;
+    margin: 3px auto !important;
   }
 }
 

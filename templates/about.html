@@ -95,19 +95,21 @@
         {{ gettext("저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다.") }}
         {{ gettext("여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다.") }}
       </p>
-      <div id="gittip">
-      <script data-gittip-username="teampopong"
-        src="https://www.gittip.com/assets/widgets/0002.js">
-      </script>
+      <div id="donation-widgets">
+        <div id="gittip">
+          <script data-gittip-username="teampopong"
+            src="https://www.gittip.com/assets/widgets/0002.js">
+          </script>
+        </div>
+        <div id="paypal">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="77RU2UUR5PJ7N">
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+        </div>
       </div>
-      <div id="paypal">
-      <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input type="hidden" name="cmd" value="_s-xclick">
-        <input type="hidden" name="hosted_button_id" value="77RU2UUR5PJ7N">
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-      </form>
-    </div>
     </div>
   </div>
 </div> <!-- /row-fluid -->
