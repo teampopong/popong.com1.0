@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-17 16:46+0900\n"
+"POT-Creation-Date: 2013-05-26 14:36+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,19 +30,11 @@ msgid "그렇기에 정치는 쉬워야하고, 데이터에 쉽게 접근할 수
 msgstr ""
 
 #: templates/about.html:15
-msgid "팀포퐁은 뛰어난 기술력을 바탕으로 대한민국 정치 데이터에 대한"
+msgid "팀포퐁은 뛰어난 기술력을 바탕으로"
 msgstr ""
 
 #: templates/about.html:17
-msgid "국제적 접근성"
-msgstr ""
-
-#: templates/about.html:17
-msgid "과"
-msgstr ""
-
-#: templates/about.html:17
-msgid "사용성을 높이고"
+msgid "대한민국 정치 데이터에 대한 국제적 접근성과 사용성을 높이고"
 msgstr ""
 
 #: templates/about.html:25

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-05-17 16:46+0900\n"
+"POT-Creation-Date: 2013-05-26 14:36+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -30,20 +30,12 @@ msgid "그렇기에 정치는 쉬워야하고, 데이터에 쉽게 접근할 수
 msgstr "Politics should be easy, and political data should be accessible."
 
 #: templates/about.html:15
-msgid "팀포퐁은 뛰어난 기술력을 바탕으로 대한민국 정치 데이터에 대한"
-msgstr "With technology and political data, Team POPONG aims to"
+msgid "팀포퐁은 뛰어난 기술력을 바탕으로"
+msgstr "With state-of-the-art technology, Team POPONG aims to"
 
 #: templates/about.html:17
-msgid "국제적 접근성"
-msgstr "enhance global accessability"
-
-#: templates/about.html:17
-msgid "과"
-msgstr " and"
-
-#: templates/about.html:17
-msgid "사용성을 높이고"
-msgstr "usability"
+msgid "대한민국 정치 데이터에 대한 국제적 접근성과 사용성을 높이고"
+msgstr "enhance global accessability and usability of Korean political data"
 
 #: templates/about.html:25
 msgid "쉽고 재미있는 시각화를 제공하여"
