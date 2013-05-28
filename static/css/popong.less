@@ -206,7 +206,7 @@ footer > div {
       font-size: 150%;
       font-style: italic;
       font-weight: bold;
-      font-family: serif;
+      font-family: "Times New Roman", Georgia, serif;
       margin: 15px 0 10px;
     }
     line-height: 230%;
@@ -244,6 +244,28 @@ footer > div {
     li{
       margin: 0 2% 15px;
     }
+  }
+
+  #github-ribbon {
+    display: none;
+  }
+}
+
+#donation-widgets {
+  width: 348px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+
+  #donation-widgets {
+    width: auto;
+  }
+
+  div#paypal,
+  div#gittip {
+    display: block !important;
+    margin: 3px auto !important;
   }
 }
 
