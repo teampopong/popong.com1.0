@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-05-26 14:36+0900\n"
+"POT-Creation-Date: 2013-05-29 00:34+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,78 +26,70 @@ msgid "누구나 정치에 대한 알권리가 있습니다."
 msgstr ""
 
 #: templates/about.html:12
-msgid "그렇기에 정치는 쉬워야하고, 데이터에 쉽게 접근할 수 있어야 합니다."
+msgid "그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다."
 msgstr ""
 
 #: templates/about.html:15
-msgid "팀포퐁은 뛰어난 기술력을 바탕으로"
+msgid "팀포퐁은 이러한 철학 하에서"
 msgstr ""
 
 #: templates/about.html:17
-msgid "대한민국 정치 데이터에 대한 국제적 접근성과 사용성을 높이고"
+msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
 msgstr ""
 
 #: templates/about.html:25
-msgid "쉽고 재미있는 시각화를 제공하여"
+msgid "이해하기 쉽고 재미있는 시각화를 제공하고자 합니다."
 msgstr ""
 
-#: templates/about.html:32
-msgid "누구나 정치에 관심을 가질 수 있게 함으로써"
-msgstr ""
-
-#: templates/about.html:33
-msgid "정책 선거를 유도하여 민주주의의 실현을 추구합니다."
-msgstr ""
-
-#: templates/about.html:36
+#: templates/about.html:34
 msgid "가치"
 msgstr ""
 
-#: templates/about.html:38
+#: templates/about.html:36
 msgid "정치적 중립"
 msgstr ""
 
-#: templates/about.html:39
+#: templates/about.html:37
 msgid "프로세스의 자동화와"
 msgstr ""
 
-#: templates/about.html:39
+#: templates/about.html:37
 msgid "재현성"
 msgstr ""
 
-#: templates/about.html:45
+#: templates/about.html:43
 msgid "세상을 바꾸는 잉여!"
 msgstr ""
 
-#: templates/about.html:49
+#: templates/about.html:47
 msgid "우리는"
 msgstr ""
 
-#: templates/about.html:62
+#: templates/about.html:60
 msgid "함께했던 사람들"
 msgstr ""
 
-#: templates/about.html:70
+#: templates/about.html:68
 msgid "고마운 분들"
 msgstr ""
 
-#: templates/about.html:85
+#: templates/about.html:83
 msgid "언제나, 어떠한 피드백도 환영입니다!"
 msgstr ""
 
-#: templates/about.html:90
+#: templates/about.html:88
 msgid "포퐁 프로젝트는 당신의 후원으로 운영됩니다"
 msgstr ""
 
-#: templates/about.html:93
+#: templates/about.html:91
 msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
 msgstr ""
 
-#: templates/about.html:95
+#: templates/about.html:93
 msgid "저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다."
 msgstr ""
 
-#: templates/about.html:96
+#: templates/about.html:94
 msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
 msgstr ""
 
