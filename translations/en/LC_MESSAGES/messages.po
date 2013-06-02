@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-05-29 00:34+0900\n"
+"POT-Creation-Date: 2013-06-02 16:34+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -29,7 +29,9 @@ msgstr "Everyone has the right to know about their society."
 msgid "그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다."
 msgstr ""
 "Therefore politics should be easy, and political data should be "
-"accessible."
+"accessible.\"\n"
+"\"Therefore politics should be easy, and political data should be \"\n"
+"\"accessible."
 
 #: templates/about.html:15
 msgid "팀포퐁은 이러한 철학 하에서"
@@ -97,7 +99,7 @@ msgstr "If you agree with our objectives and values, please consider a donation.
 msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
 msgstr "Your generous donations are used to keep our work going."
 
-#: templates/glossary.html:19 templates/sources.html:14
+#: templates/glossary.html:19 templates/sources.html:15
 msgid "정치용어집"
 msgstr "Glossary of Korean Political Terms"
 
@@ -142,7 +144,7 @@ msgstr ""
 "Election is best fit for you! Based on candidates' pledges. (Only "
 "available in Korean.)"
 
-#: templates/home.html:27 templates/sources.html:13
+#: templates/home.html:27 templates/sources.html:14
 msgid "대한민국 정치인명사전"
 msgstr "Korean Politician Dictionary"
 
@@ -155,150 +157,170 @@ msgstr ""
 
 #: templates/sources.html:5
 msgid "팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다."
-msgstr "Team POPONG pulls most data from a variety of Government sources."
+msgstr "Team POPONG handles a variety of data on the web."
 
 #: templates/sources.html:6
-msgid "정부에서 공식적으로 제공하는 데이터를 최우선적으로 다루고, 필요에 따라 국내외 민간 기관과 개인이 생성한 데이터를 사용합니다."
+msgid "정부에서 공식적으로 제공하는 데이터를 최우선적으로 사용하고, 필요에 따라 국내외 민간 기관과 개인이 생성한 데이터를 이용합니다."
 msgstr ""
+"We primarily employ official government sources and use private data as "
+"supplements."
 
-#: templates/sources.html:15
+#: templates/sources.html:8
+msgid "데이터를 기꺼이 공유해주신 분들께 깊은 감사를 드립니다."
+msgstr "We thank those who have willingly shared their data with the public."
+
+#: templates/sources.html:16
 msgid "코드북"
 msgstr "Codebook"
 
-#: templates/sources.html:21
+#: templates/sources.html:22
 msgid "정부공식기관"
 msgstr "Official government sources"
 
-#: templates/sources.html:26
+#: templates/sources.html:27
 msgid "대한민국 국회"
 msgstr "Korean National Assembly"
 
-#: templates/sources.html:29
+#: templates/sources.html:30
 msgid "역대 국회의원 선거구 및 당적"
 msgstr "Districts and party affiliations of the past National Assembly members"
 
-#: templates/sources.html:30 templates/sources.html:36
+#: templates/sources.html:31 templates/sources.html:37
 msgid "의안정보시스템"
 msgstr "National Assembly Bill Information System"
 
-#: templates/sources.html:30
+#: templates/sources.html:31
 msgid "국회 회의록 및 의안 원문"
 msgstr "National Assembly minutes and text of legislation"
 
-#: templates/sources.html:31
+#: templates/sources.html:32
 msgid "영상회의록시스템"
 msgstr "VOD service for conferences"
 
-#: templates/sources.html:32
+#: templates/sources.html:33
 msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
 msgstr "Summaries of Plenary Sessions, Standing Committees, and Special Committees"
 
-#: templates/sources.html:37
+#: templates/sources.html:38
 msgid "용어의 의미"
 msgstr "Explanations of terms"
 
-#: templates/sources.html:43
+#: templates/sources.html:44
 msgid "중앙선거관리위원회"
 msgstr "National Election Committee"
 
-#: templates/sources.html:46 templates/sources.html:48
-#: templates/sources.html:55
+#: templates/sources.html:47 templates/sources.html:49
+#: templates/sources.html:56
 msgid "선거통계시스템"
 msgstr "Election Information System"
 
-#: templates/sources.html:47
+#: templates/sources.html:48
 msgid "1~19대 국회의원 선거 후보자/당선인 데이터"
 msgstr "1~19th National Assembly Election candidates/officials data"
 
-#: templates/sources.html:49
+#: templates/sources.html:50
 msgid "19대 국회의원 공약 데이터"
 msgstr "19th National Assembly members' pledges"
 
-#: templates/sources.html:50
+#: templates/sources.html:51
 msgid "알림광장"
 msgstr "Online bulletin board"
 
-#: templates/sources.html:51
+#: templates/sources.html:52
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr "Political fund records"
 
-#: templates/sources.html:56
+#: templates/sources.html:57
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr "Electoral district-administrative division mapping"
 
-#: templates/sources.html:61
+#: templates/sources.html:62
 msgid "국회사무처"
 msgstr "National Assembly Secretaritat"
 
-#: templates/sources.html:65
+#: templates/sources.html:66
 msgid "용어의 한글-영문 매핑"
 msgstr "Korean-English mapping of terms"
 
-#: templates/sources.html:71
+#: templates/sources.html:72
 msgid "법제처"
 msgstr "Korea Ministry of Government Legislation"
 
-#: templates/sources.html:75
+#: templates/sources.html:76
 msgid "법령용어한영사전"
 msgstr "Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:75
+#: templates/sources.html:76
 msgid "제2판"
 msgstr "2nd edition"
 
-#: templates/sources.html:81
+#: templates/sources.html:82
 msgid "국가법령정보센터"
 msgstr "Korea Law Service Center"
 
-#: templates/sources.html:85
+#: templates/sources.html:86
 msgid "법령용어검색"
 msgstr "Search legislative terms"
 
-#: templates/sources.html:85
+#: templates/sources.html:86
 msgid "법령한영사전 포함"
 msgstr "including Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:91
+#: templates/sources.html:92
 msgid "통계청"
 msgstr "KOSTAT"
 
-#: templates/sources.html:96
+#: templates/sources.html:97
 msgid "한국행정구역분류 코드"
 msgstr "South Korea administrative division codes"
 
-#: templates/sources.html:101
+#: templates/sources.html:102
 msgid "안전행정부"
 msgstr "Ministry of Security and Public Administration"
 
-#: templates/sources.html:106 templates/sources.html:108
+#: templates/sources.html:107 templates/sources.html:109
 msgid "행정표준코드관리시스템"
 msgstr "Administrative Code Management System"
 
-#: templates/sources.html:107
+#: templates/sources.html:108
 msgid "기관코드"
 msgstr "Institution codes"
 
-#: templates/sources.html:109
+#: templates/sources.html:110
 msgid "학과, 학력 등 코드"
 msgstr "and other codes"
 
-#: templates/sources.html:114
+#: templates/sources.html:115
 msgid "민간기관"
 msgstr "Private institutions"
 
-#: templates/sources.html:119
+#: templates/sources.html:120
 msgid "대한민국헌정회"
 msgstr "Constitutional Government Society of the Republic of Korea"
 
-#: templates/sources.html:122
+#: templates/sources.html:123
 msgid "헌정회 소속 국회의원 데이터"
 msgstr "Members of the Constitutional Government Society"
 
-#: templates/sources.html:129
+#: templates/sources.html:130
 msgid "개인"
 msgstr "Individuals"
 
-#: templates/sources.html:137
+#: templates/sources.html:138
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr "Politicians' blog, SNS links"
+
+#: templates/sources.html:147
+msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
+msgstr ""
+"We are planning to distribute the preprocessed data via batch downloads "
+"and APIs."
+
+#: templates/sources.html:148
+msgid ""
+"그 이전에 가공된 데이터가 필요하신 분은 <a "
+"href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."
+msgstr ""
+"Those who need the preprocessed data in advance may contact us via <a "
+"href='mailto:contact@popong.com'>contact@popong.com</a>."
 
