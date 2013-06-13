@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-06-02 16:34+0900\n"
+"POT-Creation-Date: 2013-06-13 14:38+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,12 +128,12 @@ msgid ""
 "가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
 
-#: templates/home.html:27 templates/sources.html:14
-msgid "대한민국 정치인명사전"
+#: templates/home.html:27
+msgid "포커"
 msgstr ""
 
 #: templates/home.html:31
-msgid "1대부터 19대까지의 국회의원, 대통령, 후보자와 당선자까지! 대한민국 정치인을 총망라한 대한민국 최초의 정치인명 사전!"
+msgid "1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 대한민국 정치의 모든 것."
 msgstr ""
 
 #: templates/sources.html:5
@@ -146,6 +146,10 @@ msgstr ""
 
 #: templates/sources.html:8
 msgid "데이터를 기꺼이 공유해주신 분들께 깊은 감사를 드립니다."
+msgstr ""
+
+#: templates/sources.html:14
+msgid "대한민국 정치인명사전"
 msgstr ""
 
 #: templates/sources.html:16
