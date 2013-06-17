@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-06-13 14:38+0900\n"
+"POT-Creation-Date: 2013-06-17 22:12+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,6 +91,14 @@ msgstr ""
 
 #: templates/about.html:94
 msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
+msgstr ""
+
+#: templates/about.html:114
+msgid "팀포퐁에서 마케터를 구합니다."
+msgstr ""
+
+#: templates/about.html:115
+msgid "포퐁을 국내외에 널리 알려야 한다고 생각하시는 분들은 이메일로 연락주세요 :)"
 msgstr ""
 
 #: templates/glossary.html:19 templates/sources.html:15
