@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-06-17 22:12+0900\n"
+"POT-Creation-Date: 2013-06-17 22:15+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -100,7 +100,7 @@ msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사�
 msgstr "Your generous donations are used to keep our work going."
 
 #: templates/about.html:114
-msgid "팀포퐁에서 마케터를 구합니다."
+msgid "팀포퐁에서 마케터를 구합니다"
 msgstr "Team POPONG is looking for a marketer"
 
 #: templates/about.html:115
