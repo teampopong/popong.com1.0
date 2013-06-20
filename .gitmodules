@@ -1,0 +1,3 @@
+[submodule "static/data/glossary"]
+	path = static/data/glossary
+	url = https://github.com/teampopong/glossary.git
