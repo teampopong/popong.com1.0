@@ -26,7 +26,12 @@
     <div class="span4">
         <h2><img src="{{ url_for('static', filename='images/icon-new.png') }}">{{ gettext("포커") }}</h2>
       <div class="appbutton">
-		  <a href="http://pokr.kr" target="_blank"><img src="{{ url_for('static', filename='images/button-pokr.png') }}"></a>
+        {% if locale=='ko' %}
+        <a href="http://pokr.kr" target="_blank">
+        {% else %}
+        <a href="http://en.pokr.kr" target="_blank">
+        {% endif %}
+        <img src="{{ url_for('static', filename='images/button-pokr.png') }}"></a>
       </div>
       <p>{{ gettext("1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 대한민국 정치의 모든 것.") }}</p>
     </div>
