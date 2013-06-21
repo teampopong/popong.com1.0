@@ -15,7 +15,7 @@ app = Flask(__name__)
 app.debug = SERVER_SETTINGS['debug']
 
 
-terms = load_glossary('static/data/glossary.csv')
+terms = load_glossary('static/data/glossary/glossary.csv')
 PopongBabel(app, **BABEL_SETTINGS)
 
 
