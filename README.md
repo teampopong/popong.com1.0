@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/teampopong/popong.com.png)](https://travis-ci.org/teampopong/popong.com)
 
+## Installation
+
+    $ sudo make install
+
 ## Requirements
 
 - Flask==0.9 
