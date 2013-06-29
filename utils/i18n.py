@@ -51,7 +51,8 @@ def assert_valid_locale(locale):
 def host(locale=None):
     assert_valid_locale(locale)
 
-    bottom_level_domain, rest = request.host.split('.', 1)
+    t = request.host.split('.', 1)
+    bottom_level_domain, rest = t[0], t[-1]
     if not is_valid_locale(bottom_level_domain):
         host = request.host
     else:
@@ -62,7 +63,7 @@ def host(locale=None):
 
 @babel_context
 def localeselector():
-    locale, _ = request.host.split('.', 1)
+    locale = request.host.split('.', 1)[0]
     if not is_valid_locale(locale):
         locale = cur_app.babel.default_locale
     return locale
