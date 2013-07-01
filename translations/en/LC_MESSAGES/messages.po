@@ -88,7 +88,7 @@ msgstr "The POPONG project is run by you"
 #: templates/about.html:91
 msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
 msgstr ""
-"Team POPONG is an independent orgranization that pursuits political "
+"Team POPONG is an independent orgranization that pursues political "
 "neutrality."
 
 #: templates/about.html:93
@@ -123,7 +123,7 @@ msgid ""
 "미치는 영향에 대한 학술적 연구 및 실제적 변화를 목표로 하는 재능기부 그룹입니다. 일상생활 속의 정치참여를 상상하는 직장인, "
 "학생들의 잉여시간을 모아모아 활동합니다."
 msgstr ""
-"Team POPONG is a non-profit voluntary team whose goal is to organize "
+"Team POPONG is a non-profit volunteer team whose goal is to organize "
 "Korean political information and make it universally accessible and "
 "useful. (Yes, it parodies Google's mission.)"
 
@@ -138,7 +138,7 @@ msgid ""
 msgstr ""
 "This is a service targeted for the 2011 Seoul Mayor Election which "
 "candidates Wonsoon Park and Kyungwon Na have battled. POPONG listed the "
-"candidates' profiles, pledges,and major issues. (Only available in "
+"candidates' profiles, pledges, and major issues. (Only available in "
 "Korean.)"
 
 #: templates/home.html:20
@@ -150,8 +150,8 @@ msgid ""
 "10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 "
 "가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
-"A blinded test to find out which candidate of the 2011 Seoul Mayor "
-"Election is best fit for you! Based on candidates' pledges. (Only "
+"A blind test to find out which candidate of the 2011 Seoul Mayor "
+"Election is the best fit for you! Based on candidates' pledges. (Only "
 "available in Korean.)"
 
 #: templates/home.html:27
@@ -197,7 +197,7 @@ msgstr "Korean National Assembly"
 
 #: templates/sources.html:30
 msgid "역대 국회의원 선거구 및 당적"
-msgstr "Districts and party affiliations of the past National Assembly members"
+msgstr "Districts and party affiliations of past National Assembly members"
 
 #: templates/sources.html:31 templates/sources.html:37
 msgid "의안정보시스템"
@@ -250,7 +250,7 @@ msgstr "Electoral district-administrative division mapping"
 
 #: templates/sources.html:62
 msgid "국회사무처"
-msgstr "National Assembly Secretaritat"
+msgstr "National Assembly Secretariat"
 
 #: templates/sources.html:66
 msgid "용어의 한글-영문 매핑"
