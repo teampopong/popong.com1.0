@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-07-02 10:24+0900\n"
+"POT-Creation-Date: 2013-07-02 15:48+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,111 +201,120 @@ msgid "중앙선거관리위원회"
 msgstr ""
 
 #: templates/sources.html:49 templates/sources.html:51
-#: templates/sources.html:59
+#: templates/sources.html:53 templates/sources.html:55
+#: templates/sources.html:63
 msgid "선거통계시스템"
 msgstr ""
 
 #: templates/sources.html:50
-msgid "1~19대 국회의원 선거 후보자/당선인 데이터"
+msgid "1~18대 국회의원 선거 후보자/당선인 데이터"
 msgstr ""
 
 #: templates/sources.html:52
-msgid "19대 국회의원 공약 데이터"
-msgstr ""
-
-#: templates/sources.html:53
-msgid "알림광장"
+msgid "19대 국회의원 선거 후보자/당선인 데이터"
 msgstr ""
 
 #: templates/sources.html:54
+msgid "19대 국회의원 공약 데이터"
+msgstr ""
+
+#: templates/sources.html:56
+msgid "2013년 상반기 재보궐선거 (19대)"
+msgstr ""
+
+#: templates/sources.html:57
+msgid "알림광장"
+msgstr ""
+
+#: templates/sources.html:58
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr ""
 
-#: templates/sources.html:60
+#: templates/sources.html:64
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr ""
 
-#: templates/sources.html:65
+#: templates/sources.html:69
 msgid "국회사무처"
 msgstr ""
 
-#: templates/sources.html:69
+#: templates/sources.html:73
 msgid "용어의 한글-영문 매핑"
 msgstr ""
 
-#: templates/sources.html:75
+#: templates/sources.html:79
 msgid "법제처"
 msgstr ""
 
-#: templates/sources.html:79
+#: templates/sources.html:83
 msgid "법령용어한영사전"
 msgstr ""
 
-#: templates/sources.html:79
+#: templates/sources.html:83
 msgid "제2판"
 msgstr ""
 
-#: templates/sources.html:85
+#: templates/sources.html:89
 msgid "국가법령정보센터"
 msgstr ""
 
-#: templates/sources.html:89
+#: templates/sources.html:93
 msgid "법령용어검색"
 msgstr ""
 
-#: templates/sources.html:89
+#: templates/sources.html:93
 msgid "법령한영사전 포함"
 msgstr ""
 
-#: templates/sources.html:95
+#: templates/sources.html:99
 msgid "통계청"
 msgstr ""
 
-#: templates/sources.html:100
+#: templates/sources.html:104
 msgid "한국행정구역분류 코드"
 msgstr ""
 
-#: templates/sources.html:105
+#: templates/sources.html:109
 msgid "안전행정부"
 msgstr ""
 
-#: templates/sources.html:111 templates/sources.html:113
+#: templates/sources.html:115 templates/sources.html:117
 msgid "행정표준코드관리시스템"
 msgstr ""
 
-#: templates/sources.html:112
+#: templates/sources.html:116
 msgid "기관코드"
 msgstr ""
 
-#: templates/sources.html:114
+#: templates/sources.html:118
 msgid "학과, 학력 등 코드"
 msgstr ""
 
-#: templates/sources.html:120
+#: templates/sources.html:124
 msgid "민간기관"
 msgstr ""
 
-#: templates/sources.html:125
+#: templates/sources.html:129
 msgid "대한민국헌정회"
 msgstr ""
 
-#: templates/sources.html:128
+#: templates/sources.html:132
 msgid "헌정회 소속 국회의원 데이터"
 msgstr ""
 
-#: templates/sources.html:135
+#: templates/sources.html:139
 msgid "개인"
 msgstr ""
 
-#: templates/sources.html:143
+#: templates/sources.html:147
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr ""
 
-#: templates/sources.html:152
+#: templates/sources.html:156
 msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
 msgstr ""
 
-#: templates/sources.html:153
+#: templates/sources.html:157
 msgid ""
 "그 이전에 가공된 데이터가 필요하신 분은 <a "
 "href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."
