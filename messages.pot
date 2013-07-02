@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-06-17 22:15+0900\n"
+"POT-Creation-Date: 2013-07-02 10:24+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -140,7 +140,7 @@ msgstr ""
 msgid "포커"
 msgstr ""
 
-#: templates/home.html:31
+#: templates/home.html:36
 msgid "1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 대한민국 정치의 모든 것."
 msgstr ""
 
@@ -172,140 +172,140 @@ msgstr ""
 msgid "대한민국 국회"
 msgstr ""
 
-#: templates/sources.html:30
+#: templates/sources.html:31
 msgid "역대 국회의원 선거구 및 당적"
 msgstr ""
 
-#: templates/sources.html:31 templates/sources.html:37
+#: templates/sources.html:32 templates/sources.html:38
 msgid "의안정보시스템"
 msgstr ""
 
-#: templates/sources.html:31
+#: templates/sources.html:32
 msgid "국회 회의록 및 의안 원문"
 msgstr ""
 
-#: templates/sources.html:32
+#: templates/sources.html:33
 msgid "영상회의록시스템"
 msgstr ""
 
-#: templates/sources.html:33
+#: templates/sources.html:34
 msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
 msgstr ""
 
-#: templates/sources.html:38
+#: templates/sources.html:39
 msgid "용어의 의미"
 msgstr ""
 
-#: templates/sources.html:44
+#: templates/sources.html:45
 msgid "중앙선거관리위원회"
 msgstr ""
 
-#: templates/sources.html:47 templates/sources.html:49
-#: templates/sources.html:56
+#: templates/sources.html:49 templates/sources.html:51
+#: templates/sources.html:59
 msgid "선거통계시스템"
 msgstr ""
 
-#: templates/sources.html:48
+#: templates/sources.html:50
 msgid "1~19대 국회의원 선거 후보자/당선인 데이터"
 msgstr ""
 
-#: templates/sources.html:50
+#: templates/sources.html:52
 msgid "19대 국회의원 공약 데이터"
 msgstr ""
 
-#: templates/sources.html:51
+#: templates/sources.html:53
 msgid "알림광장"
 msgstr ""
 
-#: templates/sources.html:52
+#: templates/sources.html:54
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr ""
 
-#: templates/sources.html:57
+#: templates/sources.html:60
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr ""
 
-#: templates/sources.html:62
+#: templates/sources.html:65
 msgid "국회사무처"
 msgstr ""
 
-#: templates/sources.html:66
+#: templates/sources.html:69
 msgid "용어의 한글-영문 매핑"
 msgstr ""
 
-#: templates/sources.html:72
+#: templates/sources.html:75
 msgid "법제처"
 msgstr ""
 
-#: templates/sources.html:76
+#: templates/sources.html:79
 msgid "법령용어한영사전"
 msgstr ""
 
-#: templates/sources.html:76
+#: templates/sources.html:79
 msgid "제2판"
 msgstr ""
 
-#: templates/sources.html:82
+#: templates/sources.html:85
 msgid "국가법령정보센터"
 msgstr ""
 
-#: templates/sources.html:86
+#: templates/sources.html:89
 msgid "법령용어검색"
 msgstr ""
 
-#: templates/sources.html:86
+#: templates/sources.html:89
 msgid "법령한영사전 포함"
 msgstr ""
 
-#: templates/sources.html:92
+#: templates/sources.html:95
 msgid "통계청"
 msgstr ""
 
-#: templates/sources.html:97
+#: templates/sources.html:100
 msgid "한국행정구역분류 코드"
 msgstr ""
 
-#: templates/sources.html:102
+#: templates/sources.html:105
 msgid "안전행정부"
 msgstr ""
 
-#: templates/sources.html:107 templates/sources.html:109
+#: templates/sources.html:111 templates/sources.html:113
 msgid "행정표준코드관리시스템"
 msgstr ""
 
-#: templates/sources.html:108
+#: templates/sources.html:112
 msgid "기관코드"
 msgstr ""
 
-#: templates/sources.html:110
+#: templates/sources.html:114
 msgid "학과, 학력 등 코드"
 msgstr ""
 
-#: templates/sources.html:115
+#: templates/sources.html:120
 msgid "민간기관"
 msgstr ""
 
-#: templates/sources.html:120
+#: templates/sources.html:125
 msgid "대한민국헌정회"
 msgstr ""
 
-#: templates/sources.html:123
+#: templates/sources.html:128
 msgid "헌정회 소속 국회의원 데이터"
 msgstr ""
 
-#: templates/sources.html:130
+#: templates/sources.html:135
 msgid "개인"
 msgstr ""
 
-#: templates/sources.html:138
+#: templates/sources.html:143
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr ""
 
-#: templates/sources.html:147
+#: templates/sources.html:152
 msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
 msgstr ""
 
-#: templates/sources.html:148
+#: templates/sources.html:153
 msgid ""
 "그 이전에 가공된 데이터가 필요하신 분은 <a "
 "href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."
