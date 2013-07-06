@@ -48,7 +48,7 @@
       <ul>
         {% for name, attrs in YB.items() %}
         <li id="{{name}}">
-          <h3 class="member-name"><a href="http://twitter.com/{{name}}">{{name}}</a></h3>
+          <h3 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h3>
           <img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}">
           <div class="member-description shadow">{{attrs[0]}}</div>
         </li>
