@@ -24,7 +24,6 @@ def home():
     return render_template('home.html',
             dirlinks=DIRLINKS, active_page='Home')
 
-
 @app.route('/blog')
 def blog():
     if str(get_locale()) == 'ko':
@@ -32,13 +31,11 @@ def blog():
     else:
         return redirect('http://blog.popong.com/en')
 
-
 @app.route('/about')
 def about():
     return render_template('about.html',
             dirlinks=DIRLINKS, active_page='About',
             YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
-
 
 @app.route('/sources')
 def sources():
@@ -48,7 +45,6 @@ def sources():
 @app.route('/glossary')
 def glossary():
     return render_template('glossary.html', terms=terms)
-
 
 @app.route('/error')
 def error():
