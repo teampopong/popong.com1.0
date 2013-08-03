@@ -79,6 +79,9 @@ def inject_menus():
     return dict(menus=[
             ('Home', url_for('home')),
             ('Blog', url_for('blog')),
+            ('Projects', url_for('projects')),
+            ('Developers', url_for('developers')),
+            ('Participate', url_for('participate')),
             ('About', url_for('about'))
         ])
 
