@@ -37,10 +37,22 @@ def about():
             dirlinks=DIRLINKS, active_page='About',
             YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
+@app.route('/projects')
+def projects():
+    return render_template('projects.html')
+
+@app.route('/participate')
+def participate():
+    return render_template('participate.html')
+
+@app.route('/faq')
+def faq():
+    return render_template('faq.html')
+
+
 @app.route('/sources')
 def sources():
     return render_template('sources.html')
-
 
 @app.route('/glossary')
 def glossary():
