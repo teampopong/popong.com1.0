@@ -1,4 +1,6 @@
-{% extends 'layout.html' %}
+{% if not request.headers['X-PJAX'] %}
+{% extends "layout.html" %}
+{% endif %}
 
 {% block contents %}
 <div class="row-fluid">
