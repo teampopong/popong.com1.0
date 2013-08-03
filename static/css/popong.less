@@ -21,6 +21,12 @@
 @hover_color    : #005580;
 @code_color     : #333333;
 
+@popong_orange    : #ee7a40;
+@popong_chick     : #efb940;
+@lucy_pink        : #ee44a1;
+@popong_purple    : #92427a;
+@popong_sky       : #44d0de;
+
 
 // ----- mixins --------------------------------------------------
 .rounded-corners (@radius: 5px) {
@@ -92,6 +98,8 @@ code {
 }
 
 .navbar-inner {
+  background-color: #EEE;
+  background-image: none;
   min-height: 140px;
 }
 
@@ -179,6 +187,23 @@ footer > div {
   }
 }
 
+.menubox {
+  border: 5px @popong_chick solid;
+  margin: 10px 0;
+  .menu-image {
+    display: inline-block;
+    width: 100%;
+  }
+  .menu-title {
+    position: absolute;
+    color: white;
+  }
+  .menu-explanation {
+    background: @popong_chick;
+    color: white;
+    display: inline-block;
+  }
+}
 
 // ----- about.html ---------------------------------------------------
 #left-column {
