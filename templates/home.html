@@ -11,8 +11,8 @@
     </a>
     <div class="span6">
         <div class="row-fluid">
-            <a id="developers" class="span6 menubox" href="http://developers.popong.com">
-                <h2 class="menu-title">developers</h2>
+            <a id="developers" class="span6 menubox" href="{{ url_for('developers') }}">
+                <h2 class="menu-title">get data</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <span class="menu-explanation">
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp
@@ -27,7 +27,7 @@
             </a>
         </div>
         <div class="row-fluid">
-            <a class="span4 menubox" href="http://blog.popong.com">
+            <a class="span4 menubox" href="{{ url_for('blog') }}">
                 <h2 class="menu-title">blog</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <div class="menu-explanation">

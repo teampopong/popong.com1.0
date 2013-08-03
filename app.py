@@ -31,6 +31,13 @@ def blog():
     else:
         return redirect('http://blog.popong.com/en')
 
+@app.route('/developers')
+def developers():
+    if str(get_locale()) == 'ko':
+        return redirect('http://developers.popong.com/ko')
+    else:
+        return redirect('http://developers.popong.com/en')
+
 @app.route('/about')
 def about():
     return render_template('about.html',
