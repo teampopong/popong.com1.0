@@ -26,6 +26,7 @@
 @lucy_pink        : #ee44a1;
 @popong_purple    : #92427a;
 @popong_sky       : #44d0de;
+@home_yellow      : #f7bb26;
 
 
 // ----- mixins --------------------------------------------------
@@ -72,12 +73,24 @@ code {
 
 
 // navigation bar
-.navbar .nav > li {
-  font-size: 12pt;
-  a {
-    padding: 16px 13px 15px;
+.navbar-inner {
+  background-color: #EEE;
+  background-image: none;
+  min-height: 140px;
+  position: relative;
+  .nav-collapse {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    .nav > li {
+      font-size: 12pt;
+      a {
+        padding: 5px 13px 15px;
+      }
+    }
   }
 }
+
 
 #lang {
   float: right;
@@ -95,12 +108,6 @@ code {
   #lang {
       margin-top: 15px;
   }
-}
-
-.navbar-inner {
-  background-color: #EEE;
-  background-image: none;
-  min-height: 140px;
 }
 
 .nav-pills {
@@ -188,7 +195,7 @@ footer > div {
 }
 
 .menubox {
-  border: 5px @popong_chick solid;
+  border: 5px @home_yellow solid;
   margin: 10px 0;
   .menu-image {
     display: inline-block;
@@ -199,9 +206,10 @@ footer > div {
     color: white;
   }
   .menu-explanation {
-    background: @popong_chick;
+    background: @home_yellow;
     color: white;
     display: inline-block;
+    width: 100%;
   }
 }
 
