@@ -60,11 +60,9 @@
             </ul>
           </div><!--/.nav-collapse -->
           <div id="lang">
-            <ul class="nav-pills">
                 {% for lang, url in locale_links.items() %}
-                <li{% if locale==lang %} class="active"{% endif %}><a href="{{ url }}">{{ lang }}</a></li>
+                <a href="{{ url }}">{{ lang }}</a>&nbsp;{%if not loop.last %}/{% endif %}
                 {% endfor %}
-            </ul>
           </div>
         </div>
       </div>
