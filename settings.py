@@ -11,12 +11,3 @@ SERVER_SETTINGS = {
 BABEL_SETTINGS = {
     'default_locale': 'ko',
 }
-
-DIRLINKS = [
-        ('facebook', 'http://facebook.com/teampopong'),
-        ('twitter', 'http://twitter.com/teampopong'),
-        #('youtube', 'http://youtube.com/user/teampopong'),
-        ('vimeo', 'http://vimeo.com/teampopong'),
-        ('slideshare', 'http://slideshare.com/teampopong'),
-        ('github', 'http://github.com/teampopong')
-]

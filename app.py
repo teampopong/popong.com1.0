@@ -6,14 +6,12 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask.ext.babel import get_locale, refresh as refresh_babel
 
 import members
-from settings import BABEL_SETTINGS, DIRLINKS, SERVER_SETTINGS
+from settings import BABEL_SETTINGS, SERVER_SETTINGS
 from utils.i18n import PopongBabel
 from utils.glossary import load as load_glossary
 
-
 app = Flask(__name__)
 app.debug = SERVER_SETTINGS['debug']
-
 
 terms = load_glossary('static/data/glossary/glossary.csv')
 PopongBabel(app, **BABEL_SETTINGS)
@@ -21,8 +19,12 @@ PopongBabel(app, **BABEL_SETTINGS)
 
 @app.route('/')
 def home():
-    return render_template('home.html',
-            dirlinks=DIRLINKS, active_page='Home')
+    return render_template('home.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html',
+            YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
 @app.route('/blog')
 def blog():
@@ -38,12 +40,6 @@ def developers():
     else:
         return redirect('http://en.developers.popong.com')
 
-@app.route('/about')
-def about():
-    return render_template('about.html',
-            dirlinks=DIRLINKS, active_page='About',
-            YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
-
 @app.route('/projects')
 def projects():
     return render_template('projects.html')
@@ -51,11 +47,6 @@ def projects():
 @app.route('/participate')
 def participate():
     return render_template('participate.html')
-
-@app.route('/faq')
-def faq():
-    return render_template('faq.html')
-
 
 @app.route('/sources')
 def sources():
@@ -73,18 +64,26 @@ def error():
 def google_webmaster_tools():
     return render_template('googlef6e4487896615e46.html')
 
-
 @app.context_processor
 def inject_menus():
     return dict(menus=[
-            ('Home', url_for('home')),
-            ('Blog', url_for('blog')),
-            ('Projects', url_for('projects')),
-            ('Developers', url_for('developers')),
-            ('Participate', url_for('participate')),
-            ('About', url_for('about'))
-        ])
+        ('Blog', url_for('blog')),
+        ('Projects', url_for('projects')),
+        ('Developers', url_for('developers')),
+        ('Participate', url_for('participate')),
+        ('About', url_for('about'))
+    ])
 
+@app.context_processor
+def direct_links():
+    return dict(dirlinks=[
+        ('facebook', 'http://facebook.com/teampopong'),
+        ('twitter', 'http://twitter.com/teampopong'),
+        #('youtube', 'http://youtube.com/user/teampopong'),
+        ('vimeo', 'http://vimeo.com/teampopong'),
+        ('slideshare', 'http://slideshare.com/teampopong'),
+        ('github', 'http://github.com/teampopong')
+    ])
 
 def cmd_args():
     from argparse import ArgumentParser
@@ -94,7 +93,6 @@ def cmd_args():
             default='auto')
     args = parser.parse_args()
     return args
-
 
 def main():
     args = cmd_args()
