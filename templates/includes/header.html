@@ -22,19 +22,19 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
+      <div id="lang">
+        {% for lang, url in locale_links.items() %}
+        <a href="{{ url }}">{{ lang }}</a>&nbsp;{%if not loop.last %}/{% endif %}
+        {% endfor %}
+      </div>
       <a class="brand" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo-popong.png') }}" width="250px" alt="popong logo"></a>
+      {% include 'includes/social.html' %}
       <div class="nav-collapse">
         <ul class="nav">
           {% for title, url in menus %}
           <li{% if active_page==title %} class="active"{% endif %}><a href="{{url}}" alt="{{title}}">{{title}}</a></li>{% endfor %}
         </ul>
       </div>
-      <div id="lang">
-        {% for lang, url in locale_links.items() %}
-        <a href="{{ url }}">{{ lang }}</a>&nbsp;{%if not loop.last %}/{% endif %}
-        {% endfor %}
-      </div>
-      {% include 'includes/social.html' %}
     </div>
   </div>
 </div>
