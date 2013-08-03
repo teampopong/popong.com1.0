@@ -8,7 +8,6 @@
 
 
 // -----  palette ------------------------------------------------
-@bgr_color      : #FFF;
 @link_color     : #08c;
 @hover_color    : #005580;
 @code_color     : #333333;
@@ -36,14 +35,20 @@
 
 
 // ----- layout.html ---------------------------------------------------
-body {
-  background-color: @bgr_color;
+html {
+  background: url(../images/bgr.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  body {
+    background-color: transparent;
+  }
 }
 
 @media (min-width: 980px) {
   body > .container {
-    padding-top: 80px !important;
-    padding-bottom: 40px;
+    padding-top: 30px !important;
   }
 }
 
@@ -66,10 +71,13 @@ code {
 
 // navigation bar
 .navbar-inner {
-  background-color: #EEE;
+  background-color: transparent;
   background-image: none;
   min-height: 140px;
   position: relative;
+}
+
+@media (min-width: 979px) {
   .nav-collapse {
     position: absolute;
     bottom: 0;
@@ -86,19 +94,14 @@ code {
 
 #lang {
   float: right;
+  margin-top: 10px;
   ul {
-      margin: 0;
+      margin-top: 0;
       li {
         display: inline-block;
         font-size: 12px;
         padding: 0px;
       }
-  }
-}
-
-@media (min-width: 979px) {
-  #lang {
-      margin-top: 15px;
   }
 }
 
@@ -148,19 +151,30 @@ footer {
   width: 100%;
 }
 
+.navbar .brand {
+  float: none;
+}
+
+
 #sociallinks {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  #fb {
-    float: left;
-    margin: 0 5px;
-    width: 76px;
-  }
-  #tw {
-    float: left;
-    margin: 0 5px;
-    display: inline-block;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 979px) {
+  #sociallinks {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    #fb {
+      float: left;
+      margin: 0 5px;
+      width: 76px;
+    }
+    #tw {
+      float: left;
+      margin: 0 5px;
+      display: inline-block;
+    }
   }
 }
 
@@ -189,7 +203,7 @@ footer {
 
 .hero-unit {
   padding: 30px 5%;
-  background: white;
+  background: rgba(255, 255, 255, .5);
   border: solid 3px white;
   p {
     font-size: 11pt;
