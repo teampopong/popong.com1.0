@@ -1,11 +1,24 @@
 <!-- Footer -->
 <footer>
-<hr>
-  <div id="copyright">
+<div class="row-fluid">
+    <div class="span3">
+        <h3>Menus</h3>
+        asdf
+    </div>
+    <div class="span6">
+        <h3>About Team POPONG</h3>
+        asdf
+    </div>
+    <div class="span3">
+        <h3>Social Links</h3>
+        <div id="directlinks">
+            {% for title, url in dirlinks %}
+            <a href="{{url}}" target="_blank" title="{{title}}"><img class="icons" src="{{ url_for('static', filename='images/icon-%s.png' % title) }}" alt="{{title}} logo"></a>{% endfor %}
+        </div>
+
+    </div>
+</div>
+<div id="copyright">
     <p>&copy; 2011-2013 <a href="mailto:contact@popong.com">Team POPONG</a></p>
-  </div>
-  <div id="directlinks">
-    {% for title, url in dirlinks %}
-    <a href="{{url}}" target="_blank" title="{{title}}"><img class="icons" src="{{ url_for('static', filename='images/icon-%s.png' % title) }}" alt="{{title}} logo"></a>{% endfor %}
-  </div>
+</div>
 </footer>
