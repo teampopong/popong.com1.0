@@ -28,10 +28,17 @@
           <li{% if active_page==title %} class="active"{% endif %}><a href="{{url}}" alt="{{title}}">{{title}}</a></li>{% endfor %}
         </ul>
       </div><!--/.nav-collapse -->
+      <div id="sociallinks">
+        <div id="fb" class="fb-like" data-href="http://facebook.com/teampopong" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+        <div id="tw">
+          <a href="https://twitter.com/teampopong" class="twitter-follow-button" data-show-count="true" data-lang="en" data-size="small">Follow</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+      </div>
       <div id="lang">
-            {% for lang, url in locale_links.items() %}
-            <a href="{{ url }}">{{ lang }}</a>&nbsp;{%if not loop.last %}/{% endif %}
-            {% endfor %}
+        {% for lang, url in locale_links.items() %}
+        <a href="{{ url }}">{{ lang }}</a>&nbsp;{%if not loop.last %}/{% endif %}
+        {% endfor %}
       </div>
     </div>
   </div>
