@@ -54,6 +54,10 @@ def sources():
 def error():
     return render_template('404.html')
 
+@app.route('/favicon.ico')
+def favicon():
+    return app.send_static_file('images/favicon.ico')
+
 @app.route('/googlef6e4487896615e46.html')
 def google_webmaster_tools():
     return render_template('googlef6e4487896615e46.html')
