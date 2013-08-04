@@ -35,8 +35,7 @@
         <li>
             <h3>{{ gettext('팀포퐁의 멤버들을 소개합니다') }}</h3>
             <p>포퐁의 프로젝트들을 이끄는 사람들입니다.</p>
-            <div id="members">
-                <ul>
+                <ul id="members">
                     {% for name, attrs in YB.items() %}
                     <li id="{{name}}">
                         <h5 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h5>
@@ -45,7 +44,6 @@
                     </li>
                     {% endfor %}
                 </ul>
-            </div>
             <div id="past-members">
                 <h4>{{ gettext("함께했던 사람들") }}</h4>
                 <ul>
