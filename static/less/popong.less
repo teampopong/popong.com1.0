@@ -5,6 +5,8 @@
 // -----  palette ------------------------------------------------
 @link_color     : #08c;
 @hover_color    : #005580;
+@light_gray     : #eee;
+@dark_gray      : #333;
 
 @popong_orange    : #ee7a40;
 @popong_chick     : #efb940;
@@ -15,6 +17,7 @@
 
 @popong_purple_dark  : darken(@popong_purple, 20%);
 @popong_purple_light : lighten(@popong_purple, 20%);
+
 
 
 // ----- mixins --------------------------------------------------
@@ -53,6 +56,17 @@ html {
   #github-ribbon {
     display: none;
   }
+}
+
+.section-title {
+  font-size: 37pt;
+  font-style: italic;
+  line-height: 50px;
+}
+
+.section-description {
+  font-size: 12pt;
+  margin-bottom: 37px;
 }
 
 
@@ -218,7 +232,7 @@ footer {
 
 #past-members, #thanksto {
   h3 {
-    color: #333;
+    color: @dark_gray;
     font-size: 15px;
   }
   li {
@@ -257,32 +271,11 @@ footer {
 #donation-widgets {
   width: 348px;
   margin: 0 auto;
-}
-
-.notice {
-  border: 1px solid #EEE;
-  color: #999;
-  margin: 30px auto 10px;
-  display: block;
-  padding: 10px;
-
-  h3.notice-title {
-    background: #EEE;
-    .rounded-corners;
-    color: #777;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  p {
-    text-indent: 5px;
-  }
 
   div#paypal,
   div#gittip {
-    border: 2px solid #EEE;
+    background-color: white;
+    border: 2px solid @light_gray;
     border-radius: 6pt;
     display: inline-block;
     height: 75px;
@@ -324,6 +317,7 @@ footer {
   text-align: center;
   img {
     width: 50%;
+    max-width: 300px;
   }
 }
 
