@@ -14,14 +14,14 @@
                 <h2 class="menu-title">projects</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <div class="menu-explanation">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp
+                    {{ gettext('현재 야심차게 준비중인 서비스! "포커(Pokr) - 대한민국 정치의 모든 것"를 비롯한 팀포퐁의 모든 서비스를 소개합니다.') }}
                 </div>
             </a>
             <a id="use-our-data" class="span6 menubox" href="{{ url_for('developers') }}">
-                <h2 class="menu-title">use our data</h2>
+                <h2 class="menu-title">developers</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <span class="menu-explanation">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp
+                    {{ gettext('팀포퐁이 보유하고 있는 데이터와 API, 위젯을 제공합니다.') }}
                 </span>
             </a>
         </div>
@@ -30,21 +30,21 @@
                 <h2 class="menu-title">blog</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <div class="menu-explanation">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                    {{ gettext('서비스를 준비하며 탄생한 깨알같은 이야기들을 공유합니다.') }}
                 </div>
             </a>
             <a id="participate" class="span4 menubox" href="{{ url_for('participate') }}">
                 <h2 class="menu-title">participate</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <div class="menu-explanation">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                    {{ gettext('당신도 기여할 수 있습니다!') }}
                 </div>
             </a>
             <a id="about-us" class="span4 menubox" href="{{ url_for('about') }}">
                 <h2 class="menu-title">about us</h2>
                 <img class="menu-image" src="{{ url_for('static', filename='images/member-weirdclaire.jpg') }}">
                 <div class="menu-explanation">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                    {{ gettext('우리가 누군지 궁금한가요?') }}
                 </div>
             </a>
         </div>
