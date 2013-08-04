@@ -13,6 +13,9 @@
 @popong_sky       : #44d0de;
 @home_yellow      : #f7bb26;
 
+@popong_purple_dark  : darken(@popong_purple, 20%);
+@popong_purple_light : lighten(@popong_purple, 20%);
+
 
 // ----- mixins --------------------------------------------------
 .rounded-corners (@radius: 5px) {
@@ -30,88 +33,52 @@
 
 // ----- layout.html ---------------------------------------------------
 html {
+
   background: url("@{img_folder}/bgr.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
   body {
     background-color: transparent;
-  }
-}
 
-a {
-  color: @link_color;
-  &:hover {
-    color: @hover_color;
-  }
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: inherit;
-  text-rendering: auto;
-}
-
-@media (min-width: 980px) {
-  body > .container {
-    padding-top: 30px !important;
+    h1, h2, h3, h4, h5, h6 {
+      text-rendering: auto;
+    }
   }
 }
 
 
 // ----- includes/header.html --------------------------------------------
-.navbar-inner {
-  background-color: transparent;
-  background-image: none;
-  min-height: 140px;
-  position: relative;
-}
-
-.nav-pills {
-  a { 
-    color: #777;
-  }
-  a:hover { 
-    color: #FFF;
-    text-decoration: none;
-  }
-  .active {
-    a { 
-      text-decoration: none;
-      background-color: #777; 
-      }
-    a:hover { 
-      color: #EEE;
-      text-decoration: none;
-      background-color: #777; 
+.navbar {
+    .navbar-inner {
+      background-color: transparent;
+      background-image: none;
+      min-height: 140px;
+      position: relative;
     }
-  }
-}
 
-.nav-pills > li > a {
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-
-.navbar .brand {
-  float: none;
-}
-
-#lang {
-  float: right;
-  margin-top: 10px;
-  ul {
-      margin-top: 0;
-      li {
-        display: inline-block;
-        font-size: 12px;
-        padding: 0px;
+    #lang {
+      float: right;
+      margin-top: 10px;
+      ul {
+          margin-top: 0;
+          li {
+            display: inline-block;
+            font-size: 12px;
+            padding: 0px;
+          }
       }
-  }
-}
+    }
 
-#sociallinks {
-  margin-bottom: 10px;
+    .brand {
+      float: none;
+    }
+
+    #sociallinks {
+      margin-bottom: 10px;
+    }
 }
 
 @media (min-width: 979px) {
@@ -145,38 +112,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
 // ----- includes/footer.html --------------------------------------------
 footer {
   background: @popong_purple;
-  color: lighten(@popong_purple, 30%);
-  height: 150px;
+  color: @popong_purple_dark;
   margin-top: 18px;
-  padding: 15px;
+  padding: 30px 10px;
   position: relative;
-  div {
-    display: inline-block;
+  a, a:hover {
+    color: @popong_purple_light;
   }
-}
-
-#copyright {
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  width: 100%;
-}
-
-
-#directlinks {
-  img {
-    padding-right: 5px;
+  h2 {
+    font-size: 20px;
+    line-height: 20px;
   }
-}
 
-@media (max-width: 400px) {
-    #directlinks {
-        display: none;
+  .desc-section {
+    margin-bottom: 20px;
+    #who-we-are p {
+      margin: 0;
     }
+    #directlinks {
+      div {
+        display: inline-block;
+      }
+      img {
+        padding-right: 5px;
+      }
+    }
+  }
+
+  #copyright {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media (min-width: 979px) {
+  footer {
+    height: 80px;
+    #contact-us {
+      border-right: 1px solid @popong_purple_dark;
+      padding-right: 20px;
+      text-align: right;
+    }
+  }
 }
 
 // ----- home.html ---------------------------------------------------
