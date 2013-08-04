@@ -24,7 +24,7 @@
       </a>
       <div id="lang">
         {% for lang, url in locale_links.items() %}
-        <a href="{{ url }}">{{ lang }}</a>&nbsp;{%if not loop.last %}/{% endif %}
+        <a href="{{ url }}">{{ lang }}</a>&nbsp;{% if not loop.last %}/{% endif %}
         {% endfor %}
       </div>
       <a class="brand" href="{{ url_for('home') }}"><img src="{{ url_for('static', filename='images/logo-popong.png') }}" width="250px" alt="popong logo"></a>
