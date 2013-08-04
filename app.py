@@ -8,12 +8,10 @@ from flask.ext.babel import get_locale, refresh as refresh_babel
 import members
 from settings import BABEL_SETTINGS, SERVER_SETTINGS
 from utils.i18n import PopongBabel
-from utils.glossary import load as load_glossary
 
 app = Flask(__name__)
 app.debug = SERVER_SETTINGS['debug']
 
-terms = load_glossary('static/data/glossary/glossary.csv')
 PopongBabel(app, **BABEL_SETTINGS)
 
 
@@ -51,10 +49,6 @@ def participate():
 @app.route('/sources')
 def sources():
     return render_template('sources.html')
-
-@app.route('/glossary')
-def glossary():
-    return render_template('glossary.html', terms=terms)
 
 @app.route('/error')
 def error():
