@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-07-02 15:48+0900\n"
+"POT-Creation-Date: 2013-09-22 22:03+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -119,7 +119,7 @@ msgstr "Are you interested in Korean politics?"
 
 #: templates/home.html:7
 msgid ""
-"팀 포퐁(POPONG: Public Open POlitical engineeriNG)은 인터넷을 통한 시민들의 사회참여가 정치에 "
+"팀 포퐁(POPONG: Public Open POlitics engineeriNG)은 인터넷을 통한 시민들의 사회참여가 정치에 "
 "미치는 영향에 대한 학술적 연구 및 실제적 변화를 목표로 하는 재능기부 그룹입니다. 일상생활 속의 정치참여를 상상하는 직장인, "
 "학생들의 잉여시간을 모아모아 활동합니다."
 msgstr ""
@@ -196,18 +196,22 @@ msgid "대한민국 국회"
 msgstr "Korean National Assembly"
 
 #: templates/sources.html:31
-msgid "역대 국회의원 선거구 및 당적"
+msgid "역대 국회의원 선거구 및 당적 (pdf)"
 msgstr "Districts and party affiliations of past National Assembly members"
 
-#: templates/sources.html:32 templates/sources.html:38
+#: templates/sources.html:32
+msgid "의원광장"
+msgstr "Assembly members"
+
+#: templates/sources.html:33 templates/sources.html:39
 msgid "의안정보시스템"
 msgstr "National Assembly Bill Information System"
 
-#: templates/sources.html:32
+#: templates/sources.html:33
 msgid "국회 회의록 및 의안 원문"
 msgstr "National Assembly minutes and text of legislation"
 
-#: templates/sources.html:33
+#: templates/sources.html:34
 msgid "영상회의록시스템"
 msgstr "VOD service for conferences"
 
@@ -215,131 +219,139 @@ msgstr "VOD service for conferences"
 msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
 msgstr "Summaries of Plenary Sessions, Standing Committees, and Special Committees"
 
-#: templates/sources.html:39
+#: templates/sources.html:35
+msgid "회의록시스템"
+msgstr "VOD service for conferences"
+
+#: templates/sources.html:35
+msgid "본회의, 상임위 등 회의의 일정 및 회의록"
+msgstr "Summaries of Plenary Sessions, Standing Committees, and Special Committees"
+
+#: templates/sources.html:40
 msgid "용어의 의미"
 msgstr "Explanations of terms"
 
-#: templates/sources.html:45
+#: templates/sources.html:46
 msgid "중앙선거관리위원회"
 msgstr "National Election Committee"
 
-#: templates/sources.html:49 templates/sources.html:51
-#: templates/sources.html:53 templates/sources.html:55
-#: templates/sources.html:63
+#: templates/sources.html:50 templates/sources.html:52
+#: templates/sources.html:54 templates/sources.html:56
+#: templates/sources.html:64
 msgid "선거통계시스템"
 msgstr "Election Information System"
 
-#: templates/sources.html:50
+#: templates/sources.html:51
 msgid "1~18대 국회의원 선거 후보자/당선인 데이터"
 msgstr "1~18th National Assembly Election candidates/officials data"
 
-#: templates/sources.html:52
+#: templates/sources.html:53
 msgid "19대 국회의원 선거 후보자/당선인 데이터"
 msgstr "19th National Assembly Election candidates/officials data"
 
-#: templates/sources.html:54
+#: templates/sources.html:55
 msgid "19대 국회의원 공약 데이터"
 msgstr "19th National Assembly members' pledges"
 
-#: templates/sources.html:56
+#: templates/sources.html:57
 msgid "2013년 상반기 재보궐선거 (19대)"
 msgstr "By-election in the first half of 2013 (19th National Assembly)"
 
-#: templates/sources.html:57
+#: templates/sources.html:58
 msgid "알림광장"
 msgstr "Online bulletin board"
 
-#: templates/sources.html:58
+#: templates/sources.html:59
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr "Political fund records"
 
-#: templates/sources.html:64
+#: templates/sources.html:65
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr "Electoral district-administrative division mapping"
 
-#: templates/sources.html:69
+#: templates/sources.html:70
 msgid "국회사무처"
 msgstr "National Assembly Secretariat"
 
-#: templates/sources.html:73
+#: templates/sources.html:74
 msgid "용어의 한글-영문 매핑"
 msgstr "Korean-English mapping of terms"
 
-#: templates/sources.html:79
+#: templates/sources.html:80
 msgid "법제처"
 msgstr "Korea Ministry of Government Legislation"
 
-#: templates/sources.html:83
+#: templates/sources.html:84
 msgid "법령용어한영사전"
 msgstr "Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:83
+#: templates/sources.html:84
 msgid "제2판"
 msgstr "2nd edition"
 
-#: templates/sources.html:89
+#: templates/sources.html:90
 msgid "국가법령정보센터"
 msgstr "Korea Law Service Center"
 
-#: templates/sources.html:93
+#: templates/sources.html:94
 msgid "법령용어검색"
 msgstr "Search legislative terms"
 
-#: templates/sources.html:93
+#: templates/sources.html:94
 msgid "법령한영사전 포함"
 msgstr "including Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:99
+#: templates/sources.html:100
 msgid "통계청"
 msgstr "KOSTAT"
 
-#: templates/sources.html:104
+#: templates/sources.html:105
 msgid "한국행정구역분류 코드"
 msgstr "South Korea administrative division codes"
 
-#: templates/sources.html:109
+#: templates/sources.html:110
 msgid "안전행정부"
 msgstr "Ministry of Security and Public Administration"
 
-#: templates/sources.html:115 templates/sources.html:117
+#: templates/sources.html:116 templates/sources.html:118
 msgid "행정표준코드관리시스템"
 msgstr "Administrative Code Management System"
 
-#: templates/sources.html:116
+#: templates/sources.html:117
 msgid "기관코드"
 msgstr "Institution codes"
 
-#: templates/sources.html:118
+#: templates/sources.html:119
 msgid "학과, 학력 등 코드"
 msgstr "and other codes"
 
-#: templates/sources.html:124
+#: templates/sources.html:125
 msgid "민간기관"
 msgstr "Private institutions"
 
-#: templates/sources.html:129
+#: templates/sources.html:130
 msgid "대한민국헌정회"
 msgstr "Constitutional Government Society of the Republic of Korea"
 
-#: templates/sources.html:132
+#: templates/sources.html:133
 msgid "헌정회 소속 국회의원 데이터"
 msgstr "Members of the Constitutional Government Society"
 
-#: templates/sources.html:139
+#: templates/sources.html:140
 msgid "개인"
 msgstr "Individuals"
 
-#: templates/sources.html:147
+#: templates/sources.html:148
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr "Politicians' blog, SNS links"
 
-#: templates/sources.html:156
+#: templates/sources.html:157
 msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
 msgstr ""
 "We are planning to distribute the preprocessed data via batch downloads "
 "and APIs."
 
-#: templates/sources.html:157
+#: templates/sources.html:158
 msgid ""
 "그 이전에 가공된 데이터가 필요하신 분은 <a "
 "href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."
