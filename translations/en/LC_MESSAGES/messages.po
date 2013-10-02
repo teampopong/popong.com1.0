@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2013-09-22 22:03+0900\n"
+"POT-Creation-Date: 2013-10-03 01:13+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -345,13 +345,17 @@ msgstr "Individuals"
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr "Politicians' blog, SNS links"
 
-#: templates/sources.html:157
+#: templates/sources.html:158
+msgid "한자, 한글 매핑 데이터"
+msgstr "Hanja-Hangul mapping data"
+
+#: templates/sources.html:166
 msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
 msgstr ""
 "We are planning to distribute the preprocessed data via batch downloads "
 "and APIs."
 
-#: templates/sources.html:158
+#: templates/sources.html:167
 msgid ""
 "그 이전에 가공된 데이터가 필요하신 분은 <a "
 "href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."
