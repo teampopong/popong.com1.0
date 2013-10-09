@@ -1,11 +1,6 @@
-{% if not request.headers['X-PJAX'] %}
-{% extends "layout.html" %}
-{% endif %}
-
-{% block contents %}
 <div class="section">
     <h2 class="section-title">projects</h2>
-    <p class="section-description">{{ gettext('이미 만들었기, 만들고 있기') }}</p>
+    <p class="section-description">{{ gettext('이미 만들었기, 만들고 있기. 현재 야심차게 준비중인 "대한민국 정치의 모든 것"을 비롯해 팀포퐁의 모든 서비스를 소개합니다.') }}</p>
     <ul class="section-items">
         <li>
             <h3>{{ gettext("포커") }} <small>2012.7 ~ Present</small></h3>
@@ -37,4 +32,3 @@
         <li>adsf</li>
     </ul>
 </div>
-{% endblock %}

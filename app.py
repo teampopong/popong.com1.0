@@ -17,12 +17,8 @@ PopongBabel(app, **BABEL_SETTINGS)
 
 @app.route('/')
 def home():
-    return render_template('home.html')
-
-@app.route('/about')
-def about():
-    return render_template('about.html',
-            YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
+    return render_template('home.html',
+        YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
 @app.route('/blog')
 def blog():
@@ -37,14 +33,6 @@ def developers():
         return redirect('http://developers.popong.com')
     else:
         return redirect('http://en.developers.popong.com')
-
-@app.route('/projects')
-def projects():
-    return render_template('projects.html')
-
-@app.route('/participate')
-def participate():
-    return render_template('participate.html')
 
 @app.route('/sources')
 def sources():
@@ -65,11 +53,9 @@ def google_webmaster_tools():
 @app.context_processor
 def inject_menus():
     return dict(menus=[
-        ('Blog', url_for('blog')),
-        ('Projects', url_for('projects')),
-        ('Developers', url_for('developers')),
-        ('Participate', url_for('participate')),
-        ('About', url_for('about'))
+        ['Blog', url_for('blog'), u'포퐁이 보유하고 있는 데이터와 API, 위젯을 제공합니다.'],
+        ['Developers', url_for('developers'), u'서비스를 준비하며 탄생한 깨알같은 이야기들을 공유합니다.'],
+        ['Sources', url_for('sources'), ''],
     ])
 
 @app.context_processor

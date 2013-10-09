@@ -1,0 +1,29 @@
+<!-- GitHub Ribbon -->
+<a id="github-ribbon" href="https://github.com/teampopong"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
+
+<!-- Tooltips -->
+<script>
+(function () {
+  $(window).load(onLoad);
+
+  function onLoad(){
+    $('.tooltipped').tooltip();
+  }
+}());
+</script>
+
+<!-- Le javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="{{ url_for('static', filename='js/ga.js') }}" type="text/javascript"></script>
+<script src="{{ url_for('static', filename='js/bootstrap-transition.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap-collapse.js') }}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap-tooltip.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.pjax.js') }}"></script>
+<script>
+    $(document).pjax('a', '#contents');
+</script>

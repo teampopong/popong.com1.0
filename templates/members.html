@@ -1,0 +1,40 @@
+<div class="section">
+    <h2 class="section-title">members</h2>
+    <p class="section-description">{{ gettext('우리가 누군지 궁금한가요?') }}</p>
+    <ul class="section-items">
+        <li>
+            <h3>{{ gettext('팀포퐁의 멤버들을 소개합니다') }}</h3>
+            <p>포퐁의 프로젝트들을 이끄는 사람들입니다.</p>
+                <ul id="members">
+                    {% for name, attrs in YB.items() %}
+                    <li id="{{name}}">
+                        <h5 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h5>
+                        <img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}">
+                        <div class="member-description shadow">{{attrs[0]}}</div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            <div id="past-members">
+                <h4>{{ gettext("함께했던 사람들") }}</h4>
+                <ul>
+                    {% for member in OB.items() %}
+                    <li><a href="http://twitter.com/{{ member[0] }}">{{ member[0] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div id="thanksto">
+                <h4>{{ gettext("고마운 분들") }}</h4>
+                <ul>
+                    {% for person in THANKS_TO.items() %}
+                    <li> {% if person[1] != '' %}<a href="{{ person[1] }}">{% endif %} {{ person[0] }}{% if person[1] != '' %}</a>{% endif %}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </li>
+        <li>
+            <h3>협력기관</h3>
+            <p>asdf</p>
+        </li>
+
+    </ul>
+</div>
