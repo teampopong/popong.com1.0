@@ -1,8 +1,11 @@
-<div class="section">
+<div id="about" class="section container">
     <h2 class="section-title">values</h2>
     <p class="section-description">Techne vos liberabit. {{ gettext('기술로 정치를 보다 쉽고 재미있게 만들려는 사람들') }}.</p>
-    <ul class="section-items">
-        <li>
+    <div class="section-item row">
+        <div class="span6">
+            <div style="background-color: lightgray; height: 200px;">some image</div>
+        </div>
+        <div class="span6">
             <h3>{{ gettext("목표") }}</h3>
             <ul>
                 <li>
@@ -14,15 +17,13 @@
                     <!-- 1) UI, mobile compatibility 2) effective visualization -->
                 </li>
             </ul>
-        </li>
-        <li>
             <h3>{{ gettext('가치') }}</h3>
             <ul>
                 <li>{{ gettext("정치적 중립") }}</li>
                 <li>{{ gettext("프로세스의 자동화와")}} <a href="http://wikipedia.org/wiki/reproducibility">{{ gettext("재현성") }}</a></li>
-                <li>Open source, open data (개방, 공유, 확산) </li>
+                <li><a href="http://github.com/teampopong">Open source</a>, open data (개방, 공유, 확산) </li>
                 <li><s>{{ gettext("세상을 바꾸는 잉여!") }}</s></li>
             </ul>
-        </li>
-    </ul>
+        </div>
+    </div>
 </div>

@@ -1,34 +1,41 @@
-<div class="section">
+<div id="projects" class="section container">
     <h2 class="section-title">projects</h2>
-    <p class="section-description">{{ gettext('이미 만들었기, 만들고 있기. 현재 야심차게 준비중인 "대한민국 정치의 모든 것"을 비롯해 팀포퐁의 모든 서비스를 소개합니다.') }}</p>
-    <ul class="section-items">
-        <li>
-            <h3>{{ gettext("포커") }} <small>2012.7 ~ Present</small></h3>
-            <p>{{ gettext("'포커'는 역대 국회의원 선거에 출마한 모든 정치인에 대한 개인 프로필과 법안 발의 데이터를 연결해 누리꾼이 손쉽게 '파도타기'를 하며 관심 의원이나 입법 정보를 볼 수 있게 했습니다. 의원들이 지역이나 정당, 출신 학교별로 어떻게 묶이는지에 대한 정보를 제공하고 있습니다.") }}</p>
-            <div class="appbutton"> {% if locale=='ko' %} <a href="http://pokr.kr" target="_blank"> {% else %} <a href="http://en.pokr.kr" target="_blank"> {% endif %} <img src="{{ url_for('static', filename='images/button-pokr.png') }}"></a> </div>
-        </li>
-        <li>
-            <h3>{{ gettext("나는 서울 시장이다!") }} <small>2011.10 ~ 2011.11</small></h3>
-            <p>{{ gettext("2011년 10.26 서울시장 선거를 위해 개발된 서비스. 박원순 후보와 나경원 후보의 프로필, 공약, 그리고 주요 이슈를 담은 타임라인을 한 눈에 비교하기 쉽게 만들었습니다.") }}</p>
-            <div class="appbutton"> <a href="http://popong.com/iamseoulmayor" target="_blank"><img src="{% if locale=='ko' %}{{ url_for('static', filename='images/button-naseoul.png') }}{% else %}{{ url_for('static', filename='images/button-naseoul-en.png') }}{% endif %}"></a> </div>
-        </li>
-        <li>
-            <h3>{{ gettext("애정선거") }} <small>2011.10 ~ 2011.11</small></h3>
-            <p>{{ gettext("10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 가까운 후보는 누구인지 알아보러 갈까요?") }}</p>
-            <div class="appbutton"> <a href="http://popong.com/iamseoulmayor/promotion.html" target="_blank"><img src="{%if locale=='ko' %}{{ url_for('static', filename='images/button-ajelection.png') }}{% else %}{{ url_for('static', filename='images/button-ajelection-en.png') }}{% endif %}"/></a> </div>
-        </li>
+    <p class="section-description">{{ gettext('현재 야심차게 준비중인 "대한민국 정치의 모든 것"을 비롯해 팀포퐁의 모든 서비스를 소개합니다.') }}</p>
+    <div class="section-items">
+        <h3>ongoing</h3>
+        <div class="project">
+            <a href="http://pokr.kr" target="_blank">
+                <h4>{{ gettext("대한민국 정치의 모든 것") }} <small>2012.7 ~ Present</small></h4>
+                <p>{{ gettext("'포커'는 역대 국회의원 선거에 출마한 모든 정치인에 대한 개인 프로필과 법안 발의 데이터를 연결해 누리꾼이 손쉽게 '파도타기'를 하며 관심 의원이나 입법 정보를 볼 수 있게 했습니다. 의원들이 지역이나 정당, 출신 학교별로 어떻게 묶이는지에 대한 정보를 제공하고 있습니다.") }}</p>
+                <center><img src="{{ url_for('static', filename='images/pokr.png') }}"></center>
+            </a>
+        </div>
+        <h3>terminated</h3>
+        <div class="row">
+            <div class="span4 project">
+                <a href="http://popong.com/iamseoulmayor" target="_blank">
+                    <h4>{{ gettext("나는 서울 시장이다!") }} <small>2011.10 ~ 2011.11</small></h4>
+                    <p>{{ gettext("2011년 10.26 서울시장 선거를 위해 개발된 서비스. 박원순 후보와 나경원 후보의 프로필, 공약, 그리고 주요 이슈를 담은 타임라인을 한 눈에 비교하기 쉽게 만들었습니다.") }}</p>
+                    <div class="appbutton"><img src="{% if locale=='ko' %}{{ url_for('static', filename='images/button-naseoul.png') }}{% else %}{{ url_for('static', filename='images/button-naseoul-en.png') }}{% endif %}"></div>
+                </a>
+            </div>
+            <div class="span4 project">
+                <a href="http://popong.com/iamseoulmayor/promotion.html" target="_blank">
+                    <h4>{{ gettext("애정선거") }} <small>2011.10 ~ 2011.11</small></h4>
+                    <p>{{ gettext("10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 가까운 후보는 누구인지 알아보러 갈까요?") }}</p>
+                    <div class="appbutton"><img src="{%if locale=='ko' %}{{ url_for('static', filename='images/button-ajelection.png') }}{% else %}{{ url_for('static', filename='images/button-ajelection-en.png') }}{% endif %}"/></div>
+                </a>
+            </div>
+        </div>
+        <h3>prototypes</h3>
+        <p>{{ gettext('실험작, 프로토타입, 인큐베이팅 프로젝트들.') }}</p>
+        <ul id="prototypes">
+            <li><a href="http://labs.popong.com/codenamu/" target="_blank">{{ gettext('국회는 지금') }}</a></li>
+            <li><a href="http://labs.popong.com/cards/" target="_blank">{{ gettext('장바구니') }}</a></li>
+            <li><a href="http://labs.popong.com/selectable/" target="_blank">Selectables</a></li>
+            <li><a href="http://labs.popong.com/icomment/" target="_blank">iComment</a></li>
+            <li><a href="http://labs.popong.com/mobile-120411/" target="_blank">Mobile</a></li>
+        </ul>
     </ul>
 </div>
-
-<div id="section-projects" class="section">
-    <h2 class="section-title">experiments</h2>
-    <p class="section-description">{{ gettext('실험작, 프로토타입, 인큐베이팅 프로젝트들.') }}</p>
-    <ul class="section-items">
-        <li>adsf</li>
-        <li>adsf</li>
-        <li>adsf</li>
-        <li>adsf</li>
-        <li>adsf</li>
-        <li>adsf</li>
-    </ul>
 </div>

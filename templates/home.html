@@ -4,17 +4,12 @@
     {% include 'includes/head.html' %}
   </head>
   <body>
-    <div class="container">
-      {% include 'includes/header.html' %}
-      <div id="contents">
-        {% include 'intro.html' %}<hr>
-        {% include 'about.html' %}<hr>
-        {% include 'projects.html' %}<hr>
-        {% include 'members.html' %}<hr>
-        {% include 'participate.html' %}<hr>
-      </div>
-      {% include 'includes/footer.html' %}
-    </div>
+      {% include 'header.html' %}
+      {% include 'intro.html' %}
+      {% include 'about.html' %}<hr>
+      {% include 'projects.html' %}<hr>
+      {% include 'participate.html' %}
+      {% include 'footer.html' %}
    </body>
    {% include 'includes/foot.html' %}
 </html>

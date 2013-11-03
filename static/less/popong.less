@@ -1,8 +1,13 @@
 // ----- variables ---------------------------------------------------
 @img_folder: "../images";
+@base_font_color: #555;
+@base_font_size: 12pt;
+@base_line_height: 180%;
+@nav_top_margin: 15px;
 
 
 // -----  palette ------------------------------------------------
+@bgr_color      : #f3f5f7;
 @link_color     : #08c;
 @hover_color    : #005580;
 @light_gray     : #eee;
@@ -36,95 +41,123 @@
 
 // ----- layout.html ---------------------------------------------------
 html {
-
-  background: url("@{img_folder}/bgr.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
   body {
     background-color: transparent;
-
+    color: @base_font_color;
+    font-size: @base_font_size;
+    line-height: @base_line_height;
     h1, h2, h3, h4, h5, h6 {
       text-rendering: auto;
+    }
+    h3 {
+      font-size: 16pt;
+      margin: 10px 0;
+    }
+    h4 {
+      font-size: 14pt;
+      margin: 10px 0;
+    }
+    li, span, p {
+      font-size: @base_font_size;
+      line-height: @base_line_height;
     }
   }
 }
 
 @media (max-width: 980px) {
+  body {
+    padding: 0;
+    .container {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
   #github-ribbon {
     display: none;
   }
 }
 
 .section-title {
-  font-size: 37pt;
+  color: @popong_purple;
+  font-size: 22pt;
   font-style: italic;
   line-height: 50px;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .section-description {
-  font-size: 12pt;
-  margin-bottom: 37px;
+  padding-bottom: 37px;
+  text-align: center;
 }
 
 
 // ----- includes/header.html --------------------------------------------
 .navbar {
+    margin-bottom: 0;
     .navbar-inner {
       background-color: transparent;
       background-image: none;
-      min-height: 140px;
+      box-shadow: none;
+      margin: @nav_top_margin 0;
       position: relative;
+      .nav {
+        margin-top: @nav_top_margin;
+        li > a {
+          text-shadow: none;
+          &:hover {
+            color: @link_color;
+          }
+        }
+      }
     }
 
     #lang {
       float: right;
-      margin-top: 10px;
+      margin-top: @nav_top_margin;
       ul {
           margin-top: 0;
           li {
             display: inline-block;
-            font-size: 12px;
             padding: 0px;
           }
       }
     }
+}
 
-    .brand {
-      float: none;
+@media (max-width: 979px) {
+  .navbar {
+    .btn-navbar {
+      background-color: darken(@bgr_color, 20%);
+      background-image: none;
+      border: none;
     }
-
-    #sociallinks {
-      margin-bottom: 10px;
+    #lang {
+      margin-top: 5px;
     }
+  }
+  .nav-collapse .nav > li a:hover {
+    background-color: lighten(@popong_sky, 30%);
+  }
 }
 
 @media (min-width: 979px) {
   .nav-collapse {
-    position: absolute;
-    bottom: 0;
-    right: 0;
     .nav > li {
-      font-size: 12pt;
       a {
+        font-size: 14pt;
         padding: 5px 13px 15px;
       }
     }
   }
 
   #sociallinks {
-    position: absolute;
-    bottom: 50px;
-    right: 0;
+    margin: 50px auto;
     #fb {
-      float: left;
       margin: 0 5px;
       width: 76px;
     }
     #tw {
-      float: left;
       margin: 0 5px;
       display: inline-block;
     }
@@ -133,7 +166,7 @@ html {
 
 
 // ----- includes/footer.html --------------------------------------------
-footer {
+#footer {
   background: @popong_purple;
   color: @popong_purple_dark;
   margin-top: 18px;
@@ -143,8 +176,10 @@ footer {
     color: @popong_purple_light;
   }
   h2 {
-    font-size: 20px;
     line-height: 20px;
+  }
+  p {
+    font-size: 10pt;
   }
 
   .desc-section {
@@ -181,38 +216,6 @@ footer {
   }
 }
 
-// ----- home.html ---------------------------------------------------
-.hero-unit {
-  padding: 30px 5%;
-  background: rgba(255, 255, 255, .5);
-  border: solid 3px white;
-  p {
-    font-size: 11pt;
-    margin: 30px auto 0;
-  }
-}
-
-.menubox {
-  border: 5px @home_yellow solid;
-  margin: 10px 0;
-  position: relative;
-
-  .menu-image {
-    display: inline-block;
-    width: 100%;
-  }
-  .menu-title {
-    position: absolute;
-    color: white;
-    margin: 1%;
-  }
-  .menu-explanation {
-    background: @home_yellow;
-    color: white;
-    display: inline-block;
-    width: 100%;
-  }
-}
 
 // ----- about.html ---------------------------------------------------
 #members {
@@ -220,7 +223,6 @@ footer {
     display: inline-block;
     margin: 0 3% 15px;
     .member-name {
-      font-size: 16px;
       font-weight: normal;
     }
   }
@@ -233,7 +235,6 @@ footer {
 #past-members, #thanksto {
   h3 {
     color: @dark_gray;
-    font-size: 15px;
   }
   li {
     display: inline-block;
@@ -289,8 +290,16 @@ footer {
       display: block;
       background-position: right bottom;
       width: 140px;
+      font-size: 9pt;
+      line-height: 120%;
+      span {
+        line-height: 120%;
+      }
+      b {
+        font-size: 12pt;
+        line-height: 14pt;
+      }
     }
-
     form {
       margin: 10px 7px;
     }
@@ -320,6 +329,45 @@ footer {
     max-width: 300px;
   }
 }
+.project {
+  border: 3px solid @popong_orange;
+  h4 {
+    color: @popong_orange;
+  }
+  padding: 15px;
+  .rounded-corners(10px);
+  &:hover {
+    background-color: @bgr_color;
+  }
+  a {
+    color: @base_font_color;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+ul#prototypes{
+  list-style: none;
+  margin: 0;
+  li {
+    border: 3px solid @popong_orange;
+    float: left;
+    margin-right: 10px;
+    padding: 5px 10px;
+    .rounded-corners(10px);
+    &:hover {
+      background-color: @bgr_color;
+    }
+  }
+  a {
+    color: @base_font_color;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 
 // ----- sources.html ---------------------------------------------------
 table {
@@ -329,4 +377,16 @@ table {
 #source-type {
     background-color: #dff0d8;
     font-weight: bold;
+}
+
+
+// ----- intro.html ---------------------------------------------------
+#header {
+  background-color: @bgr_color;
+}
+#intro {
+  background-color: @popong_sky;
+  h2 {
+    color: @dark_gray;
+  }
 }
