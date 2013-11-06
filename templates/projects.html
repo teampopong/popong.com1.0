@@ -11,15 +11,15 @@
             </a>
         </div>
         <h3>terminated</h3>
-        <div class="row">
-            <div class="span4 project">
+        <div class="row-fluid">
+            <div class="span5 project">
                 <a href="http://popong.com/iamseoulmayor" target="_blank">
                     <h4>{{ gettext("나는 서울 시장이다!") }} <small>2011.10 ~ 2011.11</small></h4>
                     <p>{{ gettext("2011년 10.26 서울시장 선거를 위해 개발된 서비스. 박원순 후보와 나경원 후보의 프로필, 공약, 그리고 주요 이슈를 담은 타임라인을 한 눈에 비교하기 쉽게 만들었습니다.") }}</p>
                     <div class="appbutton"><img src="{% if locale=='ko' %}{{ url_for('static', filename='images/button-naseoul.png') }}{% else %}{{ url_for('static', filename='images/button-naseoul-en.png') }}{% endif %}"></div>
                 </a>
             </div>
-            <div class="span4 project">
+            <div class="span5 project">
                 <a href="http://popong.com/iamseoulmayor/promotion.html" target="_blank">
                     <h4>{{ gettext("애정선거") }} <small>2011.10 ~ 2011.11</small></h4>
                     <p>{{ gettext("10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 가까운 후보는 누구인지 알아보러 갈까요?") }}</p>
