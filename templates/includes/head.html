@@ -3,14 +3,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="author" content="Team POPONG">
-<meta property="og:image" content="{{ url_for('static', filename='images/thumbnail.png', _external=True) }}" />
+<meta property="og:image" content="{{ url_for('static', filename='images/team-popong-logo.png', _external=True) }}" />
 <meta property="og:description" content="Korean political data analysis team" />
 <meta property="og:title" content="Team POPONG" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="http://popong.com" />
 <meta property="fb:admins" content="1347665216" />
 
-<link href="{{ url_for('static', filename='images/thumbnail.png') }}" rel="image_src" type="image/png">
+<link href="{{ url_for('static', filename='images/team-popong-logo.png') }}" rel="image_src" type="image/png">
 {% for lang, url in locale_links.items() %}
 <link href="{{url}}" rel="alternate" hreflang="{{lang}}">
 {% endfor %}
