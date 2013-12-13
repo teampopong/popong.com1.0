@@ -1,0 +1,97 @@
+{% extends 'layout.html' %}
+
+{% block contents %}
+<style>
+h2 {
+    margin-top: 70px;
+    border-top: 5px solid #eee;
+    padding-top: 30px;
+}
+</style>
+<h1>대한민국 정치의 모든 것 FAQ</h1>
+<h2 id="저는-뉴스만으로-충분한-정치-정보를-받는-것-같은데요">저는 뉴스만으로 충분한 정치 정보를 받는 것 같은데요?</h2>
+<ul>
+<li>음악을 들을 때 '인기곡 100'을 들을 수 있고, 나에게 맞는 '추천음악' 받아 들을 수도 있습니다.</li>
+<li>정치 이슈에서 기존의 언론/미디어는 '인기곡 100', 대정모는 '추천음악'입니다.</li>
+</ul>
+<div class="figure">
+    <img width="700px" src="{{ url_for('static', filename='recommendation.png') }}" /><p class="caption"></p>
+</div>
+<h2 id="왜-의안이죠">왜 의안이죠?</h2>
+<div class="figure">
+<img width="700px" src="{{ url_for('static', filename='bills.png') }}" /><p class="caption"></p>
+</div>
+<h2 id="기존-서비스와-다른-점은">기존 서비스와 다른 점은?</h2>
+<ul>
+<li><img width="700px" src="{{ url_for('static', filename='comparison-screenshot.png') }}" /></li>
+<li><img width="700px" src="{{ url_for('static', filename='comparison.png') }}" /></li>
+</ul>
+<h2 id="지속가능성sustainability은">지속가능성(sustainability)은?</h2>
+<p>팀포퐁이 <strong>가장 자신있는 부분</strong>입니다!</p>
+<div class="figure">
+<img width="700px" src="{{ url_for('static', filename='autoupdate.png') }}" /><p class="caption"></p>
+</div>
+<ul>
+<li>&quot;대정모&quot;는 설계단계에서부터 지속가능성을 염두에 두고 탄생한 서비스</li>
+<li>개발을 제외한 <strong>모든 부분을 자동화</strong>하여 유지 비용 최소화</li>
+<li>도메인 비용(3만원/년)을 제외한 <strong>유지 비용은 0원</strong>!</li>
+<li>지금 당장 팀원이 전부 그만두더라도 서버 한 대와 연 3만원만 있으면 유지될 수 있음</li>
+<li>심지어, 개발코드를 공개하고 개발자 커뮤니티를 형성하여 누구나 개발에 참여하고 발전시킬 수 있게 함</li>
+</ul>
+<h2 id="페이스북-외에-다른-가입로그인-경로는-없나요">페이스북 외에 다른 가입/로그인 경로는 없나요?</h2>
+<div class="figure">
+<img width="200px" src="{{ url_for('static', filename='oauth.png" /><p class="caption"></p>
+</div>
+<ul>
+<li>사용자 관찰을 통해, <strong>페이스북 로그인에 대한 일부 유저의 거부감</strong>을 확인함.</li>
+<li>정식런치시 <strong>이메일 로그인 기능 추가 예정</strong>.</li>
+<li>지금 당장(베타 서비스 기간) 이메일 로그인 기능을 추가하지 않은 이유:
+<ol style="list-style-type: decimal">
+<li>서비스 복잡도를 낮춤으로써 오류의 가능성을 낮춤</li>
+<li>가입 절차 간소화 (one-click)</li>
+</ol></li>
+</ul>
+<h2 id="어려워서-잘-이해가-안돼요.">어려워서 잘 이해가 안돼요.</h2>
+<p><strong>&lt;(오늘을 통해 이해하는) 쉬운 의안 풀이&gt;</strong> 기획 중!</p>
+<img width="700px" src="{{ url_for('static', filename='dragonballs-popong.png') }}" />
+<h2 id="나와의-연관성을-못-찾겠어요.">나와의 연관성을 못 찾겠어요.</h2>
+<ul>
+<li>내 것인데도요?!</li>
+</ul>
+<div class="figure">
+<img width="700px" src="{{ url_for('static', filename='me.png') }}" /><p class="caption"></p>
+</div>
+<h2 id="데이터-공개를-할-건가요">데이터 공개를 할 건가요?</h2>
+<ul>
+<li><img width="700px" src="{{ url_for('static', filename='apps.png') }}" /></li>
+</ul>
+<h2 id="객관성-및-중립성은-어떻게-보장하나요">객관성 및 중립성은 어떻게 보장하나요?</h2>
+<ol style="list-style-type: decimal">
+<li>검증된 정부의 공식 자료만 사용<br>
+<img width="700px" src="{{ url_for('static', filename='crawling.png') }}" />
+<li>데이터 수집기 웹 상에 완전 공개<br>
+<img width="700px" src="{{ url_for('static', filename='crawlers.png') }}" />
+</ol>
+<h2 id="선거에서-초선-출마-후보는-어떤-식으로-검증하나요">선거에서 초선 출마 후보는 어떤 식으로 검증하나요?</h2>
+<ul>
+<li>현재 대정모는 대한민국 1-19대 국회 후보자 및 당선자에 대한 데이터를 비롯, 지방자치선거, 대통령선거에 대한 방대한 데이터를 보유하고 있습니다. (약 15만명 분)</li>
+<li>초선 출마 후보자의 성향은 실제 정치경력이 있는 기존 인물들과의 유사성을 계산하여 예측할 수 있습니다. (데이터마이닝 기술 활용)</li>
+</ul>
+<div class="figure">
+<img width="400px" src="{{ url_for('static', filename='network.png') }}" /><p class="caption"></p>
+</div>
+<h2 id="앞으로의-계획은">앞으로의 계획은?</h2>
+<div class="figure">
+<img width="700px" src="{{ url_for('static', filename='timeline.png') }}" /><p class="caption"></p>
+</div>
+<ol style="list-style-type: decimal">
+<li>각 키워드에 대해 많이 발의하는 의원 순위 도출</li>
+<li>UI/UX 관련 실험을 통한 스마트한 사용성 증진</li>
+<li>내 지역구 국회의원 뿐 아니라, 지방자치단체장, 교육감, 등의 내가 뽑은 모든 정치인 표시</li>
+</ol>
+<h2 id="재무계획">재무계획?</h2>
+<div class="figure">
+<img width="700px" src="{{ url_for('static', filename='budget.jpg') }}" /><p class="caption"></p>
+</div>
+
+{% endblock %}

@@ -37,6 +37,10 @@ def about():
             dirlinks=DIRLINKS, active_page='About',
             YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO)
 
+@app.route('/faq')
+def faq():
+    return render_template('faq.html')
+
 @app.route('/sources')
 def sources():
     return render_template('sources.html')
