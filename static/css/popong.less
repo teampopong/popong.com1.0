@@ -85,18 +85,24 @@ header {
   right: 0;
   bottom: 0;
   padding-right: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
 
   li {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
 
     &.active {
-      background: #f7f7f7;
+      background: rgba(242, 242, 242, 0.8);
     }
 
     a {
       color: @font_color;
       font-size: 16pt;
+
+      &:hover {
+        background: rgba(242, 242, 242, 0.8);
+      }
     }
   }
 }
@@ -248,10 +254,6 @@ footer {
       margin: 0 2% 15px;
     }
   }
-
-  #github-ribbon {
-    display: none;
-  }
 }
 
 #donation-widgets {
@@ -261,12 +263,14 @@ footer {
 
 // mobile
 @media (max-width: 767px) {
-  header {
-    height: 60px;
+  header .container {
+    min-height: 40px;
   }
+
   #menu li a {
     font-size: 12pt;
   }
+
   .logo {
     height: 80px;
   }
@@ -317,8 +321,18 @@ footer {
   .box-shadow;
 }
 
-#slideshare {
-  padding-top: 50px;
+.slide {
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  h4 {
+    font-size: 10pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
 }
 
 #contact {
@@ -330,15 +344,13 @@ footer {
 }
 
 .notice {
+  display: block;
   border: 1px solid #EEE;
   color: #999;
-  margin: 30px auto 10px;
-  display: block;
-  padding: 10px;
+  margin: -10px auto 10px;
+  padding-bottom: 10px;
 
-  h3.notice-title {
-    background: #EEE;
-    .rounded-corners;
+  h4.notice-title {
     color: #777;
     font-size: 13px;
     font-weight: bold;

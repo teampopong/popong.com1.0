@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-19 19:59+0900\n"
+"POT-Creation-Date: 2014-01-19 20:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,24 +76,12 @@ msgstr ""
 msgid "고마운 분들"
 msgstr ""
 
-#: templates/about.html:80
+#: templates/about.html:88
 msgid "언제나, 어떠한 피드백도 환영입니다!"
 msgstr ""
 
-#: templates/about.html:85
-msgid "포퐁 프로젝트는 당신의 후원으로 운영됩니다"
-msgstr ""
-
-#: templates/about.html:88
-msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
-msgstr ""
-
-#: templates/about.html:90
-msgid "저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다."
-msgstr ""
-
-#: templates/about.html:91
-msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
+#: templates/footer.html:3
+msgid "팀포퐁"
 msgstr ""
 
 #: templates/intro.html:4
@@ -106,6 +93,26 @@ msgid ""
 "<b>팀 포퐁(POPONG: Public Open POlitics engineeriNG)</b>은 인터넷을 통한 시민들의 사회참여가"
 " 정치에 미치는 영향에 대한 학술적 연구 및 실제적 변화를 목표로 하는 재능기부 그룹입니다. 일상생활 속의 정치참여를 상상하는 "
 "직장인, 학생들의 잉여시간을 모아모아 활동합니다."
+msgstr ""
+
+#: templates/participate.html:5
+msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법."
+msgstr ""
+
+#: templates/participate.html:17
+msgid "포퐁 프로젝트는 당신의 후원으로 운영됩니다"
+msgstr ""
+
+#: templates/participate.html:20
+msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
+msgstr ""
+
+#: templates/participate.html:22
+msgid "저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다."
+msgstr ""
+
+#: templates/participate.html:23
+msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
 msgstr ""
 
 #: templates/services.html:2
@@ -138,6 +145,18 @@ msgstr ""
 msgid ""
 "10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 "
 "가까운 후보는 누구인지 알아보러 갈까요?"
+msgstr ""
+
+#: templates/services.html:32
+msgid "프로토타입"
+msgstr ""
+
+#: templates/services.html:33
+msgid "실험작, 프로토타입, 인큐베이팅 프로젝트들."
+msgstr ""
+
+#: templates/services.html:35
+msgid "국회는 지금"
 msgstr ""
 
 #: templates/sources.html:6
