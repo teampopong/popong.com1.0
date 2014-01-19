@@ -1,0 +1,11 @@
+<div class="container">
+  {% set home = '' if request.endpoint == 'home' else url_for('home') %}
+  <a href="{{ home }}" style="padding: 0;"><img class="logo" src="{{ url_for('static', filename='images/popong-logo.png') }}"></a>
+  <ul id="menu" class="nav navbar-nav navbar-right">
+    <li><a href="{{ home }}#">HOME</a>
+    <li><a href="{{ home }}#about">ABOUT</a>
+    <li><a href="{{ home }}#services">SERVICES</a>
+    <li><a href="http://blog.popong.com/">BLOG</a>
+    <li class="hidden-xs {% if request.endpoint == 'faq' %}active{% endif %}"><a href="{{ url_for('faq') }}">FAQ</a>
+  </ul>
+</div>

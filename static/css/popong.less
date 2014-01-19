@@ -10,16 +10,16 @@
     2013-01-21 moved direct links to footer
 */
 
-
-// ----- variables ---------------------------------------------------
-@img_folder: "../images";
-
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 // -----  palette ------------------------------------------------
-@bgr_color      : #FFF;
+@bg_color       : white;
+@font_color     : #222;
 @link_color     : #08c;
 @hover_color    : #005580;
-@code_color     : #333333;
+@header_color   : rgba(255, 255, 255, 0.75);
+@footer_color   : rgba(255, 255, 255, 0.75);
+@border_color   : #eee;
 
 
 // ----- mixins --------------------------------------------------
@@ -38,87 +38,99 @@
 
 // ----- layout.html ---------------------------------------------------
 body {
-  background-color: @bgr_color;
+  background-color: @bg_color;
+  color: @font_color;
 }
 
-@media (min-width: 980px) {
-  body > .container {
-    padding-top: 80px !important;
-    padding-bottom: 40px;
-  }
+body, p {
+  font-family: calibri, 'Nanum Gothic', sans-serif;
 }
 
 a {
   color: @link_color;
   &:hover {
-    color: @hover_color;
+  color: @hover_color;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: inherit;
-  text-rendering: auto;
+h2 {
+  font-family: 'Vollkorn', serif;
+  color: #111;
+  font-size: 36pt;
+  margin-bottom: 1em; 
+  text-align: center;
 }
 
-code {
-  color: @code_color;
+h3 {
+  margin: 1em 0 0.5em;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: @header_color;
+  border-bottom: 1px solid @border_color;
+  z-index: 1;
 
-// navigation bar
-.navbar .nav > li {
-  font-size: 12pt;
-  a {
-    padding: 16px 13px 15px;
+  .container {
+    position: relative;
+    min-height: 50px;
   }
 }
 
-#lang {
-  float: right;
-  ul {
-      margin: 0;
-      li {
-        display: inline-block;
-        font-size: 12px;
-        padding: 0px;
-      }
-  }
-}
+#menu {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 15px;
 
-@media (min-width: 979px) {
-  #lang {
-      margin-top: 15px;
-  }
-}
+  li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
 
-.nav-pills {
-  a { 
-    color: #777;
-  }
-  a:hover { 
-    color: #FFF;
-    text-decoration: none;
-  }
-  .active {
-    a { 
-      text-decoration: none;
-      background-color: #777; 
-      }
-    a:hover { 
-      color: #EEE;
-      text-decoration: none;
-      background-color: #777; 
+    &.active {
+      background: #f7f7f7;
+    }
+
+    a {
+      color: @font_color;
+      font-size: 16pt;
     }
   }
 }
 
-.nav-pills > li > a {
-  padding-top: 2px;
-  padding-bottom: 2px;
+.logo {
+  height: 120px;
+  margin: -10px 0;
 }
 
-// footer
-footer > div {
+#container {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
+.page {
+  padding: 3em 0;
+  border-top: 1px solid @border_color;
+
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: @footer_color;
+  border-top: 1px solid @border_color;
+  padding-top: 10px;
+}
+
+.footer-block {
   padding: 0 10px;
   display: inline-block;
 }
@@ -149,14 +161,6 @@ footer > div {
   }
 }
 
-
-@media (max-width: 400px) {
-    #directlinks {
-        display: none;
-    }
-}
-
-// ----- home.html ---------------------------------------------------
 .appbutton {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -164,6 +168,10 @@ footer > div {
   img {
     width: 50%;
   }
+}
+
+.carousel {
+  width: 100%;
 }
 
 .hero-unit {
@@ -176,7 +184,6 @@ footer > div {
 }
 
 
-// ----- about.html ---------------------------------------------------
 #left-column {
   font-size: 10.5pt;
   p {
@@ -252,6 +259,19 @@ footer > div {
   margin: 0 auto;
 }
 
+// mobile
+@media (max-width: 767px) {
+  header {
+    height: 60px;
+  }
+  #menu li a {
+    font-size: 12pt;
+  }
+  .logo {
+    height: 80px;
+  }
+}
+
 @media (max-width: 480px) {
 
   #donation-widgets {
@@ -293,24 +313,9 @@ footer > div {
   height: 80px;
   width: 80px;
   margin: 0 auto;
-  background-image: url("@{img_folder}/member-@{img_file}.jpg");
   .rounded-corners(40px);
   .box-shadow;
 }
-
-.member-photo-cornchz      {  .member-box(cornchz);  }
-.member-photo-daybreaker   {  .member-box(daybreaker);  }
-.member-photo-jooddang     {  .member-box(jooddang);  }
-.member-photo-echojuliett  {  .member-box(echojuliett);  }
-.member-photo-allsolution  {  .member-box(allsolution);  }
-.member-photo-minspiration {  .member-box(minspiration);  }
-.member-photo-uni208       {  .member-box(uni208);  }
-.member-photo-jihye        {  .member-box(jihye);  }
-.member-photo-sanxiyn      {  .member-box(sanxiyn);  }
-.member-photo-dongx3       {  .member-box(dongx3);  }
-.member-photo-netj         {  .member-box(netj);  }
-.member-photo-unrealive    {  .member-box(unrealive);  }
-.member-photo-ingtellect   {  .member-box(ingtellect);  }
 
 #slideshare {
   padding-top: 50px;
@@ -372,17 +377,11 @@ footer > div {
 // ----- sources.html ---------------------------------------------------
 
 table {
-    margin: 3em 0;
+  margin: 3em 0;
 }
 
 #source-type {
-    background-color: #dff0d8;
-    font-weight: bold;
+  background-color: #dff0d8;
+  font-weight: bold;
 }
 
-
-// ----- glossary.html ---------------------------------------------------
-
-.inline {
-    display: inline-block;
-}

@@ -1,6 +1,7 @@
 {% extends 'layout.html' %}
 
 {% block contents %}
+<div class="page">
 <p>
 {{ gettext("팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다.") }}<br>
 {{ gettext("정부에서 공식적으로 제공하는 데이터를 최우선적으로 사용하고, 필요에 따라 국내외 민간 기관과 개인이 생성한 데이터를 이용합니다.") }}<br>
@@ -11,8 +12,8 @@
 <thead>
     <tr> 
         <th></th>
-        <th><a href="http://{{ request.host }}/polidic/">{{ gettext("대한민국 정치인명사전") }}</a></th>
-        <th><a href="{{ url_for('glossary') }}">{{ gettext("정치용어집") }}</a></th>
+        <th><a href="http://pokr.kr/">{{ gettext("대한민국 정치의 모든 것") }}</a></th>
+        <th><a href="http://labs.popong.com/glossary">{{ gettext("정치용어집") }}</a></th>
         <th><a href="https://github.com/teampopong/codebooks">{{ gettext("코드북") }}</a></th>
     </tr>
 </thead>
@@ -166,6 +167,5 @@
 {{ gettext("가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다.") }}
 {{ gettext("그 이전에 가공된 데이터가 필요하신 분은 <a href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다.") }}
 </p>
-
-
+</div>
 {% endblock %}

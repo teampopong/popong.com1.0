@@ -2,3 +2,5 @@
 .DS_Store
 server.log
 settings.py
+/static/.webassets-cache
+/static/build

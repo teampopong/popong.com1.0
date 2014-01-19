@@ -1,14 +1,14 @@
 # Translations template for PROJECT.
-# Copyright (C) 2013 ORGANIZATION
+# Copyright (C) 2014 ORGANIZATION
 # This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2013-10-03 16:09+0900\n"
+"POT-Creation-Date: 2014-01-19 19:59+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,320 +17,320 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/about.html:8
+#: templates/about.html:2
+msgid "ABOUT"
+msgstr ""
+
+#: templates/about.html:6
 msgid "목표"
 msgstr ""
 
-#: templates/about.html:11
-msgid "누구나 정치에 대한 알권리가 있습니다."
+#: templates/about.html:9
+msgid "누구나 정치에 대해 알 권리가 있습니다."
 msgstr ""
 
-#: templates/about.html:12
+#: templates/about.html:10
 msgid "그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다."
 msgstr ""
 
-#: templates/about.html:15
+#: templates/about.html:13
 msgid "팀포퐁은 이러한 철학 하에서"
 msgstr ""
 
-#: templates/about.html:17
+#: templates/about.html:15
 msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
 msgstr ""
 
-#: templates/about.html:25
+#: templates/about.html:23
 msgid "이해하기 쉽고 재미있는 시각화를 제공하고자 합니다."
 msgstr ""
 
-#: templates/about.html:34
+#: templates/about.html:32
 msgid "가치"
 msgstr ""
 
-#: templates/about.html:36
+#: templates/about.html:34
 msgid "정치적 중립"
 msgstr ""
 
-#: templates/about.html:37
+#: templates/about.html:35
 msgid "프로세스의 자동화와"
 msgstr ""
 
-#: templates/about.html:37
+#: templates/about.html:35
 msgid "재현성"
 msgstr ""
 
-#: templates/about.html:43
+#: templates/about.html:41
 msgid "세상을 바꾸는 잉여!"
 msgstr ""
 
-#: templates/about.html:47
+#: templates/about.html:45
 msgid "우리는"
 msgstr ""
 
-#: templates/about.html:60
+#: templates/about.html:57
 msgid "함께했던 사람들"
 msgstr ""
 
-#: templates/about.html:68
+#: templates/about.html:65
 msgid "고마운 분들"
 msgstr ""
 
-#: templates/about.html:83
+#: templates/about.html:80
 msgid "언제나, 어떠한 피드백도 환영입니다!"
 msgstr ""
 
-#: templates/about.html:88
+#: templates/about.html:85
 msgid "포퐁 프로젝트는 당신의 후원으로 운영됩니다"
 msgstr ""
 
-#: templates/about.html:91
+#: templates/about.html:88
 msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
 msgstr ""
 
-#: templates/about.html:93
+#: templates/about.html:90
 msgid "저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다."
 msgstr ""
 
-#: templates/about.html:94
+#: templates/about.html:91
 msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
 msgstr ""
 
-#: templates/about.html:114
-msgid "팀포퐁에서 마케터를 구합니다"
-msgstr ""
-
-#: templates/about.html:115
-msgid "포퐁을 국내외에 널리 알려야 한다고 생각하시는 분들은 이메일로 연락주세요 :)"
-msgstr ""
-
-#: templates/glossary.html:19 templates/sources.html:15
-msgid "정치용어집"
-msgstr ""
-
-#: templates/home.html:6
+#: templates/intro.html:4
 msgid "나는 정치에 관심이 있다? 없다?"
 msgstr ""
 
-#: templates/home.html:7
+#: templates/intro.html:5
 msgid ""
-"팀 포퐁(POPONG: Public Open POlitics engineeriNG)은 인터넷을 통한 시민들의 사회참여가 정치에 "
-"미치는 영향에 대한 학술적 연구 및 실제적 변화를 목표로 하는 재능기부 그룹입니다. 일상생활 속의 정치참여를 상상하는 직장인, "
-"학생들의 잉여시간을 모아모아 활동합니다."
+"<b>팀 포퐁(POPONG: Public Open POlitics engineeriNG)</b>은 인터넷을 통한 시민들의 사회참여가"
+" 정치에 미치는 영향에 대한 학술적 연구 및 실제적 변화를 목표로 하는 재능기부 그룹입니다. 일상생활 속의 정치참여를 상상하는 "
+"직장인, 학생들의 잉여시간을 모아모아 활동합니다."
 msgstr ""
 
-#: templates/home.html:13
+#: templates/services.html:2
+msgid "SERVICES"
+msgstr ""
+
+#: templates/services.html:5
+msgid "포커"
+msgstr ""
+
+#: templates/services.html:15
+msgid "1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 대한민국 정치의 모든 것."
+msgstr ""
+
+#: templates/services.html:18
 msgid "나는 서울 시장이다!"
 msgstr ""
 
-#: templates/home.html:17
+#: templates/services.html:22
 msgid ""
 "2011년 10.26 서울시장 선거를 위해 개발된 서비스. 박원순 후보와 나경원 후보의 프로필, 공약, 그리고 주요 이슈를 담은 "
 "타임라인을 한 눈에 비교하기 쉽게 만들었습니다."
 msgstr ""
 
-#: templates/home.html:20
+#: templates/services.html:25
 msgid "애정선거"
 msgstr ""
 
-#: templates/home.html:24
+#: templates/services.html:29
 msgid ""
 "10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 "
 "가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
 
-#: templates/home.html:27
-msgid "포커"
-msgstr ""
-
-#: templates/home.html:36
-msgid "1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 대한민국 정치의 모든 것."
-msgstr ""
-
-#: templates/sources.html:5
+#: templates/sources.html:6
 msgid "팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다."
 msgstr ""
 
-#: templates/sources.html:6
+#: templates/sources.html:7
 msgid "정부에서 공식적으로 제공하는 데이터를 최우선적으로 사용하고, 필요에 따라 국내외 민간 기관과 개인이 생성한 데이터를 이용합니다."
 msgstr ""
 
-#: templates/sources.html:8
+#: templates/sources.html:9
 msgid "데이터를 기꺼이 공유해주신 분들께 깊은 감사를 드립니다."
 msgstr ""
 
-#: templates/sources.html:14
-msgid "대한민국 정치인명사전"
+#: templates/sources.html:15
+msgid "대한민국 정치의 모든 것"
 msgstr ""
 
 #: templates/sources.html:16
+msgid "정치용어집"
+msgstr ""
+
+#: templates/sources.html:17
 msgid "코드북"
 msgstr ""
 
-#: templates/sources.html:22
+#: templates/sources.html:23
 msgid "정부공식기관"
 msgstr ""
 
-#: templates/sources.html:27
+#: templates/sources.html:28
 msgid "대한민국 국회"
 msgstr ""
 
-#: templates/sources.html:31
+#: templates/sources.html:32
 msgid "역대 국회의원 선거구 및 당적 (pdf)"
 msgstr ""
 
-#: templates/sources.html:32
+#: templates/sources.html:33
 msgid "의원광장"
 msgstr ""
 
-#: templates/sources.html:33 templates/sources.html:39
+#: templates/sources.html:34 templates/sources.html:40
 msgid "의안정보시스템"
 msgstr ""
 
-#: templates/sources.html:33
+#: templates/sources.html:34
 msgid "국회 회의록 및 의안 원문"
 msgstr ""
 
-#: templates/sources.html:34
+#: templates/sources.html:35
 msgid "영상회의록시스템"
 msgstr ""
 
-#: templates/sources.html:34
+#: templates/sources.html:35
 msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
 msgstr ""
 
-#: templates/sources.html:35
+#: templates/sources.html:36
 msgid "회의록시스템"
 msgstr ""
 
-#: templates/sources.html:35
+#: templates/sources.html:36
 msgid "본회의, 상임위 등 회의의 일정 및 회의록"
 msgstr ""
 
-#: templates/sources.html:40
+#: templates/sources.html:41
 msgid "용어의 의미"
 msgstr ""
 
-#: templates/sources.html:46
+#: templates/sources.html:47
 msgid "중앙선거관리위원회"
 msgstr ""
 
-#: templates/sources.html:50 templates/sources.html:52
-#: templates/sources.html:54 templates/sources.html:56
-#: templates/sources.html:64
+#: templates/sources.html:51 templates/sources.html:53
+#: templates/sources.html:55 templates/sources.html:57
+#: templates/sources.html:65
 msgid "선거통계시스템"
 msgstr ""
 
-#: templates/sources.html:51
+#: templates/sources.html:52
 msgid "1~18대 국회의원 선거 후보자/당선인 데이터"
 msgstr ""
 
-#: templates/sources.html:53
+#: templates/sources.html:54
 msgid "19대 국회의원 선거 후보자/당선인 데이터"
 msgstr ""
 
-#: templates/sources.html:55
+#: templates/sources.html:56
 msgid "19대 국회의원 공약 데이터"
 msgstr ""
 
-#: templates/sources.html:57
+#: templates/sources.html:58
 msgid "2013년 상반기 재보궐선거 (19대)"
 msgstr ""
 
-#: templates/sources.html:58
+#: templates/sources.html:59
 msgid "알림광장"
 msgstr ""
 
-#: templates/sources.html:59
+#: templates/sources.html:60
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr ""
 
-#: templates/sources.html:65
+#: templates/sources.html:66
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr ""
 
-#: templates/sources.html:70
+#: templates/sources.html:71
 msgid "국회사무처"
 msgstr ""
 
-#: templates/sources.html:74
+#: templates/sources.html:75
 msgid "용어의 한글-영문 매핑"
 msgstr ""
 
-#: templates/sources.html:80
+#: templates/sources.html:81
 msgid "법제처"
 msgstr ""
 
-#: templates/sources.html:84
+#: templates/sources.html:85
 msgid "법령용어한영사전"
 msgstr ""
 
-#: templates/sources.html:84
+#: templates/sources.html:85
 msgid "제2판"
 msgstr ""
 
-#: templates/sources.html:90
+#: templates/sources.html:91
 msgid "국가법령정보센터"
 msgstr ""
 
-#: templates/sources.html:94
+#: templates/sources.html:95
 msgid "법령용어검색"
 msgstr ""
 
-#: templates/sources.html:94
+#: templates/sources.html:95
 msgid "법령한영사전 포함"
 msgstr ""
 
-#: templates/sources.html:100
+#: templates/sources.html:101
 msgid "통계청"
 msgstr ""
 
-#: templates/sources.html:105
+#: templates/sources.html:106
 msgid "한국행정구역분류 코드"
 msgstr ""
 
-#: templates/sources.html:110
+#: templates/sources.html:111
 msgid "안전행정부"
 msgstr ""
 
-#: templates/sources.html:116 templates/sources.html:118
+#: templates/sources.html:117 templates/sources.html:119
 msgid "행정표준코드관리시스템"
 msgstr ""
 
-#: templates/sources.html:117
+#: templates/sources.html:118
 msgid "기관코드"
 msgstr ""
 
-#: templates/sources.html:119
+#: templates/sources.html:120
 msgid "학과, 학력 등 코드"
 msgstr ""
 
-#: templates/sources.html:125
+#: templates/sources.html:126
 msgid "민간기관"
 msgstr ""
 
-#: templates/sources.html:130
+#: templates/sources.html:131
 msgid "대한민국헌정회"
 msgstr ""
 
-#: templates/sources.html:133
+#: templates/sources.html:134
 msgid "헌정회 소속 국회의원 데이터"
 msgstr ""
 
-#: templates/sources.html:140
+#: templates/sources.html:141
 msgid "개인"
 msgstr ""
 
-#: templates/sources.html:148
+#: templates/sources.html:149
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr ""
 
-#: templates/sources.html:158
+#: templates/sources.html:159
 msgid "한자, 한글 매핑 데이터"
 msgstr ""
 
-#: templates/sources.html:166
+#: templates/sources.html:167
 msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
 msgstr ""
 
-#: templates/sources.html:167
+#: templates/sources.html:168
 msgid ""
 "그 이전에 가공된 데이터가 필요하신 분은 <a "
 "href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."

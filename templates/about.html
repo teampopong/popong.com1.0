@@ -1,119 +1,112 @@
-{% extends 'layout.html' %}
-
-{% block contents %}
-<div class="row-fluid">
-
-  <div id="left-column" class="span8">
-    <div id="what-we-do">
-      <h2 id="objectives">{{ gettext('목표') }}</h2>
-      <p id="motto">Techne vos liberabit.</p>
-      <p>
-        {{ gettext("누구나 정치에 대한 알권리가 있습니다.") }}<br>
-        {{ gettext("그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다.") }}
-        </p>
+<div id="about" class="page">
+  <h2>{{ gettext('ABOUT') }}</h2>
+  <div class="row">
+    <div id="left-column" class="col-md-8">
+      <div id="what-we-do">
+        <h3 id="objectives">{{ gettext('목표') }}</h3>
+        <p id="motto">Techne vos liberabit.</p>
         <p>
-        {{ gettext("팀포퐁은 이러한 철학 하에서") }}
-          <ul>
-              <li>{{ gettext("대한민국 정치 데이터에 대한 접근성과 사용성을 높이고") }}
+          {{ gettext("누구나 정치에 대해 알 권리가 있습니다.") }}<br>
+          {{ gettext("그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다.") }}
+          </p>
+          <p>
+          {{ gettext("팀포퐁은 이러한 철학 하에서") }}
             <ul>
-              <li>API, open data, open source,</li>
-              <li>googling 가능</li>
-              <li>programmable</li>
-              <li>i18n</li>
+                <li>{{ gettext("대한민국 정치 데이터에 대한 접근성과 사용성을 높이고") }}
+              <ul>
+                <li>API, open data, open source,</li>
+                <li>googling 가능</li>
+                <li>programmable</li>
+                <li>i18n</li>
+              </ul>
+            </li>
+            <li>{{ gettext("이해하기 쉽고 재미있는 시각화를 제공하고자 합니다.") }}
+            <ul>
+              <li>UI, mobile,
+              <li>visualization
+            </ul>
+            </li>
+          </ul>
+        </p>
+
+        <h3 id="values">{{ gettext('가치') }}</h3>
+        <ul>
+          <li>{{ gettext("정치적 중립") }}</li>
+          <li>{{ gettext("프로세스의 자동화와")}} <a href="http://wikipedia.org/wiki/reproducibility">{{ gettext("재현성") }}</a></li>
+          <li>Open source, open data
+            <ul>
+              <li>개방, 공유, 확산를 표방하는 Creative Commons의 가치 계승</li>
             </ul>
           </li>
-          <li>{{ gettext("이해하기 쉽고 재미있는 시각화를 제공하고자 합니다.") }}
-          <ul>
-            <li>UI, mobile,
-            <li>visualization
-          </ul>
-          </li>
+          <li><s>{{ gettext("세상을 바꾸는 잉여!") }}</s></li>
         </ul>
-      </p>
-
-      <h2 id="values">{{ gettext('가치') }}</h2>
-      <ul>
-        <li>{{ gettext("정치적 중립") }}</li>
-        <li>{{ gettext("프로세스의 자동화와")}} <a href="http://wikipedia.org/wiki/reproducibility">{{ gettext("재현성") }}</a></li>
-        <li>Open source, open data
-          <ul>
-            <li>개방, 공유, 확산를 표방하는 Creative Commons의 가치 계승</li>
-          </ul>
-        </li>
-        <li><s>{{ gettext("세상을 바꾸는 잉여!") }}</s></li>
-      </ul>
+      </div>
+      <div id="members">
+        <h3 id="who-we-are">{{ gettext('우리는') }}...</h3>
+        <ul>
+          {% for name, attrs in YB.items() %}
+          <li id="{{name}}">
+            <h4 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h4>
+            <img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}">
+            <div class="member-description shadow">{{attrs[0]}}</div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="members-past">
+        <h4>{{ gettext("함께했던 사람들") }}</h4>
+        <ul>
+          {% for member in OB.items() %}
+          <li><a href="http://twitter.com/{{ member[0] }}">{{ member[0] }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div id="thanksto">
+        <h4>{{ gettext("고마운 분들") }}</h4>
+        <ul>
+          {% for person in THANKS_TO.items() %}
+          <li>
+          {% if person[1] != '' %}<a href="{{ person[1] }}">{% endif %}
+              {{ person[0] }}{% if person[1] != '' %}</a>{% endif %}</li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-    <div id="members">
-      <h2 id="who-we-are">{{ gettext('우리는') }}...</h2>
-      <ul>
-        {% for name, attrs in YB.items() %}
-        <li id="{{name}}">
-          <h3 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h3>
-          <img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}">
-          <div class="member-description shadow">{{attrs[0]}}</div>
-        </li>
-        {% endfor %}
-        <script src="{{url_for('static', filename='js/popong.js')}}"></script>
-      </ul>
-    </div>
-    <div id="members-past">
-      <h3>{{ gettext("함께했던 사람들") }}</h3>
-      <ul>
-        {% for member in OB.items() %}
-        <li><a href="http://twitter.com/{{ member[0] }}">{{ member[0] }}</a></li>
-        {% endfor %}
-      </ul>
-    </div>
-    <div id="thanksto">
-      <h3>{{ gettext("고마운 분들") }}</h3>
-      <ul>
-        {% for person in THANKS_TO.items() %}
-        <li>
-        {% if person[1] != '' %}<a href="{{ person[1] }}">{% endif %}
-            {{ person[0] }}{% if person[1] != '' %}</a>{% endif %}</li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
-  <div id="right-column" class="span4">
-    <div id="slideshare">
-      <iframe src="http://www.slideshare.net/slideshow/embed_code/12045164" width="100%" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    </div>
-    <div id="contact">
-      {{ gettext("언제나, 어떠한 피드백도 환영입니다!") }}<br>
-      e-mail: <a href="mail:contact@popong.com">contact@popong.com</a>
-    </div>
-    <div id="donations" class="notice">
-      <h3 id="donation-title" class="notice-title">
-        {{ gettext("포퐁 프로젝트는 당신의 후원으로 운영됩니다") }}
-      </h3>
-      <p>
-        {{ gettext("팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다.") }}</p>
-      <p>
-        {{ gettext("저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다.") }}
-        {{ gettext("여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다.") }}
-      </p>
-      <div id="donation-widgets">
-        <div id="gittip">
-          <script data-gittip-username="teampopong"
-            src="https://www.gittip.com/assets/widgets/0002.js">
-          </script>
-        </div>
-        <div id="paypal">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-            ">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
+    <div id="right-column" class="col-md-4">
+      <div id="slideshare">
+        <iframe src="http://www.slideshare.net/slideshow/embed_code/12045164" width="100%" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      </div>
+      <div id="contact">
+        {{ gettext("언제나, 어떠한 피드백도 환영입니다!") }}<br>
+        e-mail: <a href="mail:contact@popong.com">contact@popong.com</a>
+      </div>
+      <div id="donations" class="notice">
+        <h4 id="donation-title" class="notice-title">
+          {{ gettext("포퐁 프로젝트는 당신의 후원으로 운영됩니다") }}
+        </h4>
+        <p>
+          {{ gettext("팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다.") }}</p>
+        <p>
+          {{ gettext("저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다.") }}
+          {{ gettext("여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다.") }}
+        </p>
+        <div id="donation-widgets">
+          <div id="gittip">
+            <script data-gittip-username="teampopong"
+              src="https://www.gittip.com/assets/widgets/0002.js">
+            </script>
+          </div>
+          <div id="paypal">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+              ">
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+          </div>
         </div>
       </div>
     </div>
-    <div class="notice">
-      <h3 class="notice-title">{{ gettext('팀포퐁에서 마케터를 구합니다') }}</h3>
-      <p>{{ gettext('포퐁을 국내외에 널리 알려야 한다고 생각하시는 분들은 이메일로 연락주세요 :)') }}</p>
-    </div>
   </div>
-</div> <!-- /row-fluid -->
-{% endblock %}
+</div>
