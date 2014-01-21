@@ -29,13 +29,6 @@
   -moz-border-radius: @radius;
 }
 
-.box-shadow (@alpha: 30%) when (isnumber(@alpha)) {
-  box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
-  -webkit-box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
-  -moz-box-shadow: inset 0 0 1px rgba(255, 255, 255, @alpha);
-}
-
-
 // ----- layout.html ---------------------------------------------------
 body {
   background-color: @bg_color;
@@ -71,12 +64,23 @@ header {
   left: 0;
   right: 0;
   background: @header_color;
-  border-bottom: 1px solid @border_color;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
   z-index: 1;
 
   .container {
     position: relative;
-    min-height: 50px;
+    height: 50px;
+    transition: height 0.5s ease;
+    -webkit-transition: height 0.5s ease;
+    -moz-transition: height 0.5s ease;
+    overflow: hidden;
+
+    &.large {
+      height: 100px;
+    }
   }
 }
 
@@ -277,7 +281,11 @@ footer {
 // mobile
 @media (max-width: 767px) {
   header .container {
-    min-height: 40px;
+    height: 40px;
+
+    &.large {
+      height: 60px;
+    }
   }
 
   #menu li a {
@@ -324,14 +332,6 @@ footer {
   li:after {
     content: ". ";
   }
-}
-
-.member-box (@img_file: null) {
-  height: 80px;
-  width: 80px;
-  margin: 0 auto;
-  .rounded-corners(40px);
-  .box-shadow;
 }
 
 .slide {
