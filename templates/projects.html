@@ -1,0 +1,35 @@
+<div id="projects" class="page container">
+  <h2>{{ gettext('PROJECTS') }}</h2>
+
+
+  {% if locale=='ko' %}
+  <a href="http://pokr.kr">
+  {% else %}
+  <a href="http://en.pokr.kr">
+  {% endif %}
+    <h3>{{ gettext("대한민국 정치의 모든 것") }}</h3>
+  </a>
+    <p>{{ gettext("1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 가입하면 내가 살고 있는 지역, 내 관심사에 대한 의안 발의 내역을 보여드립니다.") }}</p>
+    <center>
+    </center>
+  <div class="row">
+    <div class="col-md-4">
+      <a href="http://popong.com/nanow">
+      <h3>{{ gettext("국회는 지금") }}</h3>
+      </a>
+      <p>{{ gettext("18대 국회의 정당별, 연령별, 지역별, 성별, 당선횟수별 좌석배치를 볼 수 있어요!") }}</p>
+    </div>
+    <div class="col-md-4">
+      <a href="http://popong.com/iamseoulmayor">
+      <h3>{{ gettext("나는 서울 시장이다!") }}</h3>
+      </a>
+      <p>{{ gettext("2011년 10.26 서울시장 선거를 위해 개발된 서비스. 박원순 후보와 나경원 후보의 프로필, 공약, 그리고 주요 이슈를 담은 타임라인을 한 눈에 비교하기 쉽게 만들었습니다.") }}</p>
+    </div>
+    <div class="col-md-4">
+      <a href="http://popong.com/iamseoulmayor/promotion.html">
+      <h3>{{ gettext("애정선거") }}</h3>
+      </a>
+      <p>{{ gettext("2011년 10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 가까운 후보는 누구인지 알아보러 갈까요?") }}</p>
+    </div>
+  </div>
+</div>
