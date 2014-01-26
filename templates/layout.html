@@ -54,11 +54,8 @@
     {% include "header.html" with context %}
     </header>
 
-    <!-- Container -->
-    <div class="container" id="container">
-      {% block contents %}
-      {% endblock %}
-    </div> <!-- /Container -->
+    {% block contents %}
+    {% endblock %}
 
     <footer>
     {% include "footer.html" with context %}

@@ -50,7 +50,6 @@ h2 {
   font-family: 'Vollkorn', serif;
   color: #111;
   font-size: 36pt;
-  margin-bottom: 1em; 
   text-align: center;
 }
 
@@ -116,17 +115,16 @@ header {
   margin: -10px 0;
 }
 
-#container {
-  margin-top: 90px;
-  margin-bottom: 60px;
-}
-
 .page {
   padding: 3em 0;
-  border-top: 1px solid @border_color;
+  border-bottom: 1px solid @border_color;
 
   &:first-child {
-    border-top: 0;
+    margin-top: 300px;
+  }
+  &:last-child {
+    margin-bottom: 60px;
+    border-bottom: 0;
   }
 }
 
@@ -186,11 +184,11 @@ footer {
 
 .hero-unit {
   padding: 30px 5%;
+  background-image: url('../images/main.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   border: solid 3px white;
-  p {
-    font-size: 11pt;
-    margin: auto;
-  }
+  text-align: center;
 }
 
 
