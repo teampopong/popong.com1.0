@@ -1,15 +1,5 @@
 // LESS
 
-/*
-  author: @teampopong
-  date: 2012-06-00
-  modification logs:
-    2012-07-09 added style descriptions
-    2012-07-15 added palette, mix-ins & nested rules
-    2012-07-24 added member photos
-    2013-01-21 moved direct links to footer
-*/
-
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 // -----  palette ------------------------------------------------
@@ -18,7 +8,8 @@
 @link_color     : #08c;
 @hover_color    : #005580;
 @header_color   : rgba(255, 255, 255, 0.85);
-@footer_color   : rgba(255, 255, 255, 0.85);
+@footer_color   : #223;
+@footer_link_color: #7bb;
 @border_color   : #eee;
 
 
@@ -47,7 +38,6 @@ a {
 }
 
 h2 {
-  font-family: 'Vollkorn', serif;
   color: #111;
   font-size: 36pt;
   text-align: center;
@@ -129,13 +119,13 @@ header {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   background: @footer_color;
   border-top: 1px solid @border_color;
+  color: #fff;
   padding-top: 10px;
+  a, a:hover {
+    color: @footer_link_color;
+  }
 }
 
 .footer-block {
@@ -149,21 +139,18 @@ footer {
 }
 
 #sociallinks {
-  position: relative;
+  margin-top: 40px;
   #fb {
-    float: left;
     margin: 0 5px;
     width: 76px;
   }
   #tw {
-    float: left;
     margin: 0 5px;
     display: inline-block;
   }
 }
 
 #directlinks {
-  float: right;
   img {
     padding: 0 3px;
   }
@@ -183,7 +170,6 @@ footer {
 }
 
 .hero-unit {
-  padding: 30px 5%;
   background-image: url('../images/main.jpg');
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -292,6 +278,10 @@ footer {
 
   .logo {
     height: 80px;
+  }
+
+  .hero-unit {
+    margin-top: 58px;
   }
 }
 
