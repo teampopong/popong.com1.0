@@ -9,7 +9,7 @@
 @hover_color    : #005580;
 @header_color   : rgba(255, 255, 255, 0.85);
 @footer_color   : #223;
-@footer_link_color: #7bb;
+@footer_link_color: #9ee;
 @border_color   : #eee;
 
 
@@ -107,14 +107,14 @@ header {
 
 .page {
   padding: 3em 0;
-  border-bottom: 1px solid @border_color;
+  border-top: 1px solid @border_color;
 
   &:first-child {
-    margin-top: 300px;
+    margin-top: 20%;
+    border-top: 0;
   }
   &:last-child {
     margin-bottom: 60px;
-    border-bottom: 0;
   }
 }
 
@@ -254,6 +254,10 @@ footer {
     li{
       margin: 0 2% 15px;
     }
+  }
+
+  .page:first-child {
+    margin-top: 40%;
   }
 }
 
