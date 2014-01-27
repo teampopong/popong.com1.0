@@ -1,7 +1,19 @@
 {% extends 'layout.html' %}
 
+{% block extra_headers %}
+table {
+  margin: 3em 0;
+}
+
+#source-type {
+  background-color: #dff0d8;
+  font-weight: bold;
+}
+{% endblock %}
+
 {% block contents %}
-<div class="page">
+<div class="page container beginning">
+<h2 class="page-title">Sources</h2>
 <p>
 {{ gettext("팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다.") }}<br>
 {{ gettext("정부에서 공식적으로 제공하는 데이터를 최우선적으로 사용하고, 필요에 따라 국내외 민간 기관과 개인이 생성한 데이터를 이용합니다.") }}<br>

@@ -2,18 +2,23 @@
 
 {% block extra_headers %}
 <style>
-h2 {
+h3 {
     margin-top: 70px;
-    border-top: 5px solid #eee;
+    border-top: 3px solid #eee;
+    font-size: 27pt;
     padding-top: 30px;
+}
+h3:first-child {
+    border-top: 0;
+    padding-top: 0;
 }
 </style>
 {% endblock %}
 
 {% block contents %}
-<div class="page">
-<h1>대한민국 정치의 모든 것 FAQ</h1>
-<h2 id="저는-뉴스만으로-충분한-정치-정보를-받는-것-같은데요">저는 뉴스만으로 충분한 정치 정보를 받는 것 같은데요?</h2>
+<div class="page container beginning">
+<h2 class="page-title">FAQ</h2>
+<h3 id="저는-뉴스만으로-충분한-정치-정보를-받는-것-같은데요">저는 뉴스만으로 충분한 정치 정보를 받는 것 같은데요?</h3>
 <ul>
 <li>음악을 들을 때 '인기곡 100'을 들을 수 있고, 나에게 맞는 '추천음악' 받아 들을 수도 있습니다.</li>
 <li>정치 이슈에서 기존의 언론/미디어는 '인기곡 100', 대정모는 '추천음악'입니다.</li>
@@ -21,16 +26,16 @@ h2 {
 <div class="figure">
     <img width="700px" src="{{ url_for('static', filename='images/recommendation.png') }}" /><p class="caption"></p>
 </div>
-<h2 id="왜-의안이죠">왜 의안이죠?</h2>
+<h3 id="왜-의안이죠">왜 의안이죠?</h3>
 <div class="figure">
 <img width="700px" src="{{ url_for('static', filename='images/bills.png') }}" /><p class="caption"></p>
 </div>
-<h2 id="기존-서비스와-다른-점은">기존 서비스와 다른 점은?</h2>
+<h3 id="기존-서비스와-다른-점은">기존 서비스와 다른 점은?</h3>
 <ul>
 <li><img width="700px" src="{{ url_for('static', filename='images/comparison-screenshot.png') }}" /></li>
 <li><img width="700px" src="{{ url_for('static', filename='images/comparison.png') }}" /></li>
 </ul>
-<h2 id="지속가능성sustainability은">지속가능성(sustainability)은?</h2>
+<h3 id="지속가능성sustainability은">지속가능성(sustainability)은?</h3>
 <div class="figure">
 <img width="700px" src="{{ url_for('static', filename='images/autoupdate.png') }}" /><p class="caption"></p>
 </div>
@@ -39,7 +44,7 @@ h2 {
 <li>개발을 제외한 <strong>모든 부분을 자동화</strong>하여 유지 비용 최소화</li>
 <li>코드가 오픈 소스로 공개되어 있어, 지금 당장 팀원이 전부 그만두더라도 누구나 서버 한 대만 있으면 운영 가능</li>
 </ul>
-<h2 id="페이스북-외에-다른-가입로그인-경로는-없나요">페이스북 외에 다른 가입/로그인 경로는 없나요?</h2>
+<h3 id="페이스북-외에-다른-가입로그인-경로는-없나요">페이스북 외에 다른 가입/로그인 경로는 없나요?</h3>
 <div class="figure">
     <img width="200px" src="{{ url_for('static', filename='images/oauth.png') }}" /><p class="caption"></p>
 </div>
@@ -52,28 +57,28 @@ h2 {
 <li>가입 절차 간소화 (one-click)</li>
 </ol></li>
 </ul>
-<h2 id="어려워서-잘-이해가-안돼요.">어려워서 잘 이해가 안돼요.</h2>
+<h3 id="어려워서-잘-이해가-안돼요">어려워서 잘 이해가 안돼요.</h3>
 <p><strong>&lt;(오늘을 통해 이해하는) 쉬운 의안 풀이&gt;</strong> 기획 중!</p>
 <img width="700px" src="{{ url_for('static', filename='images/dragonballs-popong.png') }}" />
-<h2 id="나와의-연관성을-못-찾겠어요.">나와의 연관성을 못 찾겠어요.</h2>
+<h3 id="나와의-연관성을-못-찾겠어요">나와의 연관성을 못 찾겠어요.</h3>
 <ul>
 <li>내 것인데도요?!</li>
 </ul>
 <div class="figure">
 <img width="700px" src="{{ url_for('static', filename='images/me.png') }}" /><p class="caption"></p>
 </div>
-<h2 id="데이터-공개를-할-건가요">데이터 공개를 할 건가요?</h2>
+<h3 id="데이터-공개를-할-건가요">데이터 공개를 할 건가요?</h3>
 <ul>
 <li><img width="700px" src="{{ url_for('static', filename='images/apps.png') }}" /></li>
 </ul>
-<h2 id="객관성-및-중립성은-어떻게-보장하나요">객관성 및 중립성은 어떻게 보장하나요?</h2>
+<h3 id="객관성-및-중립성은-어떻게-보장하나요">객관성 및 중립성은 어떻게 보장하나요?</h3>
 <ol style="list-style-type: decimal">
 <li>검증된 정부의 공식 자료만 사용<br>
 <img width="700px" src="{{ url_for('static', filename='images/crawling.png') }}" />
 <li>데이터 수집기 웹 상에 완전 공개<br>
 <img width="700px" src="{{ url_for('static', filename='images/crawlers.png') }}" />
 </ol>
-<h2 id="선거에서-초선-출마-후보는-어떤-식으로-검증하나요">선거에서 초선 출마 후보는 어떤 식으로 검증하나요?</h2>
+<h3 id="선거에서-초선-출마-후보는-어떤-식으로-검증하나요">선거에서 초선 출마 후보는 어떤 식으로 검증하나요?</h3>
 <ul>
 <li>현재 대정모는 대한민국 1-19대 국회 후보자 및 당선자에 대한 데이터를 비롯, 지방자치선거, 대통령선거에 대한 방대한 데이터를 보유하고 있습니다. (약 15만명 분)</li>
 <li>초선 출마 후보자의 성향은 실제 정치경력이 있는 기존 인물들과의 유사성을 계산하여 예측할 수 있습니다. (데이터마이닝 기술 활용)</li>

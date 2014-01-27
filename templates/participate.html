@@ -1,43 +1,19 @@
 <div id="participate" class="page container">
-  <h2 class="section-title">PARTICIPATE</h2>
-  <div class="row">
-    <div class="col-md-8" style="margin-bottom: 40px;">
-      <p class="section-description">{{ gettext('당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법.') }}</p>
-      <ol class="section-items">
-        <li><a href="http://facebook.com/teampopong">포퐁 페이스북 페이지</a>에서 좋아요를 꾸욱 누른다.</li>
-        <li><a href="http://teampopong.uservoice.com">피드백 포럼</a>에서 아이디어를 제시하고 마음에 드는 다른 유저들의 아이디어에 투표하고 토론한다.</li>
-        <li><a href="http://blog.popong.com/ko">포퐁 블로그</a>를 구독한다.</li>
-        <li><a href="http://github.com/teampopong">포퐁 깃헙</a>에서 이슈들을 보며 직접 pull request를 보낸다.</li>
-        <li>주변 사람들에게 열심히 홍보한다.</li>
-        <li>후원한다!</li>
-      </ol>
-    </div>
-    <div class="col-md-4 notice">
-      <h4 id="donation-title" class="notice-title">
-        {{ gettext("포퐁 프로젝트는 당신의 후원으로 운영됩니다") }}
-      </h4>
+  <h2 class="page-title">Participate</h2>
+  <p class="section-description">{{ gettext('당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법.') }}</p>
+  <ol class="section-items">
+    <li><a href="http://facebook.com/teampopong">포퐁 페이스북 페이지</a>에서 좋아요를 꾸욱 누른다.</li>
+    <li><a href="http://teampopong.uservoice.com">피드백 포럼</a>에서 아이디어를 제시하고 마음에 드는 다른 유저들의 아이디어에 투표하고 토론한다.</li>
+    <li><a href="http://blog.popong.com/ko">포퐁 블로그</a>를 구독한다.</li>
+    <li><a href="http://github.com/teampopong">포퐁 깃헙</a>에서 이슈들을 보며 직접 pull request를 보낸다.</li>
+    <li>주변 사람들에게 열심히 홍보한다.</li>
+    <li>후원한다!
       <p>
-        {{ gettext("팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다.") }}</p>
-      <p>
+        {{ gettext("팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다.") }}
         {{ gettext("저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다.") }}
         {{ gettext("여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다.") }}
+        {% include 'donate.html' %}
       </p>
-      <div id="donation-widgets">
-        <div id="gittip">
-          <script data-gittip-username="teampopong"
-    src="https://www.gittip.com/assets/widgets/0002.js">
-          </script>
-        </div>
-        <div id="paypal">
-          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-            <input type="hidden" name="cmd" value="_s-xclick">
-            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-      ">
-            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
+    </li>
+  </ol>
 </div>

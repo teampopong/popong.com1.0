@@ -23,20 +23,29 @@ PopongBabel(app, **BABEL_SETTINGS)
 
 @app.route('/')
 def home():
-    return render_template('main.html',
-            YB=members.YB, OB=members.OB, THANKS_TO=members.THANKS_TO,
-            dirlinks=DIRLINKS, active_page='Home')
+    return render_template('main.html', dirlinks=DIRLINKS)
 
+@app.route('/team')
+def team():
+    return render_template('team.html',
+            YB=members.YB, OB=members.OB, partners=members.PARTNERS,
+            dirlinks=DIRLINKS)
+
+@app.route('/blog')
+def blog():
+    return redirect('http://blog.popong.com')
 
 @app.route('/faq')
 def faq():
-    return render_template('faq.html')
-
+    return render_template('faq.html', dirlinks=DIRLINKS)
 
 @app.route('/sources')
 def sources():
-    return render_template('sources.html')
+    return render_template('sources.html', dirlinks=DIRLINKS)
 
+@app.route('/philosophy')
+def philosophy():
+    return render_template('philosophy.html', dirlinks=DIRLINKS)
 
 def cmd_args():
     from argparse import ArgumentParser

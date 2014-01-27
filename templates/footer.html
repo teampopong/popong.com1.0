@@ -1,9 +1,26 @@
 <div class="container">
-  <div id="copyright" class="footer-block">
-    <p>&copy; 2011-2014 <a href="mailto:contact@popong.com">{{ gettext('팀포퐁') }}</a></p>
-  </div>
-  <div id="directlinks" class="footer-block">
-    {% for title, url in dirlinks %}
-    <a href="{{url}}" target="_blank" title="{{title}}"><img class="icons" src="{{ url_for('static', filename='images/icon-%s.png' % title) }}" alt="{{title}} logo"></a>{% endfor %}
+  <div class="row">
+    <div class="col-md-5">
+      <img src="{{ url_for('static', filename='images/popong-logo-2.png') }}">
+      <p>
+      팀포퐁은 기술을 바탕으로 정치를 보다 쉽고 재미있게 하기 위한 비영리, 무소속의 중립적 단체입니다.
+      Team POPONG is a nonprofit, nonpartisan group in Korea that aims to make politics easy and fun via technology.</p>
+      <div id="copyright" class="footer-block">&copy; 2011-2014 <a href="mailto:contact@popong.com">{{ gettext('팀포퐁') }}</a></div>
+    </div>
+    <div class="col-md-6 col-md-offset-1 row">
+      <div class="links col-md-6">
+        <h3>About Us</h3>
+        <a href="{{ url_for('team') }}">Team</a>
+        <a href="{{ url_for('blog') }}">Blog</a>
+        <a href="{{ url_for('philosophy') }}">Philosophy</a>
+        <a href="{{ url_for('sources') }}">Sources</a>
+        <a href="{{ url_for('faq') }}">FAQ</a>
+      </div>
+      <div class="links col-md-6">
+        <h3>Social Links</h3>
+        {% for title, url in dirlinks %}
+        <a href="{{url}}" target="_blank" title="{{title}}">{{title}}</a>{% endfor %}
+      </div>
+    </div>
   </div>
 </div>
