@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2014-01-27 17:48+0900\n"
+"POT-Creation-Date: 2014-01-27 17:57+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgstr "You can access the customized data anytime, anywhere"
 
 #: templates/intro.html:3
 msgid "당신의 일상 속"
-msgstr "Doing politics"
+msgstr "Discover politics"
 
 #: templates/intro.html:3
 msgid "정치를 발견하다"
