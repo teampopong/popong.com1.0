@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2014-01-19 20:49+0900\n"
+"POT-Creation-Date: 2014-01-27 17:48+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -17,132 +17,183 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
 
-#: templates/about.html:2
-msgid "ABOUT"
-msgstr "ABOUT"
-
-#: templates/about.html:6
-msgid "목표"
-msgstr "Objectives"
-
-#: templates/about.html:9
-msgid "누구나 정치에 대해 알 권리가 있습니다."
-msgstr "Everyone has the right to know about their society."
-
-#: templates/about.html:10
-msgid "그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다."
-msgstr ""
-"Therefore politics should be easy, and political data should be "
-"accessible."
-
-#: templates/about.html:13
-msgid "팀포퐁은 이러한 철학 하에서"
-msgstr "For this, Team POPONG aims to"
-
-#: templates/about.html:15
-msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
-msgstr "enhance global accessability and usability of Korean political data"
-
-#: templates/about.html:23
-msgid "이해하기 쉽고 재미있는 시각화를 제공하고자 합니다."
-msgstr "and provide easy and interesting visualizations."
-
-#: templates/about.html:32
-msgid "가치"
-msgstr "Values"
-
-#: templates/about.html:34
-msgid "정치적 중립"
-msgstr "Political neutrality"
-
-#: templates/about.html:35
-msgid "프로세스의 자동화와"
-msgstr "Process automation and"
-
-#: templates/about.html:35
-msgid "재현성"
-msgstr "reproducibility"
-
-#: templates/about.html:41
-msgid "세상을 바꾸는 잉여!"
-msgstr "The change nerds want to see in the world"
-
-#: templates/about.html:45
-msgid "우리는"
-msgstr "We are"
-
-#: templates/about.html:57
-msgid "함께했던 사람들"
-msgstr "Past members"
-
-#: templates/about.html:65
-msgid "고마운 분들"
-msgstr "Thanks to"
-
-#: templates/about.html:88
-msgid "언제나, 어떠한 피드백도 환영입니다!"
-msgstr "Any kind of feedback is always welcome!"
-
-#: templates/footer.html:3
+#: templates/footer.html:8
 msgid "팀포퐁"
 msgstr "Team POPONG"
 
-#: templates/intro.html:4
-msgid "나는 정치에 관심이 있다? 없다?"
-msgstr "Are you interested in Korean politics?"
+#: templates/how.html:3
+msgid "공공데이터를 매일 자동으로 수집합니다"
+msgstr "We collect data from government resources using automated processes"
 
-#: templates/intro.html:5
-msgid ""
-"<b>팀 포퐁(POPONG: Public Open POlitics engineeriNG)</b>은 인터넷을 통한 시민들의 사회참여가"
-" 정치에 미치는 영향에 대한 학술적 연구 및 실제적 변화를 목표로 하는 재능기부 그룹입니다. 일상생활 속의 정치참여를 상상하는 "
-"직장인, 학생들의 잉여시간을 모아모아 활동합니다."
-msgstr ""
-"Team POPONG is a non-profit volunteer team whose goal is to organize "
-"Korean political information and make it universally accessible and "
-"useful. (Yes, it parodies Google's mission.)"
+#: templates/how.html:5
+msgid "나의 관심정보만 선별해서 보여줍니다"
+msgstr "Data selected by your interests are delivered to you"
+
+#: templates/how.html:7
+msgid "언제 어디서든 편리하게 정보를 받아볼 수 있게 합니다"
+msgstr "You can access the customized data anytime, anywhere"
+
+#: templates/intro.html:3
+msgid "당신의 일상 속"
+msgstr "Doing politics"
+
+#: templates/intro.html:3
+msgid "정치를 발견하다"
+msgstr "in our ordinary lives"
+
+#: templates/intro.html:4
+msgid "누구나 정치를 쉽고 재미있게"
+msgstr "We believe politics can be"
+
+#: templates/intro.html:4
+msgid "이해할 수 있는 세상을 지향합니다"
+msgstr "fun, and easy to understand"
+
+#: templates/participate.html:3
+msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법."
+msgstr "There are six ways for you to contribute"
 
 #: templates/participate.html:5
-msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법."
-msgstr "Contribute to us! 6 ways for you to help us."
+msgid "포퐁 페이스북 페이지"
+msgstr "At our Facebook page"
 
-#: templates/participate.html:17
-msgid "포퐁 프로젝트는 당신의 후원으로 운영됩니다"
-msgstr "The POPONG project is run by you"
+#: templates/participate.html:5
+msgid "에서 좋아요를 꾸욱 누른다."
+msgstr " 'like' us!"
 
-#: templates/participate.html:20
+#: templates/participate.html:6
+msgid "피드백 포럼"
+msgstr "At our feedback forum"
+
+#: templates/participate.html:6
+msgid "에서 아이디어를 제시하고 마음에 드는 다른 유저들의 아이디어에 투표하고 토론한다."
+msgstr " suggest ideas or vote on other users' ideas. (In Korean)"
+
+#: templates/participate.html:7
+msgid "http://blog.popong.com/ko"
+msgstr "http://blog.popong.com/en"
+
+#: templates/participate.html:7
+msgid "포퐁 블로그"
+msgstr "Our blog"
+
+#: templates/participate.html:7
+msgid "를 구독한다."
+msgstr " is open to anyone who'd like to subscribe."
+
+#: templates/participate.html:8
+msgid "포퐁 코드저장소"
+msgstr "Our code repository"
+
+#: templates/participate.html:8
+msgid "에서 이슈들을 보며 직접 pull request를 보낸다."
+msgstr " is open to anyone who'd like to send pull-requests."
+
+#: templates/participate.html:9
+msgid "주변 사람들에게 열심히 홍보한다."
+msgstr "Tell your friends about Team POPONG."
+
+#: templates/participate.html:10
+msgid "후원한다!"
+msgstr "Donate!"
+
+#: templates/participate.html:12
 msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
 msgstr ""
 "Team POPONG is an independent orgranization that pursues political "
 "neutrality."
 
-#: templates/participate.html:22
+#: templates/participate.html:13
 msgid "저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다."
 msgstr "If you agree with our objectives and values, please consider a donation."
 
-#: templates/participate.html:23
+#: templates/participate.html:14
 msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
 msgstr "Your generous donations are used to keep our work going."
 
-#: templates/services.html:2
-msgid "SERVICES"
-msgstr "SERVICES"
+#: templates/philosophy.html:27
+msgid "목표"
+msgstr "Objectives"
 
-#: templates/services.html:5
-msgid "포커"
-msgstr "Pokr"
+#: templates/philosophy.html:30
+msgid "누구나 정치에 대해 알 권리가 있습니다."
+msgstr "Everyone has the right to know about their society."
 
-#: templates/services.html:15
-msgid "1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 대한민국 정치의 모든 것."
+#: templates/philosophy.html:31
+msgid "그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다."
+msgstr ""
+"Therefore politics should be easy, and political data should be "
+"accessible."
+
+#: templates/philosophy.html:34
+msgid "팀포퐁은 이러한 철학 하에서"
+msgstr "For this, Team POPONG aims to"
+
+#: templates/philosophy.html:36
+msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
+msgstr "enhance global accessability and usability of Korean political data"
+
+#: templates/philosophy.html:44
+msgid "이해하기 쉽고 재미있는 시각화를 제공하고자 합니다."
+msgstr "and provide easy and interesting visualizations."
+
+#: templates/philosophy.html:53
+msgid "가치"
+msgstr "Values"
+
+#: templates/philosophy.html:55
+msgid "정치적 중립"
+msgstr "Political neutrality"
+
+#: templates/philosophy.html:56
+msgid "프로세스의 자동화와"
+msgstr "Process automation and"
+
+#: templates/philosophy.html:56
+msgid "재현성"
+msgstr "reproducibility"
+
+#: templates/philosophy.html:58
+msgid "세상을 바꾸는 잉여!"
+msgstr "The change nerds want to see in the world"
+
+#: templates/philosophy.html:64 templates/projects.html:10
+#: templates/sources.html:27
+msgid "대한민국 정치의 모든 것"
+msgstr "Politics in Korea"
+
+#: templates/philosophy.html:64
+msgid "요약자료"
+msgstr "summary"
+
+#: templates/philosophy.html:68
+msgid "한국 시맨틱 웹 컨퍼런스 2013"
+msgstr "2013 Korean semantic web conference"
+
+#: templates/projects.html:12
+msgid ""
+"1대부터 19대까지의 국회의원 후보자와 당선자와 그들이 발의한 의안을 이 곳에서 보세요! 가입하면 내가 살고 있는 지역, 내 "
+"관심사에 대한 의안 발의 내역을 보여드립니다."
 msgstr ""
 "Pokr[ˈpō-kər] aims to list all politicians and bills in South Korea. It "
 "currently contains over 14,000 candidates and elected officials of the "
 "National Assembly Election."
 
-#: templates/services.html:18
-msgid "나는 서울 시장이다!"
-msgstr "I am the Seoul Mayor!"
+#: templates/projects.html:18
+msgid "국회는 지금"
+msgstr "National assembly, now"
 
-#: templates/services.html:22
+#: templates/projects.html:20
+msgid "18대 국회의 정당별, 연령별, 지역별, 성별, 당선횟수별 좌석배치를 볼 수 있어요!"
+msgstr ""
+"The 18th National Assembly seats by party, age, region, gender, and "
+"n(elected). (Only available in Korean)"
+
+#: templates/projects.html:24
+msgid "나는 서울 시장이다!"
+msgstr "I'm the Seoul Mayor!"
+
+#: templates/projects.html:26
 msgid ""
 "2011년 10.26 서울시장 선거를 위해 개발된 서비스. 박원순 후보와 나경원 후보의 프로필, 공약, 그리고 주요 이슈를 담은 "
 "타임라인을 한 눈에 비교하기 쉽게 만들었습니다."
@@ -152,226 +203,210 @@ msgstr ""
 "candidates' profiles, pledges, and major issues. (Only available in "
 "Korean.)"
 
-#: templates/services.html:25
+#: templates/projects.html:30
 msgid "애정선거"
 msgstr "Baffling Election"
 
-#: templates/services.html:29
+#: templates/projects.html:32
 msgid ""
-"10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과 가장 "
-"가까운 후보는 누구인지 알아보러 갈까요?"
+"2011년 10.26 서울시장 선거 후보들의 공약을 무작위로 보여주며, 나와 가장 잘 맞는 후보를 추천해주는 서비스! 당신의 성향과"
+" 가장 가까운 후보는 누구인지 알아보러 갈까요?"
 msgstr ""
 "A blind test to find out which candidate of the 2011 Seoul Mayor Election"
 " is the best fit for you! Based on candidates' pledges. (Only available "
 "in Korean.)"
 
-#: templates/services.html:32
-msgid "프로토타입"
-msgstr "PROTOTYPES"
-
-#: templates/services.html:33
-msgid "실험작, 프로토타입, 인큐베이팅 프로젝트들."
-msgstr "Experimens, prototypes, incubating projects."
-
-#: templates/services.html:35
-msgid "국회는 지금"
-msgstr "National assembly is now..."
-
-#: templates/sources.html:6
+#: templates/sources.html:18
 msgid "팀 포퐁은 대한민국 웹에 공개된 다양한 데이터를 기계적으로 처리하여 제공합니다."
 msgstr "Team POPONG handles a variety of data on the web."
 
-#: templates/sources.html:7
+#: templates/sources.html:19
 msgid "정부에서 공식적으로 제공하는 데이터를 최우선적으로 사용하고, 필요에 따라 국내외 민간 기관과 개인이 생성한 데이터를 이용합니다."
 msgstr ""
 "We primarily employ official government sources and use private data as "
 "supplements."
 
-#: templates/sources.html:9
+#: templates/sources.html:21
 msgid "데이터를 기꺼이 공유해주신 분들께 깊은 감사를 드립니다."
 msgstr "We thank those who have willingly shared their data with the public."
 
-#: templates/sources.html:15
-msgid "대한민국 정치의 모든 것"
-msgstr "Pokr(Politics in KoRea)"
-
-#: templates/sources.html:16
+#: templates/sources.html:28
 msgid "정치용어집"
 msgstr "Glossary of Korean Political Terms"
 
-#: templates/sources.html:17
+#: templates/sources.html:29
 msgid "코드북"
 msgstr "Codebook"
 
-#: templates/sources.html:23
+#: templates/sources.html:35
 msgid "정부공식기관"
 msgstr "Official government sources"
 
-#: templates/sources.html:28
+#: templates/sources.html:40
 msgid "대한민국 국회"
 msgstr "Korean National Assembly"
 
-#: templates/sources.html:32
+#: templates/sources.html:44
 msgid "역대 국회의원 선거구 및 당적 (pdf)"
 msgstr "Districts and party affiliations of past National Assembly members"
 
-#: templates/sources.html:33
+#: templates/sources.html:45
 msgid "의원광장"
 msgstr "Assembly members"
 
-#: templates/sources.html:34 templates/sources.html:40
+#: templates/sources.html:46 templates/sources.html:52
 msgid "의안정보시스템"
 msgstr "National Assembly Bill Information System"
 
-#: templates/sources.html:34
+#: templates/sources.html:46
 msgid "국회 회의록 및 의안 원문"
 msgstr "National Assembly minutes and text of legislation"
 
-#: templates/sources.html:35
+#: templates/sources.html:47
 msgid "영상회의록시스템"
 msgstr "VOD service for conferences"
 
-#: templates/sources.html:35
+#: templates/sources.html:47
 msgid "본회의, 예결위, 상임위, 특별위 등 회의의 요약 정보"
 msgstr "Summaries of Plenary Sessions, Standing Committees, and Special Committees"
 
-#: templates/sources.html:36
+#: templates/sources.html:48
 msgid "회의록시스템"
 msgstr "VOD service for conferences"
 
-#: templates/sources.html:36
+#: templates/sources.html:48
 msgid "본회의, 상임위 등 회의의 일정 및 회의록"
 msgstr "Summaries of Plenary Sessions, Standing Committees, and Special Committees"
 
-#: templates/sources.html:41
+#: templates/sources.html:53
 msgid "용어의 의미"
 msgstr "Explanations of terms"
 
-#: templates/sources.html:47
+#: templates/sources.html:59
 msgid "중앙선거관리위원회"
 msgstr "National Election Committee"
 
-#: templates/sources.html:51 templates/sources.html:53
-#: templates/sources.html:55 templates/sources.html:57
-#: templates/sources.html:65
+#: templates/sources.html:63 templates/sources.html:65
+#: templates/sources.html:67 templates/sources.html:69
+#: templates/sources.html:77
 msgid "선거통계시스템"
 msgstr "Election Information System"
 
-#: templates/sources.html:52
+#: templates/sources.html:64
 msgid "1~18대 국회의원 선거 후보자/당선인 데이터"
 msgstr "1~18th National Assembly Election candidates/officials data"
 
-#: templates/sources.html:54
+#: templates/sources.html:66
 msgid "19대 국회의원 선거 후보자/당선인 데이터"
 msgstr "19th National Assembly Election candidates/officials data"
 
-#: templates/sources.html:56
+#: templates/sources.html:68
 msgid "19대 국회의원 공약 데이터"
 msgstr "19th National Assembly members' pledges"
 
-#: templates/sources.html:58
+#: templates/sources.html:70
 msgid "2013년 상반기 재보궐선거 (19대)"
 msgstr "By-election in the first half of 2013 (19th National Assembly)"
 
-#: templates/sources.html:59
+#: templates/sources.html:71
 msgid "알림광장"
 msgstr "Online bulletin board"
 
-#: templates/sources.html:60
+#: templates/sources.html:72
 msgid "정치인들이 받은 선거 자금 내역"
 msgstr "Political fund records"
 
-#: templates/sources.html:66
+#: templates/sources.html:78
 msgid "선거구-행정구역(읍면동) 매핑"
 msgstr "Electoral district-administrative division mapping"
 
-#: templates/sources.html:71
+#: templates/sources.html:83
 msgid "국회사무처"
 msgstr "National Assembly Secretariat"
 
-#: templates/sources.html:75
+#: templates/sources.html:87
 msgid "용어의 한글-영문 매핑"
 msgstr "Korean-English mapping of terms"
 
-#: templates/sources.html:81
+#: templates/sources.html:93
 msgid "법제처"
 msgstr "Korea Ministry of Government Legislation"
 
-#: templates/sources.html:85
+#: templates/sources.html:97
 msgid "법령용어한영사전"
 msgstr "Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:85
+#: templates/sources.html:97
 msgid "제2판"
 msgstr "2nd edition"
 
-#: templates/sources.html:91
+#: templates/sources.html:103
 msgid "국가법령정보센터"
 msgstr "Korea Law Service Center"
 
-#: templates/sources.html:95
+#: templates/sources.html:107
 msgid "법령용어검색"
 msgstr "Search legislative terms"
 
-#: templates/sources.html:95
+#: templates/sources.html:107
 msgid "법령한영사전 포함"
 msgstr "including Korean-English dictionary of legislative terms"
 
-#: templates/sources.html:101
+#: templates/sources.html:113
 msgid "통계청"
 msgstr "KOSTAT"
 
-#: templates/sources.html:106
+#: templates/sources.html:118
 msgid "한국행정구역분류 코드"
 msgstr "South Korea administrative division codes"
 
-#: templates/sources.html:111
+#: templates/sources.html:123
 msgid "안전행정부"
 msgstr "Ministry of Security and Public Administration"
 
-#: templates/sources.html:117 templates/sources.html:119
+#: templates/sources.html:129 templates/sources.html:131
 msgid "행정표준코드관리시스템"
 msgstr "Administrative Code Management System"
 
-#: templates/sources.html:118
+#: templates/sources.html:130
 msgid "기관코드"
 msgstr "Institution codes"
 
-#: templates/sources.html:120
+#: templates/sources.html:132
 msgid "학과, 학력 등 코드"
 msgstr "and other codes"
 
-#: templates/sources.html:126
+#: templates/sources.html:138
 msgid "민간기관"
 msgstr "Private institutions"
 
-#: templates/sources.html:131
+#: templates/sources.html:143
 msgid "대한민국헌정회"
 msgstr "Constitutional Government Society of the Republic of Korea"
 
-#: templates/sources.html:134
+#: templates/sources.html:146
 msgid "헌정회 소속 국회의원 데이터"
 msgstr "Members of the Constitutional Government Society"
 
-#: templates/sources.html:141
+#: templates/sources.html:153
 msgid "개인"
 msgstr "Individuals"
 
-#: templates/sources.html:149
+#: templates/sources.html:161
 msgid "현직 국회의원 블로그/SNS 데이터"
 msgstr "Politicians' blog, SNS links"
 
-#: templates/sources.html:159
+#: templates/sources.html:171
 msgid "한자, 한글 매핑 데이터"
 msgstr "Hanja-Hangul mapping data"
 
-#: templates/sources.html:167
+#: templates/sources.html:179
 msgid "가공된 데이터는 차후 다운로드 및 API로 제공할 예정입니다."
 msgstr ""
 "We are planning to distribute the preprocessed data via batch downloads "
 "and APIs."
 
-#: templates/sources.html:168
+#: templates/sources.html:180
 msgid ""
 "그 이전에 가공된 데이터가 필요하신 분은 <a "
 "href='mailto:contact@popong.com'>contact@popong.com</a>으로 연락주시기 바랍니다."
