@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block extra_headers %}
+<style>
+.member-img {
+  width: 120px;
+  height: 120px;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+</style>
+{% endblock %}
+
+{% block contents%}
+<div class="page container beginning">
+<h2 class="page-title">The team</h2>
+<div id="members">
+  <ul>
+    {% for name, attrs in YB.items() %}
+    <li id="{{name}}">
+      <div class="circular-image"><img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}"></div>
+      <h4 class="member-name">{% if name in ['weirdclaire', 'fc_j', 'strayleone', 'ysohn', 'jihye'] %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h4>
+      <div class="member-description shadow">{{attrs[0]}}</div>
+    </li>
+    {% endfor %}
+    {% for name, attrs in OB.items() %}
+    <li id="{{name}}">
+      <div class="circular-image"><img class="member-img gray opaque" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}"></div>
+      <h4 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h4>
+      <div class="member-description shadow">{{attrs[0]}}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+<div id="partners">
+<h2 class="page-title">Partners</h2>
+  <ul>
+    {% for name, url in partners.items() %}
+    <li>
+    {% if url != '' %}<a href="{{ url }}">{% endif %}
+      <img src="{{ url_for('static', filename='images/%s.png' % name) }}">
+    {% if url != '' %}</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>
+</div>
+{% endblock %}

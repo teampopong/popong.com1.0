@@ -1,16 +1,19 @@
 // LESS
 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
-// -----  palette ------------------------------------------------
-@bg_color       : white;
-@font_color     : #222;
-@link_color     : #08c;
-@hover_color    : #005580;
-@header_color   : rgba(255, 255, 255, 0.85);
-@footer_color   : #223;
-@footer_link_color: #9ee;
-@border_color   : #eee;
+// ----- variables ------------------------------------------------
+
+@bg_color           : white;
+@font_color         : #222;
+@link_color         : #08c;
+@hover_color        : #005580;
+@header_color       : rgba(255, 255, 255, 0.85);
+@footer_color       : #32302b;
+@footer_link_color  : #aaa69d;
+@footer_hover_color : #f1f0ef;
+@border_color       : #eee;
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 
 // ----- mixins --------------------------------------------------
@@ -20,15 +23,45 @@
   -moz-border-radius: @radius;
 }
 
-// ----- layout.html ---------------------------------------------------
+.box-shadow {
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.transition {
+  transition: height 0.5s ease;
+  -webkit-transition: height 0.5s ease;
+  -moz-transition: height 0.5s ease;
+}
+.circular-image img {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.opaque {
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* msie */
+}
+
+
+// ----- common ---------------------------------------------------
 body {
   background-color: @bg_color;
   color: @font_color;
-}
-
-body, p {
   font-family: calibri, 'Nanum Gothic', sans-serif;
-  font-size: 13pt;
+  font-size: 12pt;
 }
 
 a {
@@ -39,13 +72,19 @@ a {
 }
 
 h2 {
-  color: #111;
   font-size: 36pt;
-  text-align: center;
 }
 
-h3 {
-  margin: 1em 0 0.5em;
+span {
+  display: inline-block;
+}
+
+
+// ----- layout.html ---------------------------------------------------
+
+.logo {
+  height: 120px;
+  margin: -10px 0;
 }
 
 header {
@@ -55,56 +94,74 @@ header {
   right: 0;
   background: @header_color;
   border-bottom: 1px solid #ccc;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
-  -moz-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.33);
+  .box-shadow;
   z-index: 1;
 
   .container {
     position: relative;
     height: 50px;
-    transition: height 0.5s ease;
-    -webkit-transition: height 0.5s ease;
-    -moz-transition: height 0.5s ease;
     overflow: hidden;
+    .transition;
 
     &.large {
       height: 100px;
     }
   }
-}
 
-#menu {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding-right: 15px;
-  margin-top: 0;
-  margin-bottom: 0;
+  #menu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 15px;
+    margin-top: 0;
+    margin-bottom: 0;
 
-  li {
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
+    li {
+      display: inline-block;
+      font-family: 'Raleway', sans-serif;
 
-    &.active {
-      background: rgba(242, 242, 242, 0.8);
-    }
-
-    a {
-      color: @font_color;
-      font-size: 16pt;
-
-      &:hover {
+      &.active {
         background: rgba(242, 242, 242, 0.8);
+      }
+
+      a {
+        color: @font_color;
+        font-size: 16pt;
+
+        &:hover {
+          background: rgba(242, 242, 242, 0.8);
+        }
       }
     }
   }
 }
 
-.logo {
-  height: 120px;
-  margin: -10px 0;
+footer {
+  background: @footer_color;
+  border-top: 1px solid @border_color;
+  color: #ddd;
+  font-size: 13px;
+  line-height: 20px;
+  padding: 20px 20px 30px;
+  a {
+    color: @footer_link_color;
+    text-transform: capitalize;
+    &:hover {
+      color: @footer_hover_color;
+      text-decoration: none;
+    }
+  }
+  h3 {
+    border-bottom: 1px solid #3e3c36;
+    font-size: 14px;
+  }
+  .links a {
+    display: block;
+  }
 }
+
+
+// ----- pages ---------------------------------------------------
 
 .page {
   padding: 3em 0;
@@ -121,28 +178,14 @@ header {
 
 .page-title {
   text-align: center;
+  text-transform: uppercase;
 }
 
-footer {
-  background: @footer_color;
-  border-top: 1px solid @border_color;
-  color: #fff;
-  padding-top: 10px;
-  a, a:hover {
-    color: @footer_link_color;
-  }
+.beginning {
+  padding: 7em 0;
 }
 
-.footer-block {
-  padding: 0 10px;
-  display: inline-block;
-}
-
-#copyright {
-  margin: 0 5px;
-  float: left;
-}
-
+// intro.html
 #sociallinks {
   margin-top: 40px;
   #fb {
@@ -155,26 +198,6 @@ footer {
   }
 }
 
-#directlinks {
-  img {
-    padding: 0 3px;
-  }
-  margin-bottom: 10px;
-}
-
-.appbutton {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  img {
-    width: 50%;
-  }
-}
-
-.carousel {
-  width: 100%;
-}
-
 .hero-unit {
   background-image: url('../images/main.jpg');
   background-repeat: no-repeat;
@@ -183,195 +206,10 @@ footer {
   text-align: center;
 }
 
-
-#left-column {
-  font-size: 10.5pt;
-  p {
-    font-size: 10.5pt;
-  }
-  h2 {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    color: olivedrab;
-  }
-  ul li {
-    color: #333;
-    line-height: 150%;
-    ul li {
-      display: none;
-      font-size: 80%;
-      color: #CCC;
-    }
-  }
-
-  #what-we-do {
-    #motto {
-      font-size: 150%;
-      font-style: italic;
-      font-weight: bold;
-      font-family: "Times New Roman", Georgia, serif;
-      margin: 15px 0 10px;
-    }
-    line-height: 230%;
-    ul {
-      margin-bottom: 0;
-  }
-  }
-
-  #members {
-    ul {
-      padding: 0;
-    }
-    li {
-      display: block;
-      float: left;
-      height: auto;
-      .rounded-corners;
-      margin: 0 10px 10px;
-      border: 1px solid @border_color;
-      border-radius: 5px;
-      overflow: hidden;
-
-      h4.member-name {
-        margin: 0;
-        font-size: 10pt;
-        font-weight: normal;
-        line-height: 1.5em;
-        text-align: center;
-      }
-
-      .member-description {
-        display: none;
-      }
-    }
-  }
-}
-
-#members img {
-  width: 80px;
-  height: 100px;
-}
-
-@media (max-width: 980px) {
-  #members {
-    ul{
-      margin: 0 0 9px 0;
-    }
-    li{
-      margin: 0 2% 15px;
-    }
-  }
-
-  .page:first-child {
-    margin-top: 40%;
-  }
-}
-
+// participate.html
 #donation-widgets {
   width: 348px;
   margin: 0 auto;
-}
-
-// mobile
-@media (max-width: 767px) {
-  header .container {
-    height: 40px;
-
-    &.large {
-      height: 60px;
-    }
-  }
-
-  #menu li a {
-    font-size: 12pt;
-  }
-
-  .logo {
-    height: 80px;
-  }
-
-  .hero-unit {
-    margin-top: 58px;
-  }
-}
-
-@media (max-width: 480px) {
-
-  #donation-widgets {
-    width: auto;
-  }
-
-  div#paypal,
-  div#gittip {
-    display: block !important;
-    margin: 3px auto !important;
-  }
-}
-
-#members-past,
-#thanksto {
-  width: 80%;
-  float: left;
-  margin: 10px 0 0;
-  h3 {
-    color: #333;
-    font-size: 15px;
-  }
-
-  a {
-    color: #555;
-  }
-
-  li {
-    display: inline-block;
-    margin: 0 3px 3px 3px;
-  }
-
-  li:after {
-    content: ". ";
-  }
-}
-
-.slide {
-  margin-top: 20px;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  h4 {
-    font-size: 10pt;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-}
-
-#contact {
-  color: #777;
-  font-weight: bold;
-  margin: 10px auto;
-  text-align: center;
-  width: 100%;
-}
-
-.notice {
-  display: block;
-  border: 1px solid #EEE;
-  color: #999;
-  margin: -10px auto 10px;
-  padding-bottom: 10px;
-
-  h4.notice-title {
-    color: #777;
-    font-size: 13px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-  p {
-    text-indent: 5px;
-  }
 
   div#paypal,
   div#gittip {
@@ -397,13 +235,49 @@ footer {
   }
 }
 
-// ----- sources.html ---------------------------------------------------
 
-table {
-  margin: 3em 0;
+// ----- media ---------------------------------------------------
+
+@media (max-width: 980px) {
+  .page {
+    padding: 6em 10px;
+
+    &:first-child {
+    margin-top: 40%;
+    }
+  }
 }
 
-#source-type {
-  background-color: #dff0d8;
-  font-weight: bold;
+@media (max-width: 767px) {
+  header .container {
+    height: 40px;
+
+    &.large {
+      height: 60px;
+    }
+  }
+
+  #menu li a {
+    font-size: 12pt;
+  }
+
+  .logo {
+    height: 80px;
+  }
+
+  .hero-unit {
+    margin-top: 58px;
+  }
+}
+
+@media (max-width: 480px) {
+  #donation-widgets {
+    width: auto;
+  }
+
+  div#paypal,
+  div#gittip {
+    display: block !important;
+    margin: 3px auto !important;
+  }
 }

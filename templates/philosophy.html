@@ -1,10 +1,81 @@
-<div id="about" class="page container">
-  <div class="centerline">
-    <h3 class="page-title">1. {{ gettext('공공데이터를 매일 자동으로 수집합니다') }}</h3>
-    <center><img src="{{ url_for('static', filename='images/framework.png') }}" style="width: 100%; max-width: 900px"></center>
-    <h3 class="page-title">2. {{ gettext('나의 관심정보만 선별해서 보여줍니다') }}</h3>
-    <center><img src="{{ url_for('static', filename='images/customization.png') }}" style="width: 100%; max-width: 800px"></center>
-    <h3 class="page-title">3. {{ gettext('언제 어디서든 편리하게 정보를 받아볼 수 있게 합니다') }}</h3>
-    <center><img src="{{ url_for('static', filename='images/responsive.png') }}" style="width: 100%; max-width: 550px"></center>
+{% extends 'layout.html' %}
+
+{% block extra_headers %}
+<style>
+.slide {
+  margin-top: 20px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  h4 {
+    font-size: 10pt;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+}
+</style>
+{% endblock %}
+
+{% block contents %}
+<div class="page container beginning">
+  <h2 class="page-title">Philosophy</h2>
+  <div class="row">
+    <div id="left-column" class="col-md-8">
+      <div id="what-we-do">
+        <h3 id="objectives">{{ gettext('목표') }}</h3>
+        <p id="motto">Techne vos liberabit.</p>
+        <p>
+          {{ gettext("누구나 정치에 대해 알 권리가 있습니다.") }}<br>
+          {{ gettext("그렇기에 정치는 쉬워야하고, 데이터는 쉽게 접근가능해야 합니다.") }}
+          </p>
+          <p>
+          {{ gettext("팀포퐁은 이러한 철학 하에서") }}
+            <ul>
+                <li>{{ gettext("대한민국 정치 데이터에 대한 접근성과 사용성을 높이고") }}
+              <ul>
+                <li>API, open data, open source,</li>
+                <li>googling 가능</li>
+                <li>programmable</li>
+                <li>i18n</li>
+              </ul>
+            </li>
+            <li>{{ gettext("이해하기 쉽고 재미있는 시각화를 제공하고자 합니다.") }}
+            <ul>
+              <li>UI, mobile,
+              <li>visualization
+            </ul>
+            </li>
+          </ul>
+        </p>
+
+        <h3 id="values">{{ gettext('가치') }}</h3>
+        <ul>
+          <li>{{ gettext("정치적 중립") }}</li>
+          <li>{{ gettext("프로세스의 자동화와")}} <a href="http://wikipedia.org/wiki/reproducibility">{{ gettext("재현성") }}</a></li>
+          <li>Open source, open data
+            <ul>
+              <li>개방, 공유, 확산를 표방하는 Creative Commons의 가치 계승</li>
+            </ul>
+          </li>
+          <li><s>{{ gettext("세상을 바꾸는 잉여!") }}</s></li>
+        </ul>
+      </div>
+    </div>
+    <div id="right-column" class="col-md-4 hidden-xs">
+      <div class="slide">
+        <h4>대한민국 정치의 모든 것</h4>
+        <iframe src="http://www.slideshare.net/slideshow/embed_code/30178916" width="100%" height="320" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+      </div>
+      <div class="slide">
+        <h4>한국 시맨틱 웹 컨퍼런스 2013</h4>
+        <iframe src="//slid.es/e9t/2013-kswc/embed?style=light" width="360" height="320" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+      <!--div class="slide">
+        <iframe src="http://www.slideshare.net/slideshow/embed_code/12045164" width="100%" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+      </div-->
+    </div>
   </div>
 </div>
+{% endblock %}
