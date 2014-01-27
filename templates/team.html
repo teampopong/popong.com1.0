@@ -2,12 +2,18 @@
 
 {% block extra_headers %}
 <style>
+@media (max-width: 767px) {
+  #members {
+    text-align: center;
+  }
+}
 .member-img {
   width: 120px;
   height: 120px;
 }
 ul {
   list-style-type: none;
+  padding: 0;
 }
 li {
   display: inline-block;
