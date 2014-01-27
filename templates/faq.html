@@ -24,20 +24,18 @@ h3:first-child {
 <li>정치 이슈에서 기존의 언론/미디어는 '인기곡 100', 대정모는 '추천음악'입니다.</li>
 </ul>
 <div class="figure">
-    <img width="700px" src="{{ url_for('static', filename='images/recommendation.png') }}" /><p class="caption"></p>
+    <img class="hidden-xs" width="700px" src="{{ url_for('static', filename='images/recommendation.png') }}" /><p class="caption"></p>
 </div>
 <h3 id="왜-의안이죠">왜 의안이죠?</h3>
 <div class="figure">
-<img width="700px" src="{{ url_for('static', filename='images/bills.png') }}" /><p class="caption"></p>
+<img style="width:100%; max-width:700px" src="{{ url_for('static', filename='images/bills.png') }}" /><p class="caption"></p>
 </div>
 <h3 id="기존-서비스와-다른-점은">기존 서비스와 다른 점은?</h3>
-<ul>
-<li><img width="700px" src="{{ url_for('static', filename='images/comparison-screenshot.png') }}" /></li>
-<li><img width="700px" src="{{ url_for('static', filename='images/comparison.png') }}" /></li>
-</ul>
+<img class="hidden-xs" width="700px" src="{{ url_for('static', filename='images/comparison-screenshot.png') }}" />
+<img style="width:100%; max-width:700px" src="{{ url_for('static', filename='images/comparison.png') }}" />
 <h3 id="지속가능성sustainability은">지속가능성(sustainability)은?</h3>
 <div class="figure">
-<img width="700px" src="{{ url_for('static', filename='images/autoupdate.png') }}" /><p class="caption"></p>
+<img class="hidden-xs" width="700px" src="{{ url_for('static', filename='images/autoupdate.png') }}" /><p class="caption"></p>
 </div>
 <ul>
 <li>&quot;대정모&quot;는 설계단계에서부터 지속가능성을 염두에 두고 탄생한 서비스</li>
@@ -46,7 +44,7 @@ h3:first-child {
 </ul>
 <h3 id="페이스북-외에-다른-가입로그인-경로는-없나요">페이스북 외에 다른 가입/로그인 경로는 없나요?</h3>
 <div class="figure">
-    <img width="200px" src="{{ url_for('static', filename='images/oauth.png') }}" /><p class="caption"></p>
+    <img class="hidden-xs" width="200px" src="{{ url_for('static', filename='images/oauth.png') }}" /><p class="caption"></p>
 </div>
 <ul>
 <li>사용자 관찰을 통해, <strong>페이스북 로그인에 대한 일부 유저의 거부감</strong>을 확인함.</li>
@@ -59,24 +57,16 @@ h3:first-child {
 </ul>
 <h3 id="어려워서-잘-이해가-안돼요">어려워서 잘 이해가 안돼요.</h3>
 <p><strong>&lt;(오늘을 통해 이해하는) 쉬운 의안 풀이&gt;</strong> 기획 중!</p>
-<img width="700px" src="{{ url_for('static', filename='images/dragonballs-popong.png') }}" />
-<h3 id="나와의-연관성을-못-찾겠어요">나와의 연관성을 못 찾겠어요.</h3>
-<ul>
-<li>내 것인데도요?!</li>
-</ul>
-<div class="figure">
-<img width="700px" src="{{ url_for('static', filename='images/me.png') }}" /><p class="caption"></p>
-</div>
+<img style="width:100%; max-width:500px" src="{{ url_for('static', filename='images/dragonballs-popong.png') }}" />
 <h3 id="데이터-공개를-할-건가요">데이터 공개를 할 건가요?</h3>
-<ul>
-<li><img width="700px" src="{{ url_for('static', filename='images/apps.png') }}" /></li>
-</ul>
+<img class="hidden-xs" width="700px" src="{{ url_for('static', filename='images/apps.png') }}" />
+<a href="http://data.popong.com/">여기</a>로 방문해주세요!
 <h3 id="객관성-및-중립성은-어떻게-보장하나요">객관성 및 중립성은 어떻게 보장하나요?</h3>
 <ol style="list-style-type: decimal">
 <li>검증된 정부의 공식 자료만 사용<br>
-<img width="700px" src="{{ url_for('static', filename='images/crawling.png') }}" />
+<img class="hidden-xs" width="700px" src="{{ url_for('static', filename='images/crawling.png') }}" />
 <li>데이터 수집기 웹 상에 완전 공개<br>
-<img width="700px" src="{{ url_for('static', filename='images/crawlers.png') }}" />
+<img class="hidden-xs" width="700px" src="{{ url_for('static', filename='images/crawlers.png') }}" />
 </ol>
 <h3 id="선거에서-초선-출마-후보는-어떤-식으로-검증하나요">선거에서 초선 출마 후보는 어떤 식으로 검증하나요?</h3>
 <ul>
@@ -84,7 +74,7 @@ h3:first-child {
 <li>초선 출마 후보자의 성향은 실제 정치경력이 있는 기존 인물들과의 유사성을 계산하여 예측할 수 있습니다. (데이터마이닝 기술 활용)</li>
 </ul>
 <div class="figure">
-<img width="400px" src="{{ url_for('static', filename='images/network.png') }}" /><p class="caption"></p>
+<img style="width:100%; max-width:400px" src="{{ url_for('static', filename='images/network.png') }}" /><p class="caption"></p>
 </div>
 </div>
 {% endblock %}
