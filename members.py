@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 YB = {
     "fc_j": ["Intl. relations", "2013.10", ""],
     "strayleone": ["Developer", "2013.10", ""],
-    "rebekahkang": ["Public relations", "2013.10", ""],
+    "younmokang": ["Public relations", "2013.10", ""],
     "ysohn": ["Politics specialist", "2013.02", ""],
     "cornchz": ["Developer", "2010.12", ""],
     "echojuliett": ["Data miner","2011.01", ""],
