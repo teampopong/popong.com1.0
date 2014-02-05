@@ -1,0 +1,11 @@
+<div id="partners">
+  <h2 class="page-title">Partners</h2>
+  <ul class="no-bullet">
+    {% for name, url in partners.items() %}
+    <li class="item-inline">
+    {% if url != '' %}<a href="{{ url }}">{% endif %}
+      <img src="{{ url_for('static', filename='images/%s.png' % name) }}">
+    {% if url != '' %}</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+</div>
