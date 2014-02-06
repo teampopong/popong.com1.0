@@ -1,8 +1,8 @@
 // LESS
+@import "fonts";
 
 
 // ----- variables ------------------------------------------------
-
 @bg_color           : white;
 @font_color         : #222;
 @link_color         : #08c;
@@ -12,9 +12,6 @@
 @footer_link_color  : #aaa69d;
 @footer_hover_color : #f1f0ef;
 @border_color       : #eee;
-
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-
 
 // ----- mixins --------------------------------------------------
 .rounded-corners (@radius: 5px) {
@@ -60,7 +57,6 @@
 body {
   background-color: @bg_color;
   color: @font_color;
-  font-family: calibri, 'Nanum Gothic', sans-serif;
   font-size: 12pt;
 }
 
@@ -73,6 +69,21 @@ a {
 
 h2 {
   font-size: 36pt;
+}
+
+.ko {
+  h1, h2, h3 {
+    font-family: "나눔고딕", "맑은 고딕"; // 폰트가 있는 머신
+  }
+
+  h2 {
+    letter-spacing: -2px;
+    word-spacing: 2px;
+  }
+
+  h3 {
+    letter-spacing: -1px;
+  }
 }
 
 span {
@@ -224,11 +235,9 @@ footer {
 
 // participate.html
 #donation-widgets {
-  width: 348px;
-  margin: 0 auto;
+  text-align: center;
 
-  div#paypal,
-  div#gittip {
+  div#paypal {
     border: 2px solid #EEE;
     border-radius: 6pt;
     display: inline-block;
@@ -236,14 +245,6 @@ footer {
     margin: 3px;
     vertical-align: middle;
     width: 160px;
-
-    .gittip-widget {
-      margin: auto;
-      border: none;
-      display: block;
-      background-position: right bottom;
-      width: 140px;
-    }
 
     form {
       margin: 10px 7px;
