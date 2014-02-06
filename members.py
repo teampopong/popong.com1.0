@@ -33,6 +33,8 @@ THANKS_TO = {
 }
 
 PARTNERS = {
+    'cckorea': 'http://cckorea.org',
+    'codenamu': 'http://codenamu.org',
     'okfkorea': 'http://okfn.kr',
     'openparl': 'http://openingparliament.org',
     'sunlight': 'http://sunlightfoundation.com'
