@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-01-27 17:57+0900\n"
+"POT-Creation-Date: 2014-02-06 18:34-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,40 +129,40 @@ msgstr ""
 msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
 msgstr ""
 
-#: templates/philosophy.html:44
+#: templates/philosophy.html:37
 msgid "이해하기 쉽고 재미있는 시각화를 제공하고자 합니다."
 msgstr ""
 
-#: templates/philosophy.html:53
+#: templates/philosophy.html:41
 msgid "가치"
 msgstr ""
 
-#: templates/philosophy.html:55
+#: templates/philosophy.html:43
 msgid "정치적 중립"
 msgstr ""
 
-#: templates/philosophy.html:56
+#: templates/philosophy.html:44
 msgid "프로세스의 자동화와"
 msgstr ""
 
-#: templates/philosophy.html:56
+#: templates/philosophy.html:44
 msgid "재현성"
 msgstr ""
 
-#: templates/philosophy.html:58
+#: templates/philosophy.html:46
 msgid "세상을 바꾸는 잉여!"
 msgstr ""
 
-#: templates/philosophy.html:64 templates/projects.html:10
+#: templates/philosophy.html:52 templates/projects.html:10
 #: templates/sources.html:27
 msgid "대한민국 정치의 모든 것"
 msgstr ""
 
-#: templates/philosophy.html:64
+#: templates/philosophy.html:52
 msgid "요약자료"
 msgstr ""
 
-#: templates/philosophy.html:68
+#: templates/philosophy.html:56
 msgid "한국 시맨틱 웹 컨퍼런스 2013"
 msgstr ""
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2014-01-27 17:57+0900\n"
+"POT-Creation-Date: 2014-02-06 18:34-0500\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgstr "We believe politics can be"
 
 #: templates/intro.html:4
 msgid "이해할 수 있는 세상을 지향합니다"
-msgstr "fun, and easy to understand"
+msgstr "fun, and easy to everybody"
 
 #: templates/participate.html:3
 msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법."
@@ -133,40 +133,40 @@ msgstr "For this, Team POPONG aims to"
 msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
 msgstr "enhance global accessability and usability of Korean political data"
 
-#: templates/philosophy.html:44
+#: templates/philosophy.html:37
 msgid "이해하기 쉽고 재미있는 시각화를 제공하고자 합니다."
 msgstr "and provide easy and interesting visualizations."
 
-#: templates/philosophy.html:53
+#: templates/philosophy.html:41
 msgid "가치"
 msgstr "Values"
 
-#: templates/philosophy.html:55
+#: templates/philosophy.html:43
 msgid "정치적 중립"
 msgstr "Political neutrality"
 
-#: templates/philosophy.html:56
+#: templates/philosophy.html:44
 msgid "프로세스의 자동화와"
 msgstr "Process automation and"
 
-#: templates/philosophy.html:56
+#: templates/philosophy.html:44
 msgid "재현성"
 msgstr "reproducibility"
 
-#: templates/philosophy.html:58
+#: templates/philosophy.html:46
 msgid "세상을 바꾸는 잉여!"
 msgstr "The change nerds want to see in the world"
 
-#: templates/philosophy.html:64 templates/projects.html:10
+#: templates/philosophy.html:52 templates/projects.html:10
 #: templates/sources.html:27
 msgid "대한민국 정치의 모든 것"
 msgstr "Politics in Korea"
 
-#: templates/philosophy.html:64
+#: templates/philosophy.html:52
 msgid "요약자료"
 msgstr "summary"
 
-#: templates/philosophy.html:68
+#: templates/philosophy.html:56
 msgid "한국 시맨틱 웹 컨퍼런스 2013"
 msgstr "2013 Korean semantic web conference"
 
