@@ -34,5 +34,6 @@ THANKS_TO = {
 
 PARTNERS = {
     'okfkorea': 'http://okfn.kr',
+    'openparl': 'http://openingparliament.org',
     'sunlight': 'http://sunlightfoundation.com'
 }

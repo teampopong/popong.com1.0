@@ -4,7 +4,7 @@
     {% for name, url in partners.items() %}
     <li class="item-inline">
     {% if url != '' %}<a href="{{ url }}">{% endif %}
-      <img src="{{ url_for('static', filename='images/%s.png' % name) }}">
+      <img src="{{ url_for('static', filename='images/partner-%s.png' % name) }}">
     {% if url != '' %}</a>{% endif %}</li>
     {% endfor %}
   </ul>
