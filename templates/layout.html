@@ -12,16 +12,11 @@
     <meta property="og:url" content="http://popong.com" />
     <meta property="fb:admins" content="1347665216" />
     <link rel="image_src" type="image/png" href="{{ url_for('static', filename='images/thumbnail.png') }}">
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     {% for lang, url in locale_links.items() %}
     <link rel="alternate" hreflang="{{lang}}" href="{{url}}">
     {% endfor %}
 
     <!-- Le styles -->
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/bootstrap-theme.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/popong.less') }}" rel="stylesheet/less" type="text/css">
     {% assets filters="less", output='build/popong.%(version)s.css', depends=['**/*.less'],
         'css/bootstrap.min.css',
         'css/bootstrap-theme.min.css',
@@ -37,7 +32,7 @@
     {% endblock %}
   </head>
 
-  <body>
+  <body class="{{ locale }}">
     <!--
          _ __  ___  _ __  ___  ____   ___
         | '_ \/ _ \| '_ \/ _ \| '_ \ / _ \
