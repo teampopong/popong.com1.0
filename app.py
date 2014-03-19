@@ -61,9 +61,12 @@ def main():
     args = cmd_args()
     if args.locale and args.locale != 'auto':
         app.babel.locale_selector_func = lambda: args.locale
-    print 'On http://%s:%s/' % (SERVER_SETTINGS['host'], SERVER_SETTINGS['port'])
-    meinheld.listen((SERVER_SETTINGS['host'], SERVER_SETTINGS['port']))
-    meinheld.run(app)
+    if SERVER_SETTINGS['type']=='flask':
+        app.run()
+    elif SERVER_SETTINGS['type']=='meinheld':
+        print 'On http://%s:%s/' % (SERVER_SETTINGS['host'], SERVER_SETTINGS['port'])
+        meinheld.listen((SERVER_SETTINGS['host'], SERVER_SETTINGS['port']))
+        meinheld.run(app)
 
 
 
