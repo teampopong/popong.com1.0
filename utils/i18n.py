@@ -79,4 +79,3 @@ def inject_locales():
 
     return dict(locale_links=locale_links,
             locale=str(get_locale()))
-

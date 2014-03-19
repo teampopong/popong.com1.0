@@ -6,7 +6,6 @@ import re
 import meinheld
 from flask import Flask, render_template, redirect, request, url_for
 from flask.ext.assets import Environment as Asset
-from flask.ext.babel import get_locale, refresh as refresh_babel
 
 import members
 from settings import BABEL_SETTINGS, DIRLINKS, SERVER_SETTINGS
