@@ -2,9 +2,13 @@
 
 [![Build Status](https://travis-ci.org/teampopong/popong.com.png)](https://travis-ci.org/teampopong/popong.com)
 
-### Installation
+### Installation (if necessary)
 
     $ sudo make install
+
+### Initialization
+
+    $ make init
 
 ### Run 
 
