@@ -5,12 +5,13 @@
 // ----- variables ------------------------------------------------
 @bg_color           : white;
 @font_color         : #222;
+@menu_font_color    : white;
 @link_color         : #08c;
 @hover_color        : #005580;
-@header_color       : rgba(255, 255, 255, 0.85);
-@footer_color       : #32302b;
-@footer_link_color  : #aaa69d;
-@footer_hover_color : #f1f0ef;
+@footer_color       : #353e48;
+@footer_link_color  : darken(@menu_font_color, 10%);
+@footer_hover_color : @menu_font_color;
+@header_color       : fade(@footer_color, 90%);
 @border_color       : #eee;
 
 // ----- mixins --------------------------------------------------
@@ -144,7 +145,7 @@ header {
   left: 0;
   right: 0;
   background: @header_color;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid darken(@header_color, 5%);
   .box-shadow;
   z-index: 1;
 
@@ -176,11 +177,13 @@ header {
       }
 
       a {
-        color: @font_color;
-        font-size: 16pt;
+        color: @menu_font_color;
+        font-size: 14pt;
+        text-shadow: 1px 1px 0 fade(darken(@header_color, 20%), 85%);
 
         &:hover {
-          background: rgba(242, 242, 242, 0.8);
+          background: lighten(@header_color, 25%);
+          text-shadow: 1px 1px 0 fade(@header_color, 85%);
         }
       }
     }
@@ -190,10 +193,11 @@ header {
 footer {
   background: @footer_color;
   border-top: 1px solid @border_color;
-  color: #ddd;
+  color: @footer_link_color;
   font-size: 13px;
   line-height: 20px;
   padding: 20px 20px 30px;
+
   a {
     color: @footer_link_color;
     text-transform: capitalize;
@@ -203,7 +207,8 @@ footer {
     }
   }
   h3 {
-    border-bottom: 1px solid #3e3c36;
+    padding-bottom: 2px;
+    border-bottom: 1px solid darken(@footer_color, 6%);
     font-size: 14px;
   }
   .links a {
