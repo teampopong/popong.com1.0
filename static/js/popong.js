@@ -8,7 +8,7 @@ var $logo;
 $(function () {
     $body = $('body');
     $header = $('header .container');
-    $logo = $('.logo');
+    $logo = $('header .logo');
     $('#menu a').click(function () {
         var href = $(this).attr('href'),
             $elem = href !== '#' && $(href) || $('body');
