@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2014-02-06 18:34-0500\n"
+"POT-Creation-Date: 2014-04-10 18:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,7 @@ msgid "이해할 수 있는 세상을 지향합니다"
 msgstr ""
 
 #: templates/participate.html:3
-msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법."
+msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법"
 msgstr ""
 
 #: templates/participate.html:5

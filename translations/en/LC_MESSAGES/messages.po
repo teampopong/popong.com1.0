@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2014-02-06 18:34-0500\n"
+"POT-Creation-Date: 2014-04-10 18:27+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -43,14 +43,14 @@ msgstr "in our ordinary lives"
 
 #: templates/intro.html:4
 msgid "누구나 정치를 쉽고 재미있게"
-msgstr "We believe politics can be"
+msgstr "Politics can be"
 
 #: templates/intro.html:4
 msgid "이해할 수 있는 세상을 지향합니다"
-msgstr "fun, and easy to everybody"
+msgstr "fun, and easy for everyone"
 
 #: templates/participate.html:3
-msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법."
+msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법"
 msgstr "There are six ways for you to contribute"
 
 #: templates/participate.html:5
@@ -181,7 +181,7 @@ msgstr ""
 
 #: templates/projects.html:18
 msgid "국회는 지금"
-msgstr "National assembly, now"
+msgstr "National Assembly, Now"
 
 #: templates/projects.html:20
 msgid "18대 국회의 정당별, 연령별, 지역별, 성별, 당선횟수별 좌석배치를 볼 수 있어요!"
