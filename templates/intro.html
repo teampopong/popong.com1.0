@@ -1,7 +1,9 @@
 <div class="hero-unit">
   <div class="page container no-bottom-margin">
-      <h2><span>{{ gettext('당신의 일상 속') }}&nbsp;</span><span>{{ gettext('정치를 발견하다') }}</span></h2>
-      <h3><span>{{ gettext('누구나 정치를 쉽고 재미있게') }}&nbsp;</span><span>{{ gettext('이해할 수 있는 세상을 지향합니다') }}</span></h3>
+      <div class="hero">
+          <h2><span>{{ gettext('당신의 일상 속') }}&nbsp;</span><span>{{ gettext('정치를 발견하다') }}</span></h2>
+          <h3><span>{{ gettext('누구나 정치를 쉽고 재미있게') }}&nbsp;</span><span>{{ gettext('이해할 수 있는 세상을 지향합니다') }}</span></h3>
+      </div>
     {% include 'social.html' %}
     <div id="language">
     {% for lang, url in locale_links.items() %}<a href="{{ url }}">{{ lang }}</a>{% if not loop.last %}&nbsp;/&nbsp;{% endif %}{% endfor %}
