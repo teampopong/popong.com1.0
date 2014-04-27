@@ -30,9 +30,9 @@ def team():
             YB=members.YB, OB=members.OB, partners=members.PARTNERS,
             dirlinks=DIRLINKS)
 
-@app.route('/blog')
-def blog():
-    return redirect('http://blog.popong.com')
+@app.route('/blog/<locale>')
+def blog(locale):
+    return redirect('http://blog.popong.com/%s' % locale)
 
 @app.route('/faq')
 def faq():
