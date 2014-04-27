@@ -340,16 +340,12 @@ footer {
     height: 40px;
 
     &.large {
-      height: 60px;
+      height: 100px;
     }
   }
 
   #menu li a {
     font-size: 12pt;
-  }
-
-  .logo {
-    height: 80px;
   }
 
   .hero-unit {
@@ -358,11 +354,13 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h2 {
-    font-size: 24pt;
-  }
-  h3.page-title {
-    text-align: left;
+  .hero-unit {
+    h2 {
+      font-size: 24pt;
+    }
+    h3 {
+      font-size: 15pt;
+    }
   }
   #donation-widgets {
     width: auto;
