@@ -27,7 +27,7 @@ def home():
 @app.route('/team')
 def team():
     return render_template('about.html',
-            YB=members.YB, OB=members.OB, partners=members.PARTNERS,
+            YB=members.YB, CONTRIBUTORS=members.CONTRIBUTORS, partners=members.PARTNERS,
             dirlinks=DIRLINKS)
 
 @app.route('/blog/<locale>')
