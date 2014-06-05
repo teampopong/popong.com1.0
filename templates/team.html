@@ -8,7 +8,10 @@
       <div class="member-description shadow">{{attrs[0]}}</div>
     </li>
     {% endfor %}
-    {% for name, attrs in OB.items() %}
+  </ul>
+  <h2 class="page-title">Contributors & Alumnis</h2>
+  <ul class="no-bullet">
+    {% for name, attrs in CONTRIBUTORS.items() %}
     <li id="{{name}}" class="item-inline">
       <div class="circular-image"><img class="member-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}"></div>
       <h4 class="member-name">{% if name=='weirdclaire' %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h4>

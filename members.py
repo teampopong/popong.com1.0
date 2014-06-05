@@ -6,7 +6,6 @@ from __future__ import unicode_literals
 YB = {
     "fc_j": ["Intl. relations", "2013.10", ""],
     "strayleone": ["Developer", "2013.10", ""],
-    "younmokang": ["Public relations", "2013.10", ""],
     "ysohn": ["Politics specialist", "2013.02", ""],
     "cornchz": ["Developer", "2010.12", ""],
     "echojuliett": ["Data miner","2011.01", ""],
@@ -15,7 +14,7 @@ YB = {
     "weirdclaire": ["UX designer","2012.08", ""]
 }
 
-OB = {
+CONTRIBUTORS = {
     "achimnol": ["Developer", "2010.12", ""],
     "allsolution": ["Developer","2011.07","2011.12"],
     "uni208": ["Data miner","2011.01","2011.12"],
@@ -24,6 +23,7 @@ OB = {
     "sanxiyn": ["Developer","",""],
     "dongx3": ["Developer","",""],
     "netj": ["Developer","",""],
+    "younmokang": ["Public relations", "2013.10", ""],
     "unrealive": ["Coordinator","2011.01","2011.06"]
 }
 
