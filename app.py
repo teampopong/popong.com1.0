@@ -34,6 +34,10 @@ def team():
 def blog(locale):
     return redirect('http://blog.popong.com/%s' % locale)
 
+@app.route('/data')
+def data():
+    return redirect('http://data.popong.com/')
+
 @app.route('/faq')
 def faq():
     return render_template('faq.html', dirlinks=DIRLINKS)
