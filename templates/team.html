@@ -1,10 +1,12 @@
+{% set no_links = ['jjuntae', 'jonghyuk', 'weirdclaire', 'fc_j', 'strayleone', 'ysohn', 'jihye'] %}
+
 <div id="team">
   <h2 class="page-title">The team</h2>
   <ul class="no-bullet">
     {% for name, attrs in YB.items() %}
     <li id="{{name}}" class="item-inline">
       <div class="circular-image"><img class="circle-img" data-placement="bottom" data-title="{{attrs[2]}}" title="{{attrs[2]}}" src="{{url_for('static', filename='images/member-%s.jpg' % name)}}"></div>
-      <h4 class="member-name">{% if name in ['weirdclaire', 'fc_j', 'strayleone', 'ysohn', 'jihye'] %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h4>
+      <h4 class="member-name">{% if name in no_links %}{{name}}{% else %}<a href="http://twitter.com/{{name}}">{{name}}</a>{% endif %}</h4>
       <div class="member-description shadow">{{attrs[0]}}</div>
     </li>
     {% endfor %}
