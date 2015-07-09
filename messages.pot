@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-09 17:12+0900\n"
+"POT-Creation-Date: 2015-07-09 17:15+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 
 #: templates/contact.html:19
 msgid ""
-"이러한 이유로 관심을 가져주시는 모든 분들과 오프라인에서 일일히 만남을 가지기는 어렵습니다만, 온라인으로 의미있고 재미있는 소통은 "
+"이러한 이유로 관심을 가져주시는 모든 분들과 오프라인에서 일일이 만남을 가지기는 어렵습니다만, 온라인으로 의미있고 재미있는 소통은 "
 "언제나 환영하고 있습니다."
 msgstr ""
 
