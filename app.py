@@ -1,6 +1,7 @@
 #! /usr/bin/python2.7
 # -*- coding: utf-8 -*-
 
+from datetime import datetime
 import re
 
 import meinheld
@@ -22,13 +23,12 @@ PopongBabel(app, **BABEL_SETTINGS)
 
 @app.route('/')
 def home():
-    return render_template('main.html', dirlinks=DIRLINKS)
+    return render_template('main.html')
 
 @app.route('/team')
 def team():
     return render_template('about.html',
-            YB=members.YB, CONTRIBUTORS=members.CONTRIBUTORS, partners=members.PARTNERS,
-            dirlinks=DIRLINKS)
+            YB=members.YB, CONTRIBUTORS=members.CONTRIBUTORS, partners=members.PARTNERS)
 
 @app.route('/blog/<locale>')
 def blog(locale):
@@ -40,15 +40,24 @@ def data():
 
 @app.route('/faq')
 def faq():
-    return render_template('faq.html', dirlinks=DIRLINKS)
+    return render_template('faq.html')
 
 @app.route('/sources')
 def sources():
-    return render_template('sources.html', dirlinks=DIRLINKS)
+    return render_template('sources.html')
 
 @app.route('/philosophy')
 def philosophy():
-    return render_template('philosophy.html', dirlinks=DIRLINKS)
+    return render_template('philosophy.html')
+
+
+@app.context_processor
+def inject_data():
+    return dict(
+        dirlinks=DIRLINKS,
+        thisyear=datetime.today().year,
+    )
+
 
 def cmd_args():
     from argparse import ArgumentParser
