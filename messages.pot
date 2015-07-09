@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2015-07-09 15:50+0900\n"
+"POT-Creation-Date: 2015-07-09 17:12+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,53 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 0.9.6\n"
+
+#: templates/contact.html:4
+msgid ""
+"연락을 주시기 전에 한 가지 말씀드리고 싶은 점은,\n"
+"팀포퐁은 <a href=\"http://37signals.com/remote/\">원격(remote)</a>을 지향하고 있다는 "
+"것입니다."
+msgstr ""
+
+#: templates/contact.html:6
+msgid ""
+"초창기의 팀포퐁은 대부분이 학생이었고,\n"
+"<s>연애를 포기하고</s>\n"
+"매주 주말에 모여 열정적으로 회의와 개발을 했습니다만,\n"
+"지금은 <b>거의 모든 소통을 온라인으로</b> 합니다.\n"
+"대부분의 초창기 멤버들이 사회로 진출하기도 했고,\n"
+"10년, 100년 뒤에도 우리가 만든 프로덕트들이 지속되는 것을 중요하게 생각하고 있기 때문입니다.\n"
+"(바꿔 말하면 \"가늘고 길게\" 정신.)"
+msgstr ""
+
+#: templates/contact.html:16
+msgid ""
+"소통 공간이 온라인으로 옮겨지면서 소통이 다소 느려진 점은 있지만,\n"
+"거주 지역 등 물리적 제약이 없어진 덕분에 지금은 국내외 다양한 곳에 <a href=\"{{ url_for('team\n"
+"') }}\">팀원들</a>이 분포할 수 있게 되었습니다."
+msgstr ""
+
+#: templates/contact.html:19
+msgid ""
+"이러한 이유로 관심을 가져주시는 모든 분들과 오프라인에서 일일히 만남을 가지기는 어렵습니다만, 온라인으로 의미있고 재미있는 소통은 "
+"언제나 환영하고 있습니다."
+msgstr ""
+
+#: templates/contact.html:20
+msgid "(그러다가 언젠가 친해지면 치맥도 하러 만나볼 수 있겠죠!)"
+msgstr ""
+
+#: templates/contact.html:25
+msgid "팀포퐁 공개 메일링 리스트로 지금 당장 메일 보내기"
+msgstr ""
+
+#: templates/contact.html:26
+msgid "(팀포퐁이 더 선호하는 채널)"
+msgstr ""
+
+#: templates/contact.html:28
+msgid "팀포퐁 운영팀한테만 비밀리에 연락하기"
+msgstr ""
 
 #: templates/footer.html:8
 msgid "팀포퐁"
@@ -49,63 +96,81 @@ msgstr ""
 msgid "이해할 수 있는 세상을 지향합니다"
 msgstr ""
 
-#: templates/participate.html:2
+#: templates/participate.html:4
+msgid "팀포퐁은 하고 싶은 것을 스스로 이행할 의지와 열정이 있는 누구에게나 열려 있는 커뮤니티입니다."
+msgstr ""
+
+#: templates/participate.html:5
+msgid "여느 조직처럼 정해진 일정이나 플랜도 없고, 자유롭게 의견을 교환하며 자기가 하고 싶은 것을 하면 됩니다."
+msgstr ""
+
+#: templates/participate.html:6
+msgid ""
+"처음에는 혼자서 프로젝트를 진행하다가 팀원 중 뜻이 맞는 사람이 있다면 같이 일해도 되고, 이미 진행되고 있던 다른 프로젝트에 "
+"조인하셔도 됩니다."
+msgstr ""
+
+#: templates/participate.html:7
+msgid "어떠한 방식의 참여도 환영이니 관심 있는 분들은 별도의 인사 없이도 언제든 참여하시면 됩니다."
+msgstr ""
+
+#: templates/participate.html:10
 msgid "당신도 기여할 수 있습니다! 당신이 기여할 수 있는 여섯 가지 방법"
 msgstr ""
 
-#: templates/participate.html:4
+#: templates/participate.html:12
 msgid "포퐁 페이스북 페이지"
 msgstr ""
 
-#: templates/participate.html:4
+#: templates/participate.html:12
 msgid "에서 좋아요를 꾸욱 누른다."
 msgstr ""
 
-#: templates/participate.html:5
+#: templates/participate.html:13
 msgid "피드백 포럼"
 msgstr ""
 
-#: templates/participate.html:5
+#: templates/participate.html:13
 msgid "에서 아이디어를 제시하고 마음에 드는 다른 유저들의 아이디어에 투표하고 토론한다."
 msgstr ""
 
-#: templates/participate.html:6
+#: templates/participate.html:14
 msgid "http://blog.popong.com/ko"
 msgstr ""
 
-#: templates/participate.html:6
+#: templates/participate.html:14
 msgid "포퐁 블로그"
 msgstr ""
 
-#: templates/participate.html:6
+#: templates/participate.html:14
 msgid "를 구독한다."
 msgstr ""
 
-#: templates/participate.html:7
+#: templates/participate.html:15
 msgid "포퐁 코드저장소"
 msgstr ""
 
-#: templates/participate.html:7
+#: templates/participate.html:15
 msgid "에서 이슈들을 보며 직접 pull request를 보낸다."
 msgstr ""
 
-#: templates/participate.html:8
+#: templates/participate.html:16
 msgid "주변 사람들에게 열심히 홍보한다."
 msgstr ""
 
-#: templates/participate.html:9
+#: templates/participate.html:17
 msgid "후원한다!"
 msgstr ""
 
-#: templates/participate.html:11
+#: templates/participate.html:19
 msgid "팀포퐁은 정치적 중립성을 중요한 가치로 여기며, 따라서 어떠한 단체의 지원도 받지 않습니다."
 msgstr ""
 
-#: templates/participate.html:12
+#: templates/participate.html:20
 msgid "저희의 목표와 가치에 공감하신다면 포퐁 프로젝트가 지속될 수 있도록 후원 부탁드립니다."
 msgstr ""
 
-#: templates/participate.html:13
+#: templates/participate.html:21
 msgid "여러분의 후원금은 서버 및 도메인 유지 등 운영에 사용됩니다."
 msgstr ""
 
