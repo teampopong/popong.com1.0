@@ -2,6 +2,16 @@
 
 {% block contents %}
 {% include "intro.html" with context %}
-{% include "projects.html" with context %}
-{% include "participate.html" with context %}
+
+<div id="philosophy" class="page container">
+{% include "philosophy.html" with context %}
+</div>
+
+<div id="projects" class="page container">
+    {% include "projects.html" with context %}
+</div>
+
+<div id="participate" class="page container">
+  {% include "participate.html" with context %}
+</div>
 {% endblock %}
