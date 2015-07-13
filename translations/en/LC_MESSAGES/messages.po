@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version:  1.0\n"
 "Report-Msgid-Bugs-To: contact@popong.com\n"
-"POT-Creation-Date: 2015-07-09 17:21+0900\n"
+"POT-Creation-Date: 2015-07-14 01:17+0900\n"
 "PO-Revision-Date: 2013-01-22 22:00+0900\n"
 "Last-Translator: Lucy Park <lucypark@popong.com>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -200,7 +200,7 @@ msgstr ""
 
 #: templates/philosophy.html:28
 msgid "팀포퐁은 이러한 철학 하에서"
-msgstr "For this, Team POPONG aims to"
+msgstr "For this, Team POPONG aims to:"
 
 #: templates/philosophy.html:30
 msgid "대한민국 정치 데이터에 대한 접근성과 사용성을 높이고"
